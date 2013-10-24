@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<title></title>
+<meta charset="utf-8">
+<script src="js/d3.v3.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/underscore.nest.js"></script>
+<script src="js/queue.min.js"></script>
+<script src="js/d3.tip.js"></script>
+
+<style>
+
+  body {
+    background: #F4F4F4;
+    font: 11px sans-serif;
+
+  }
+
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+
+  .node {
+    font: 10px sans-serif;
+  }
+
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+
+</style>
+<body>
+
+<iframe width='100%' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/ccc?key=0AhB_RnBFNkDcdF9maGpEU2ZtanFHT2xYdWlfM20xQnc&usp=sharing'></iframe>
+</body>
+<script>
+
+var width = 960,
+    height = 2200;
+
+var cluster = d3.layout.cluster()
+    .size([height, width - 160]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(40,0)");
+
+
+var makeCSV = function(data){
+  var csvContent = "data:text/csv;charset=utf-8,";
+  csvContent += d3.keys(data[0]).join(",");
+  data.forEach(function(item, index){
+
+     dataString = d3.values(item).join(",");
+     csvContent += index < item.length ? dataString+ "\n" : dataString;
+
+  });
+  var encodedUri = encodeURI(csvContent);
+  var link = document.createElement("a");
+  link.setAttribute("href", encodedUri);
+  link.setAttribute("download", "data.csv");
+  link.click();
+  //window.open(encodedUri);
+}
+
+var transformPolitiker = function(politiker){
+
+  politiker.parteiOld = politiker.partei;
+  politiker.partei = politiker.partei.slice(0,3).toUpperCase();
+
+  switch(politiker.partei){
+    case "UDC": politiker.partei = "SVP"; break;
+    case "PSS": politiker.partei = "SPS"; break;
+    case "PLR": politiker.partei = "FDP"; break;
+    case "PDC": politiker.partei = "CVP"; break;
+    case "PES": politiker.partei = "GPS"; break;
+  }
+
+  switch(politiker.partei){
+    case "SVP": politiker.parteiFarbe = "#428953"; break;
+    case "SPS": politiker.parteiFarbe = "#CE2929"; break;
+    case "FDP": politiker.parteiFarbe = "#5675D6"; break;
+    case "CVP": politiker.parteiFarbe = "#FF8B07"; break;
+    case "GPS": politiker.parteiFarbe = "#A3DD57"; break;
+    case "GLP": politiker.parteiFarbe = "#77E599"; break;
+    case "BDP": politiker.parteiFarbe = "#D0B100"; break;
+    case "Lega": politiker.parteiFarbe = "#963F04"; break;
+    case "EVP": politiker.parteiFarbe = "#65ECEF"; break;
+    case "CSP": politiker.parteiFarbe = "#FF8B07"; break;
+    case "MCG": politiker.parteiFarbe = "#303030"; break;
+    case "Parteilos": politiker.parteiFarbe = "#EEE"; break;
+  }
+
+  return politiker;
+}
+
+var makeDendogram = function(options){
+
+  var nest = _.nest(options.data, "parteiZuordnung");
+
+  console.log(nest);
+
+  var nodes = cluster.nodes(nest),
+      links = cluster.links(nodes);
+
+  var link = svg.selectAll(".link")
+      .data(links)
+    .enter().append("path")
+      .attr("class", "link")
+      .attr("d", diagonal);
+
+  var node = svg.selectAll(".node")
+      .data(nodes)
+    .enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+
+  node.append("circle")
+      .attr("r", 4.5);
+
+  node.append("text")
+      .attr("dx", function(d) { return d.children ? -8 : 8; })
+      .attr("dy", 3)
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) { return d.name ? d.name : options.itemLabel(d); });
+}
+
+queue()
+  //.defer(d3.csv, 'data/politiker.csv')
+  .defer(d3.csv, 'https://docs.google.com/spreadsheet/pub?key=0AhB_RnBFNkDcdF9maGpEU2ZtanFHT2xYdWlfM20xQnc&single=true&gid=0&output=csv')
+  .defer(d3.csv, 'data/badges.csv')
+  .await(ready)
+
+function ready (error,politiker,badges) {
+  console.log(politiker,badges);
+
+  // politiker.forEach(function(pol){
+  //   pol = transformPolitiker(pol);
+  // });
+
+  makeDendogram({
+    data: politiker,
+    key: "partei",
+    itemLabel : function(d){ return d.vorname + " " + d.nachname; }
+  });
+
+  
+  //edit mit http://handsontable.com/
+  //makeCSV(politiker);
+}
+    
+
+</script>

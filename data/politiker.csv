@@ -1,0 +1,247 @@
+id,zeile,vorname,nachname,geschlecht,rat,partei,kanton,infocube_url,infocube_id,geschlecht
+1,1,Fabio,Abate,,SR,PLR.I Liberali Radicali,TI,0.0,0.0,m
+2,2,Andreas,Aebi,,NR,SVP,BE,http://infocube.ch/de/p/418186/salzmann-werner,418186.0,m
+3,3,Matthias,Aebischer,,NR,SPS,BE,,,m
+4,4,Thomas,Aeschi,,NR,SVP,ZG,0.0,0.0,m
+5,5,Evi,Allemann,,NR,SPS,BE,0.0,0.0,w
+6,6,Hans,Altherr,,SR,FDP.Die Liberalen,AR,0.0,0.0,m
+7,7,Cesla Virginia,Amarelle,,NR,PSS,VD,Kein Eintrag,,w
+8,8,Céline Marie-Claire,Amaudruz,,NR,UDC,GE,0.0,0.0,w
+9,9,Viola,Amherd,,NR,CVP,VS,http://infocube.ch/de/p/853602/rall-rene,853602.0,w
+10,10,Adrian,Amstutz,,NR,SVP,BE,http://infocube.ch/de/p/6328894/schnegg-roger,6328894.0,m
+11,11,Josiane,Aubert,,NR,PSS,VD,,,w
+12,12,Caspar,Baader-Buri,,NR,SVP,BL,0.0,0.0,m
+13,13,Jacqueline,Badran,,NR,SPS,ZH,http://infocube.ch/de/p/268223/keller-ulrich,268223.0,w
+14,14,Luc,Barthassat,,NR,PDC,GE,0.0,0.0,m
+15,15,Isidor,Baumann,,SR,CVP,UR,http://infocube.ch/de/p/51997/baumann-edith,51997.0,m
+16,16,Martin,Bäumle,,NR,glp,ZH,http://infocube.ch/de/p/1058766/gysi-nathalie#activeMandates,1058766.0,m
+17,17,Didier,Berberat,,SR,PSS,NE,Zu ungenau,,m
+18,18,Maria,Bernasconi,,NR,PSS,GE,zu ungenau,,w
+19,19,Kathrin,Bertschy,,NR,glp,BE,0.0,0.0,w
+20,20,Peter,Bieri,,SR,CVP,ZG,Zu ungenau,,m
+21,21,Max,Binder,,NR,SVP,ZH,http://infocube.ch/de/p/35427/amstutz-urs,35427.0,m
+22,22,Prisca,Birrer-Heimo,,NR,SPS,LU,0.0,0.0,w
+23,23,Pirmin Josef,Bischof,,SR,CVP,SO,0.0,0.0,m
+24,24,Ivo,Bischofberger,,SR,CVP,AI,0.0,0.0,m
+25,25,Christoph,Blocher,,NR,SVP,ZH,,,m
+26,26,Thomas,Böhni,,NR,glp,TG,Kein Eintrag,,m
+27,27,Roland F.,Borer,,NR,SVP,SO,Kein Resultat,,m
+28,28,Toni,Bortoluzzi-Elmer,,NR,SVP,ZH,Zu ungenau,,m
+29,29,Jacques,Bourgeois,,NR,PLR.Les Libéraux-Radicaux,FR,http://infocube.ch/de/p/1035028/glauser-fritz,1035028.0,m
+30,30,Heinz,Brand-Ciocco,,NR,SVP,GR,0.0,0.0,m
+31,31,Pascale,Bruderer Wyss,,SR,SPS,AG,0.0,0.0,w
+32,32,Toni,Brunner,,NR,SVP,SO,,,m
+33,33,Roland Rino,Büchel,,NR,SVP,SG,0.0,0.0,m
+34,34,Jakob,Büchler-Giger,,NR,CVP,SG,Zu ungenau,,m
+35,35,André,Bugnon,,NR,UDC,VC,,,m
+36,36,Christine,Bulliard-Marbach,,NR,CVP,FR,Zu ungenau,,w
+37,37,Yannick,Buttet,,NR,PDC,VS,http://infocube.ch/de/p/727481/squaratti-alfred#activeMandates,727481.0,m
+38,38,Martin,Candinas,,NR,CVP,GR,0.0,0.0,m
+39,39,Marina,Carobbio Guscetti,,NR,PSS,TI,,,w
+40,40,Andrea Claudio,Caroni,,NR,FDP.Die Liberalen,AR,0.0,0.0,m
+41,41,Ignazio,Cassis,,NR,PLR.I Liberali Radicali,TI,0.0,0.0,m
+42,42,Isabelle,Chevalley,,NR,pvl,VD,https://infocube.ch/de/p/451881/seydoux-laurent#activeMandates,451881.0,w
+43,43,Max,Chopard-Acklin,,NR,SPS,AG,https://infocube.ch/de/p/4377053/widmer-jean-marc#inactiveMandates,4377053.0,m
+44,44,Raphaël,Comte,,SR,PLR.Les Libéraux-Radicaux,NE,0.0,0.0,m
+45,45,Robert-Christian,Cramer,,SR,GPS,GE,,,m
+46,46,Christophe,Darbellay,,NR,PDC,VS,,,m
+47,47,Dominique,de Buman,,NR,PDC,FR,0.0,0.0,m
+48,48,Thomas,de Courten,,NR,SVP,BL,https://infocube.ch/de/p/651505/meier-markus,651505.0,m
+49,49,Fathi,Derder,,NR,PLR.Les Libéraux-Radicaux,VD,https://infocube.ch/de/p/7092939/schaller-arnaud,7092939.0,m
+50,50,Verena,Diener,,SR,glp,ZH,0.0,0.0,w
+51,51,Roland,Eberle,,SR,SVP,TG,0.0,0.0,m
+52,52,Joachim,Eder,,SR,FDP.Die Liberalen,ZG,,,m
+53,53,Christine,Egerszegi-Obrist,,SR,FDP.Die Liberalen,AG,,,w
+54,54,Hans,Egloff,,NR,SVP,ZH,https://infocube.ch/de/p/1192206/gmuer-ansgar,1192206.0,m
+55,55,Corina,Eichenberger-Walther,,NR,FDP.Die Liberalen,AG,https://infocube.ch/de/p/224973/heller-daniel,224973.0,w
+56,56,Stefan,Engler,,SR,CVP,GR,,,m
+57,57,Yvette,Estermann,,NR,SVP,LU,https://infocube.ch/de/p/152168/estermann-richard-f,152168.0,w
+58,58,Daniel,Fässler,,NR,CVP,AI,0.0,0.0,m
+59,59,Laurent,Favre,,NR,PLR.Les Libéraux-Radicaux,NE,https://infocube.ch/de/p/6465912/fuerer-guido,6465912.0,m
+60,60,Hans,Fehr,,NR,SVP,ZH,Zu ungenau,,m
+61,61,Hans-Jürg,Fehr,,NR,SPS,SH,0.0,0.0,m
+62,62,Jacqueline,Fehr,,NR,SPS,ZH,Zu ungenau,,w
+63,63,Olivier,Feller,,NR,PLR.Les Libéraux-Radicaux,,0.0,0.0,m
+64,64,Yvonne,Feri,,NR,SPS,AG,,,w
+65,65,Anita,Fetz,,SR,SPS,BS,0.0,0.0,w
+66,66,Doris,Fiala,,NR,FDP,ZH,0.0,,w
+67,67,Roland,Fischer,,NR,glp,LU,https://infocube.ch/de/p/6749204/graber-michele/politische-aktivitaeten,6749204.0,m
+68,68,Beat,Flach,,NR,glp,AG,http://infocube.ch/de/p/858208/schuhmacher-peter,858208.0,m
+69,69,Sylvia,Flückiger-Bäni,,NR,SVP,AG,http://infocube.ch/de/p/6527757/schneider-henrique,6527757.0,w
+70,70,Kurt,Fluri,,NR,FDP.Die Liberalen,SO,,,m
+71,71,Peter,Föhn,,SR,SVP,SZ,http://infocube.ch/de/p/5530653/foehn-marco,5530653.0,m
+72,72,Jean-René,Fournier,,SR,CVP,VS,https://infocube.ch/de/p/p27003254264/bertelletto-duc-xavier,p27003254264,m
+73,73,Olivier,Français,,NR,PLR.Les Libéraux-Radicaux,VD,,,m
+74,74,Sebastian,Frehner,,NR,SVP,BS,,,m
+75,75,Pankraz,Freitag,,SR,FDP.Die Liberalen,GL,0.0,0.0,m
+76,76,Oskar,Freysinger,,NR,UDC,VS,,,m
+77,77,Pierre-Alain,Fridez,,NR,PSS,JU,0.0,0.0,m
+78,78,Claudia,Friedl,,SPS,SG,,0.0,0.0,w
+79,79,Chantal,Galladé,,NR,SPS,ZH,0.0,0.0,w
+80,80,Urs,Gasche,,NR,BDP,BE,http://infocube.ch/de/p/4243104/de-weck-roger-francois-philippe,4243104.0,m
+81,81,Josias F.,Gasser,,NR,glp,GR,0.0,0.0,m
+82,82,Andrea Martina,Geissbühler,,NR,SVP,BE,,,w
+83,83,Jean-René,Germanier,,NR,PLR.Les Libéraux-Radicaux,VS,http://infocube.ch/de/p/4860527/schlaepfer-martin,4860527.0,m
+84,84,Johannes,Germann,,SR,SVP,SH,0.0,0.0,m
+85,85,Ulrich,Giezendanner,,NR,SVP,AG,http://infocube.ch/de/p/869641/gehrken-michael,869641.0,m
+86,86,Yvonne,Gilli,,NR,GPS,SG,http://infocube.ch/de/p/33090/alther-rudolf,33090.0,w
+87,87,Bastien,Girod,,NR,GPS,ZH,,,m
+88,88,Ida,Glanzmann-Hunkeler,,NR,CVP,LU,,,w
+89,89,Balthasar,Glättli,,NR,GPS,ZH,,,m
+90,90,Alois,Gmür,,NR,CVP,SZ,,,m
+91,91,Petra,Gössi,,NR,FDP.Die Liberalen,SZ,0.0,0.0,w
+92,92,Konrad,Graber,,SR,CVP,LU,0.0,0.0,m
+93,93,Maya,Graf,,NR,GPS,LU,,,w
+94,94,Edith,Graf-Litscher,,NR,SPS,TG,,,w
+95,95,Jean-Pierre,Grin,,NR,UDC,VD,http://infocube.ch/de/p/6238466/giunta-giovanni,6238466.0,m
+96,96,Andreas,Gross,,NR,SPS,ZH,,,m
+97,97,Jürg,Grossen,,NR,glp,BE,0.0,0.0,m
+98,98,Hans,Grunder,,NR,BDP,BR,http://infocube.ch/de/p/926284/koepe-christian-karoly,926284.0,m
+99,99,Jean-Paul,Gschwind,,NR,PDC,JU,,,m
+100,100,Bernhard,Guhl,,NR,BDP,AG,,,m
+101,101,Felix,Gutzwiller,,SR,FDP.Die Liberalen,ZH,https://infocube.ch/de/p/888313/brogli-urs/mandates,888313.0,m
+102,102,Barbara Patricia,Gysi,,NR,SPS,SG,,,w
+103,103,Brigitte,Häberli-Koller,,SR,CVP,TG,http://infocube.ch/de/p/864193/menzi-armin,864193.0,w
+104,104,Philipp,Hadorn,,NR,SPS,SO,,,m
+105,105,Ursula,Haller Vannini,,NR,BDP,BE,http://infocube.ch/de/search?q=Peter+St%C3%A4hli&defaultSearchEntryStatus=1&senden=Suchen,,w
+106,106,Thomas,Hardegger,,NR,SPS,ZH,,,m
+107,107,Hansjörg,Hassler,,NR,BDP,GR,0.0,0.0,m
+108,108,Markus,Hausammann,,NR,SVP,TG,,,m
+109,109,Claude,Hêche,,SR,PSS,JU,,,m
+110,110,Alfred,Heer,,NR,SVP,ZH,,,m
+111,111,Bea,Heim,,NR,SPS,SO,,,w
+112,112,Hans,Hess,,SR,FDP.Die Liberalen,OW,,,m
+113,113,Verena,Herzog,,NR,SVP,TG,0.0,0.0,w
+114,114,Lorenz,Hess,,NR,BDP,BE,0.0,0.0,m
+115,115,Hugues,Hiltpold,,NR,PLR.Les Libéraux-Radicaux,GE,https://infocube.ch/de/p/4757083/maudet-pierre-henri#activeMandates,4757083.0,m
+116,116,Antonio,Hodgers,,NR,PES,GE,0.0,0.0,m
+117,117,Gabi,Huber,,NR,FDP.Die Liberalen,UR,0.0,0.0,w
+118,118,Ruth,Humbel,,NR,CVP,AG,0.0,0.0,w
+119,119,Thomas,Hurter,,NR,SVP,SH,0.0,0.0,m
+120,120,Markus,Hutter,,NR,FDP.Die Liberalen,ZH,http://infocube.ch/de/p/505270/vogt-valentin,505270.0,m
+121,121,René,Imoberdorf,,SR,CVP,VS,,,m
+122,122,Maja,Ingold,,NR,EVP,ZH,,,w
+123,123,Claude,Janiak,,SR,SPS,BL,,,m
+124,124,Beat,Jans,,NR,SPS,BS,http://infocube.ch/de/p/853105/wiener-freuler-daniel,853105.0,m
+125,125,This,Jenny,,SR,SVP,GL,,,m
+126,126,Rudolf,Joder,,NR,SVP,BE,https://infocube.ch/de/p/1065079/durst-marcel,1065079.0,m
+127,127,Francine,John-Calame,,NR,PES,NE,,,w
+128,128,Daniel,Jositsch,,NR,SPS,ZH,https://infocube.ch/de/p/713874/kyburz-peter#activeMandates,713874.0,m
+129,129,Hans,Kaufmann,,NR,SVP,ZH,,,m
+130,130,Peter,Keller,,NR,SVP,NW,0.0,0.0,m
+131,131,Karin,Keller-Sutter,,SR,FDP.Die Liberalen,SG,Kein Eintrag,,w
+132,132,Margrit,Kessler,,NR,glp,SG,,,w
+133,133,Margareta,Kiener Nellen,,NR,SPS,BE,,,w
+134,134,Hans,Killer,,NR,SVP,AG,https://infocube.ch/de/p/681493/glutz-urs,681493.0,m
+135,135,Hansjörg,Knecht,,NR,SVP,AG,0.0,0.0,m
+136,136,Alexander,Kuprecht,,SR,SVP,SZ,0.0,0.0,m
+137,137,Martin,Landolt,,NR,BDP,GL,,,m
+138,138,Markus,Lehmann,,NR,CVP,BS,,,m
+139,139,Ueli,Leuenberger,,NR,PES,GE,http://infocube.ch/de/p/1022882/maxwell-sigurd,1022882.0,m
+140,140,Filippo,Leutenegger,,NR,FDP.Die Liberalen,ZH,http://infocube.ch/de/p/791471/bolla-vincenz-claudia,791471.0,m
+141,141,Susanne,Leutenegger Oberholzer,,NR,SPS,BL,0.0,0.0,w
+142,142,Christian,Levrat,,SR,PSS,FR,http://infocube.ch/de/p/1144647/carrupt-alain,1144647.0,m
+143,143,Christian,Lohr,,NR,CVP,TG,http://infocube.ch/de/p/4957570/badertscher-renz-gabriele,4957570.0,m
+144,144,Filippo,Lombardi,,SR,CVP,TI,http://infocube.ch/de/p/534408/wyder-rudolf-thomas,534408.0,m
+145,145,Christian,Lüscher,,NR,PLR.Les Libéraux-Radicaux,GE,,,m
+146,146,Werner,Luginbühl,,SR,BDP,BE,http://infocube.ch/de/p/5546035/muerner-martin,5546035.0,m
+147,147,Ruedi,Lustenberger,,NR,CVP,LU,,,m
+148,148,Thomas,Maier,,NR,glp,ZH,http://infocube.ch/de/p/5579517/zeyer-christian,5579517.0,m
+149,149,Jacques-André,Maire,,NR,PSS,NE,,,m
+150,150,Christa,Markwalder,,NR,FDP.Die Liberalen,BE,,,w
+151,151,Ada,Marra,,NR,PSS,VD,http://infocube.ch/de/p/6657780/hamdaoui-mohamed,6657780.0,w
+152,152,Nadine,Masshardt,,NR,SPS,BE,https://infocube.ch/de/p/6348926/schefer-andreas#activeMandates,6348926.0,w
+153,153,Liliane,Maury Pasquier,,SR,PSS,GE,,,w
+154,154,Lucrezia,Meier-Schatz,,NR,CVP,SG,,,w
+155,155,Thomas,Minder,,SR,0.0,SH,0.0,0.0,m
+156,156,Isabelle,Moret,,NR,PLR.Les Libéraux-Radicaux,VD,,,w
+157,157,Christoph,Mörgeli,,NR,SVP,ZH,,,m
+158,158,Tiana Angelina,Moser,,NR,glp,ZH,0.0,0.0,w
+159,159,Geri,Müller,,NR,GPS,AG,,,m
+160,160,Leo,Müller,,NR,CVP,LU,http://infocube.ch/de/p/702264/schwenk-oskar-j,702264.0,m
+161,161,Philipp,Müller,,NR,FDP.Die Liberalen,AG,0.0,0.0,m
+162,162,Thomas,Müller,,NR,SVP,SG,http://infocube.ch/de/p/4692736/sommer-monika,4692736.0,m
+163,163,Walter,Müller,,NR,FDP.Die Liberalen,SG,,,m
+164,164,Stefan,Müller-Altermatt,,NR,CVP,SO,0.0,0.0,m
+165,165,Felix,Müri,,NR,SVP,LU,0.0,0.0,m
+166,166,Martin,Naef,,NR,SPS,ZH,https://infocube.ch/de/p/p29002609056/herkenrath-marc,p29002609056,m
+167,167,Jacques,Neirynck,,NR,PDC,VD,0.0,0.0,m
+168,168,Yves,Nidegger,,NR,UDC,GE,http://infocube.ch/de/p/4127563/studer-marc,4127563.0,m
+169,169,Paul,Niederberger,,SR,CVP,NW,,,m
+170,170,Roger,Nordmann,,NR,PSS,VD,,,m
+171,171,Ruedi,Noser,,NR,FDP.Die Liberalen,ZH,https://infocube.ch/de/p/4513204/hugi-andreas,4513204.0,m
+172,172,Eric,Nussbaumer,,NR,SPS,BL,https://infocube.ch/de/p/4010952/batzli-stefan,4010952.0,m
+173,173,Roberta,Pantani,,NR,Lega,TI,0.0,0.0,w
+174,174,Corrado,Pardini,,NR,SPS,BE,,,m
+175,175,Guy,Parmelin,,NR,UDC,VD,0.0,0.0,m
+176,176,Fulvio,Pelli,,NR,PLR.Les Libéraux-Radicaux,TI,,,m
+177,177,Yvan,Perrin,,NR,UDC,NE,http://infocube.ch/de/p/527355/willener-walter,527355.0,m
+178,178,Bruno,Pezzatti,,NR,FDP.Die Liberalen,ZG,http://infocube.ch/de/p/4178254/enggasser-josiane,4178254.0,m
+179,179,Gerhard,Pfister,,NR,CVP,ZG,,,m
+180,180,Nadja,Pieren,,NR,SVP,BE,http://infocube.ch/de/p/880278/gfeller-kurt,880278.0,w
+181,181,Valérie,Piller Carrard,,NR,PSS,FR,0.0,0.0,w
+182,182,Mauro,Poggia,,NR,MCR,GE,,,m
+183,183,Rosmarie,Quadranti,,NR,BDP,ZH,0.0,0.0,w
+184,184,Lorenzo,Quadri,,NR,Lega,TI,,,m
+185,185,Paul,Rechsteiner,,SR,SPS,SG,http://infocube.ch/de/p/33776/ambrosetti-renzo-carlo,33776.0,m
+186,186,Luc,Recordon,,SR,Les Verts,VD,,,m
+187,187,Fabio,Regazzi,,NR,PPD,TI,,,m
+188,188,Lukas,Reimann,,NR,SVP,SG,,,m
+189,189,Maximilian,Reimann,,NR,SVP,AG,,,m
+190,190,Mathias,Reynard,,NR,PSS,VS,,,m
+191,191,Alain,Ribaux,,NR,PLR.Les Libéraux-Radicaux,NE,,,m
+192,192,Natalie Simone,Rickli,,NR,SVP,ZH,0.0,,w
+193,193,Kathy,Riklin,,NR,CVP,ZH,,,w
+194,194,Jean-François,Rime,,NR,UDC,FR,0.0,0.0,m
+195,195,Markus,Ritter,,NR,CVP,TI,https://infocube.ch/de/p/944515/dissler-josef,944515.0,m
+196,196,Marco,Romano,,NR,CVP,TI,http://infocube.ch/de/p/5413724/rossi-michele,5413724.0,m
+197,197,Stéphane,Rossini,,NR,PSS,VS,0.0,0.0,m
+198,198,Albert,Rösti,,NR,SVP,BE,https://infocube.ch/de/p/188532/gfeller-peter,188532.0,m
+199,199,Pierre,Rusconi,,NR,UDC,TI,0.0,0.0,m
+200,200,Rutz,Gregor A.,,NR,SVP,ZH,0.0,0.0,m
+201,201,Regula,Rytz,,NR,GPS,BE,,,w
+202,202,Géraldine,Savary,,SR,PSS,VD,,,w
+203,203,Louis,Schelbert,,NR,GPS,LU,https://infocube.ch/de/p/865001/beglinger-fedorova-caroline,865001.0,m
+204,204,Silvia,Schenker,,NR,SPS,BS,http://infocube.ch/de/p/5164353/bienlein-martin,5164353.0,w
+205,205,Peter,Schilliger,,NR,FDP.Die Liberalen,LU,,,m
+206,206,Urs,Schläfli,,NR,CVP,SO,,,m
+207,207,Martin,Schmid,,SR,FDP.Die Liberalen,GR,0.0,0.0,m
+208,208,Barbara,Schmid-Federer,,NR,CVP,ZH,https://infocube.ch/de/p/6243190/saxer-mark-arnold,6243190.0,w
+209,209,Daniela,Schneeberger,,NR,FDP.Die Liberalen,BL,0.0,0.0,w
+210,210,Ursula,Schneider Schüttel,,NR,SPS,FR,0.0,0.0,w
+211,211,Elisabeth,Schneider-Schneiter,,NR,CVP,BL,https://infocube.ch/de/p/5190083/saladin-franz,5190083.0,w
+212,212,Jean Christophe,Schwaab,,NR,PSS,VD,,,m
+213,213,Urs,Schwaller,,SR,CVP,FR,,,m
+214,214,Pirmin,Schwander,,NR,SVP,SZ,0.0,0.0,m
+215,215,Silva,Semadeni,,NR,SPS,GR,,,w
+216,216,Anne,Seydoux-Christe,,SR,PDC,JU,https://infocube.ch/de/p/6525747/oberbeck-simon,6525747.0,w
+217,217,Carlo,Sommaruga,,NR,PSS,GE,infocube.ch/de/p/970677/niggli-peter,970677.0,m
+218,218,Markus,Stadler,,SR,glp,UR,http://infocube.ch/de/p/4663719/rey-alfred,4663719.0,m
+219,219,Jürg,Stahl,,NR,SVP,ZH,http://infocube.ch/de/p/6522394/grichting-thomas#activeMandates,6522394.0,m
+220,220,Luzius,Stamm,,NR,SVP,AG,http://infocube.ch/de/p/4931043/buholzer-rene-paul,4931043.0,m
+221,221,Jean-François,Steiert,,NR,PSS,FR,http://infocube.ch/de/p/872550/ziltener-erika,872550.0,m
+222,222,Hans,Stöckli,,SR,SPS,BE,0.0,0.0,m
+223,223,Daniel,Stolz,,NR,FDP.Die Liberalen,BS,0.0,0.0,m
+224,224,Marianne,Streiff-Feller,,NR,EVP,BE,http://infocube.ch/de/p/729397/saxenhofer-peter-eugen-seraphin#activeMandates,729397.0,w
+225,225,Georges,Theiler,,SR,FDP.Die Liberalen,LU,0.0,0.0,m
+226,226,Adèle,Thorens Goumaz,,NR,PES,VD,,,w
+227,227,Manuel,Tornare,,NR,PSS,GE,Zu ungenau,,m
+228,228,Aline,Trede,,NR,GPS,BE,0.0,0.0,w
+229,229,Alexander,Tschäppät,,NR,SPS,BE,,,m
+230,230,Andy,Tschümperlin,,NR,SPS,SZ,,,m
+231,231,Christian,van Singer,,NR,PES,VD,https://infocube.ch/de/p/6702969/michaud-gigon-sophie-alda-linette#activeMandates,6702969.0,m
+232,232,Pierre-François,Veillon,,NR,UDC,VD,https://infocube.ch/de/p/4442814/schneuwly-felix,4442814.0,m
+233,233,Daniel,Vischer,,NR,GPS,ZH,Zu ungenau,,m
+234,234,Albert,Vitali,,NR,FDP.Die Liberalen,LU,,,m
+235,235,Karl,Vogler,,NR,CSP,OW,http://infocube.ch/de/p/1190796/egle-franz,1190796.0,m
+236,236,Alec,von Graffenried,,NR,GPS,BE,,,m
+237,237,Erich,von Siebenthal,,NR,SVP,BE,,,m
+238,238,Eric,Voruz,,NR,PSS,VD,,,m
+239,239,Hansjörg,Walter,,NR,SVP,TG,Zu ungenau,,m
+240,240,Hansruedi,Wandfluh,,NR,SVP,BE,https://infocube.ch/de/p/1038098/linder-stefan,1038098.0,m
+241,241,Christian,Wasserfallen,,NR,FDP.Die Liberalen,BE,https://infocube.ch/de/p/p28007352913/thalhammer-alexandra#activeAddresses,p28007352913,m
+242,242,Thomas,Weibel,,NR,glp,ZH,https://infocube.ch/de/p/p24006194100/kunz-stefan,p24006194100,m
+243,243,Cédric,Wermuth,,NR,SPS,AG,https://infocube.ch/de/p/p22009442056/sariaslan-emine,p22009442056,m
+244,244,Walter,Wobmann,,NR,SVP,SO,0.0,0.0,m
+245,245,Roberto,Zanetti,,SR,SPS,SO,https://infocube.ch/de/p/4573869/tuti-giorgio#activeMandates,4573869.0,m
+246,246,Lothar,Ziörjen,,NR,BDP,ZH,https://infocube.ch/de/p/472127/stockmann-benedikt-maximilian#activeMandates,472127.0,m

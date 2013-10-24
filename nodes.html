@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<title></title>
+<meta charset="utf-8">
+<script src="js/d3.v3.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/queue.min.js"></script>
+
+<style>
+
+path, circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+
+</style>
+<body>
+<div id="chart"></div>
+</body>
+<script>
+
+  var w = 700, h = 700, r = 100;
+  var svg = d3.select("#chart").append("svg")
+      .attr("width", w)
+      .attr("height", h)
+      .append("g")
+        //.attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
+
+  
+  queue()
+    .defer(d3.csv, 'data/politiker.csv')
+    .defer(d3.csv, 'data/badges.csv')
+    .await(ready)
+
+  function ready (error,politiker,badges) {
+    console.log(politiker[0],badges[0]);
+
+    // politiker = politiker.filter(function(d){ return d.rat == "NR" });
+    // politiker.forEach(function(d){
+    //   d.sort = d.partei.slice(0,3).toUpperCase();
+    // })
+
+    var parteien = d3.nest()
+      .key(function(d) { return d.sort; })
+      .entries(politiker);
+
+    var filteredParteien = parteien.filter(function(d){ return d.values.length>5 });
+
+    
+    var fill = d3.scale.category10();
+
+    var force = d3.layout.force()
+        .nodes(badges)
+        .size([w, h])
+        .on("tick", tick)
+        .charge(-10)
+        .start();
+
+    var node = svg.selectAll(".node")
+        .data(badges)
+      .enter().append("circle")
+        .attr("class", "node")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 5)
+        .style("fill", function(d, i) { return fill(i & 3); })
+        .style("stroke", function(d, i) { return d3.rgb(fill(i & 3)).darker(2); })
+        .call(force.drag)
+        .on("mousedown", function() { d3.event.stopPropagation(); });
+
+    svg.style("opacity", 1e-6)
+      .transition()
+        .duration(1000)
+        .style("opacity", 1);
+
+    d3.select("body")
+        .on("mousedown", mousedown);
+
+    function tick(e) {
+
+      //Push different nodes in different directions for clustering.
+      // var k = 6 * e.alpha;
+      // politiker.forEach(function(o, i) {
+      //   o.y += i & 1 ? k : -k;
+      //   o.x += i & 2 ? k : -k;
+      // });
+
+      node.attr("cx", function(d) { return d.x; })
+          .attr("cy", function(d) { return d.y; });
+    }
+
+    function mousedown() {
+      politiker.forEach(function(o, i) {
+        o.x += (Math.random() - .5) * 40;
+        o.y += (Math.random() - .5) * 40;
+      });
+      force.resume();
+    }
+      
+
+  }
+    
+
+</script>

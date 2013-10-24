@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<title></title>
+<meta charset="utf-8">
+<script src="js/d3.v3.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/queue.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/tipsy.js"></script>
+<link href="css/tipsy.css" rel="stylesheet" type="text/css" />
+
+<style>
+.link {
+  fill:none;
+  stroke-width: 1px;
+  stroke:#000;
+  opacity: 0.3;
+}
+.node {
+  fill:#000;
+}
+.arc circle {
+  stroke-width: 3px;
+}
+.arc path {
+  opacity: 0.3;
+}
+body {
+  background: #F4F4F4;
+  font: 11px sans-serif;
+
+}
+svg {
+   background: #fff;
+}
+
+
+</style>
+<body>
+<div id="chart"></div>
+</body>
+<script>
+
+  var w = 900, h = 700, r = 100;
+  var svg = d3.select("#chart").append("svg")
+      .attr("width", w)
+      .attr("height", h)
+
+  
+  var makeRat = function(params){
+
+    params.startAngle += params.arcPadding;
+    params.endAngle -= params.arcPadding;
+
+    var makeSeats = function(data){
+      var seats = [];
+      d3.range(params.rows).forEach(function(z){
+        
+        var angleDiff = data.endAngle - data.startAngle - 2*params.padding;
+        var radiusDiff = params.outerRadius-params.innerRadius;
+        var r = params.innerRadius + params.margin + (z/params.rows) * radiusDiff;
+        var numPerRow = Math.abs(Math.floor((angleDiff * r) / params.margin));
+        
+        d3.range(numPerRow).forEach(function(s){
+
+          var angle =  params.padding + data.startAngle + ((s+0.5)/numPerRow) * angleDiff;
+          var x = Math.sin(angle)*r ;
+          var y = -Math.cos(angle)*r ;
+          seats.push({x:x,y:y});
+        });
+      });
+      data.seats = seats;
+    }
+
+    var assignSeats = function(seats,persons){
+      //console.log(seats,persons)
+      if(seats.length<persons.length){
+        console.log("not enough seats", seats.length-persons.length, seats,persons);
+      }
+      var i = 0;
+      persons.forEach(function(p){
+        p.x = seats[i].x;
+        p.y = seats[i].y;
+        i++;
+      });
+    }
+    
+    var arc = d3.svg.arc()
+        .innerRadius(params.innerRadius)
+        .outerRadius(params.outerRadius)
+
+    var pie = d3.layout.pie()
+        .value(function(d,i) { return d.values.length+ params.fillup; })
+        .sort(null)
+        .startAngle(params.startAngle)
+        .endAngle(params.endAngle)
+
+    var pieData = pie(params.data);
+
+    console.log(pieData)
+    var container = params.svg.append("g").attr('class', params.name);
+
+    var g = container.selectAll(".arc")
+      .data(pieData)
+        .enter().append("g")
+          .attr("class", "arc")
+          .attr("fill", function(d){ return params.fill(d.data.key); })
+    
+    g.append("path")
+      .attr("d", arc)
+      .attr("class", function(d){ return d.data.key })
+
+    var nationalrat = container
+      .selectAll("arc")
+      .data(pieData)
+        .enter()
+          .append("g")
+          .attr("class","arc")
+        .each(function(d) {
+          //console.log(d)
+            makeSeats(d);
+            assignSeats(d.seats,d.data.values);
+
+            d3.select(this)
+              .selectAll("circle")
+              .data(d.data.values)
+              .enter()
+                .append("circle")
+                .attr("cx", function(d) { return d.x; })
+                .attr("cy", function(d) { return d.y; })
+                .attr("r", 5)
+                .attr("fill", function(d){ return params.fill(d.sort); })               
+                .on("mouseover", function(d1) { 
+                  d1.badges = d3.selectAll(".node").filter(function(d2){ return d1.id == d2.badgegeber_id })
+                    .attr("r",20)
+                })
+                .on("mouseout", function(d1) { 
+                  d1.badges.attr("r",5).attr("stroke","none")
+                })
+          })
+
+
+    $(".rat circle").tipsy({ 
+        fade: false,
+        gravity: 'w', 
+        html: true, 
+        title: function() {
+          var d = this.__data__;
+          return d.vorname + " " + d.nachname; 
+        }
+      });
+
+   // if(params.name == "nationalrat"){
+      
+      g.append("text")
+          .attr("transform", function(d) {
+              var c = arc.centroid(d),
+                  x = c[0],
+                  y = c[1],
+                  angle = Math.atan2(y,x)*180/Math.PI+90
+                  // pythagorean theorem for hypotenuse
+                  h = Math.sqrt(x*x + y*y);
+              return "translate(" + (x/h * params.labelRadius) +  ',' +
+                 (y/h * params.labelRadius) +  ") rotate("+ angle +")"; 
+          })
+          .attr("dy", ".35em")
+          .attr("text-anchor", function(d) {
+              // are we past the center?
+              return "middle"
+          })
+          .text(function(d, i) { return d.data.key; });
+   // }
+
+    return {
+      arc:arc,
+      arcs:g,
+      pieData:pieData
+    }
+
+  }
+
+  queue()
+    .defer(d3.csv, 'data/politiker.csv')
+    .defer(d3.csv, 'data/badges.csv')
+    .await(ready)
+
+  function ready (error,politiker,badges) {
+    var fill = d3.scale.category10();
+  
+    politiker.forEach(function(d){
+      d.sort = d.partei.slice(0,3).toUpperCase();
+      d.badges = badges.filter(function(badge){ return d.id == badge.badgegeber_id; });
+    });
+
+    badges.forEach(function(d){
+      d.politiker = politiker.filter(function(pol){ return pol.id == d.badgegeber_id; })[0];
+    });
+
+    
+
+    console.log(politiker[0],badges[0]);
+
+    var nationalrat = d3.nest()
+      .key(function(d) { return d.sort; })
+      .entries(politiker.filter(function(d){ return d.rat == "NR" }));
+
+    nationalrat = nationalrat.filter(function(d){ return d.values.length>1 });
+    nationalrat.sort(function(a,b){
+      return b.values.length - a.values.length;
+    })
+
+    var standerat = d3.nest()
+      .key(function(d) { return d.sort; })
+      .entries(politiker.filter(function(d){ return d.rat == "SR" }));
+
+    standerat = standerat.filter(function(d){ return d.values.length>1 });
+    
+    standeratSort = [];
+    nationalrat.forEach(function(d1){
+      var ok = standerat.filter(function(d2){ return d1.key == d2.key});
+      if(ok.length != 0){
+        standeratSort.push(ok[0]);
+      }
+    });
+    standerat = standeratSort;
+    //standeratSort.reverse();
+
+
+
+    var parlamentSvg = svg.append("g")
+        .attr("transform", "translate(" + w / 2 + "," + h / 2  + ")")
+        .attr("class","rat")
+    
+    var nationalratPie = makeRat({
+      name: "nationalrat",
+      innerRadius: 250,
+      outerRadius: 330,
+      labelRadius: 340,
+      arcPadding:0.05,
+      startAngle: Math.PI*0.5,
+      endAngle: Math.PI*1.5,
+      margin: 13,
+      padding: 0.009,
+      rows: 6,
+      data: nationalrat,
+      fill: fill,
+      svg: parlamentSvg,
+      fillup:9
+    });
+
+    var standeratPie = makeRat({
+      name: "standerat",
+      innerRadius: 250,
+      outerRadius: 280,
+      labelRadius: 290,
+      startAngle: -Math.PI/2,
+      endAngle: Math.PI/2,
+
+      arcPadding:0.05,
+      margin: 13,
+      padding: 0.009,
+      rows: 2,
+      data: standeratSort,
+      fill: fill,
+      svg: parlamentSvg,
+      fillup:0
+    });
+
+    // wandelhalle
+
+    var funktionen = d3.nest()
+      .key(function(d) { return d.deklarierte_funktion; })
+      .entries(badges);
+
+    // var links = [];
+    // funktionen.forEach(function(funktion){
+    //   var last;
+    //   funktion.values.forEach(function(a){
+    //     funktion.values.forEach(function(b){
+    //       if(a!=b){
+    //         var link = { source: a, target: b};
+    //         links.push(link);
+    //       }
+    //     });
+    //   });
+    // });
+
+    var links = [];
+    var nodes = [];
+
+    funktionen.forEach(function(funktion){
+      //console.log(funktion);
+      if(funktion.values.length>1){
+        var knoten = { knoten: true, name: funktion.key};
+        nodes.push(knoten);
+        funktion.values.forEach(function(a){
+          nodes.push(a);
+          var link = { source: knoten, target: a};
+          links.push(link);
+        });
+      }
+    })
+
+    var lobby = svg.append("g")
+      .attr("transform", "translate(0," + h/1.2  + ")")
+      .attr("class", "lobby")
+
+    var pack = d3.layout.pack()
+        .size([w, h])
+        .value(function(d) { 
+          console.log(d)
+        });
+
+        
+    var nodes = pack.nodes(funktionen);
+
+    console.log(funktionen,nodes);
+
+    lobby.selectAll("circle")
+          .data(nodes)
+        .enter().append("circle")
+          .attr("cx", function(d) { return d.x; })
+          .attr("cy", function(d) { return d.y; })
+          .attr("r", function(d) { return d.r; })
+
+
+
+
+
+    // var node = lobby
+    //   .selectAll(".node")
+    //     .data(badges)
+    //   .enter().append("circle")
+    //     .attr("class", "node")
+    //     .attr("cx", function(d) { return d.x; })
+    //     .attr("cy", function(d) { return d.y; })
+    //     .attr("r", 5)
+    //     .style("fill", function(d, i) { return fill(d.politiker.partei); })
+    //     //.style("stroke", function(d, i) { return d3.rgb(fill(i & 3)).darker(2); })
+    //     .call(force.drag)
+    //     .on("mousedown", function(d) { 
+    //       console.log(d);
+    //       d3.event.stopPropagation();
+    //     })
+    //     .on("mouseover", function(d1) { 
+    //       d1.politiker = d3.selectAll(".rat circle").filter(function(d2){ return d2.id == d1.badgegeber_id })
+    //         .attr("r",20)
+
+    //     })
+    //     .on("mouseout", function(d1) { 
+    //       d1.politiker.attr("r",5).attr("stroke","none")
+    //     })
+
+    // var link = lobby.selectAll(".link")
+    //       .data(links)
+    //     .enter().append("line")
+    //       .attr("class", "link")
+    //       .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+    
+    // force.on("tick", function() {
+    //     link.attr("x1", function(d) { return d.source.x; })
+    //         .attr("y1", function(d) { return d.source.y; })
+    //         .attr("x2", function(d) { return d.target.x; })
+    //         .attr("y2", function(d) { return d.target.y; });
+
+    //     node.attr("cx", function(d) { return d.x; })
+    //         .attr("cy", function(d) { return d.y; });
+    // });
+    
+
+    $(".lobby circle").tipsy({ 
+        fade: false,
+        gravity: 'w', 
+        html: true, 
+        title: function() {
+          var d = this.__data__;
+          return d.deklarierte_funktion + ")"; 
+        }
+      });
+
+
+    // d3.select("body")
+    //    .on("mousedown", mousedown);
+    // function mousedown() {
+    //   politiker.forEach(function(o, i) {
+    //     o.x += (Math.random() - .5) * 40;
+    //     o.y += (Math.random() - .5) * 40;
+    //   });
+    //   force.resume();
+    // }
+  }
+    
+
+</script>

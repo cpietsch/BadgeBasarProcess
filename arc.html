@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<title></title>
+<meta charset="utf-8">
+<script src="js/d3.v3.min.js"></script>
+<script src="js/underscore-min.js"></script>
+
+<style>
+
+path, circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+
+</style>
+<body>
+<div id="chart"></div>
+</body>
+<script>
+  var num = 10;
+  var winkel =  -Math.PI*0.5 / num;
+  var politiker = d3.range(num).map(function(d) {
+    return {
+      "name": "Peter Hansen",
+      "partei": _.sample(["SPS","FDP","PSS"])
+    }
+  });
+  var parteien = d3.nest()
+    .key(function(d) { return d.partei; })
+    .entries(politiker);
+
+  var w = 700, h = 700, r = 100;
+  var svg = d3.select("#chart").append("svg")
+      .attr("width", w)
+      .attr("height", h)
+      .append("g")
+        .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
+
+  var size = Math.PI/2;
+  var arc = d3.svg.arc()
+      .innerRadius(function(d,i){
+        console.log(d,i)
+        return 40;
+      })
+      .outerRadius(50)
+      .startAngle(function(d,i){
+        d.startAngle = i*size/num;
+        return d.startAngle;
+      })
+      .endAngle(function(d,i){
+        return d.startAngle+size/num;
+      })
+
+  var arcs = svg.append("g")
+    .selectAll("path")
+    .data(politiker)
+    .enter().append("path")
+    .attr("d", arc)
+
+  var circle = svg.append("g")
+    .selectAll("circle")
+    .data(politiker)
+    .enter()
+    .append("circle")
+    .attr("cx", function(d, i) {
+      return Math.cos(i*winkel)*r;
+    })
+    .attr("cy", function(d, i) {
+      return Math.sin(i*winkel)*r;
+    })
+    .attr("r", 2)
+    
+
+</script>

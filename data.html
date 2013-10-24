@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<title></title>
+<meta charset="utf-8">
+<script src="js/d3.v3.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/queue.min.js"></script>
+<script src="js/d3.tip.js"></script>
+
+<style>
+
+.arc path {
+  opacity: 0.3;
+}
+body {
+  background: #F4F4F4;
+  font: 11px sans-serif;
+
+}
+svg {
+   background: #fff;
+}
+.d3-tip {
+  line-height: 1;
+  font-weight: normal;
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+</style>
+<body>
+<div id="chart"></div>
+</body>
+<script>
+
+  var w = 900, h = 700, r = 100;
+  var svg = d3.select("#chart").append("svg")
+      .attr("width", w)
+      .attr("height", h)
+
+  
+  var makeRat = function(params){
+
+    var makeSeats = function(data){
+      var seats = [];
+      d3.range(params.rows).forEach(function(z){
+        
+        var angleDiff = data.endAngle - data.startAngle - 2*params.padding;
+        var radiusDiff = params.outerRadius-params.innerRadius;
+        var r = params.innerRadius + params.margin + (z/params.rows) * radiusDiff;
+        var numPerRow = Math.floor((angleDiff * r) / params.margin);
+
+        d3.range(numPerRow).forEach(function(s){
+          var angle =  params.padding + params.startAngle*2 + data.startAngle + ((s+0.5)/numPerRow) * angleDiff;
+          var x = Math.cos(angle)*r ;
+          var y = Math.sin(angle)*r ;
+          seats.push({x:x,y:y});
+        });
+      });
+      data.seats = seats;
+    }
+
+    var assignSeats = function(seats,persons){
+      //console.log(seats,persons)
+      if(seats.length<persons.length){
+        console.log("not enough seats", seats.length-persons.length, persons);
+      }
+      var i = 0;
+      persons.forEach(function(p){
+        p.x = seats[i].x;
+        p.y = seats[i].y;
+        i++;
+      });
+    }
+    
+    var arc = d3.svg.arc()
+        .innerRadius(params.innerRadius)
+        .outerRadius(params.outerRadius)
+
+    var pie = d3.layout.pie()
+        .value(function(d,i) { return d.values.length+ params.fillup; })
+        .startAngle(params.startAngle)
+        .endAngle(params.startAngle*-1)
+
+    var pieData = pie(params.data);
+
+    console.log(pieData)
+    var container = params.svg.append("g").attr('class', params.name);
+
+    var g = container.selectAll(".arc")
+      .data(pieData)
+        .enter().append("g")
+          .attr("class", "arc")
+          .attr("fill", function(d){ return params.fill(d.data.key); })
+    
+    g.append("path")
+      .attr("d", arc)
+      .attr("class", function(d){ return d.data.key })
+
+    var tip = d3.tip()
+      .offset([-8, 0])
+      .attr('class', 'd3-tip')
+      .html(function(d) { 
+        console.log(d)
+        return d.partei + ": " + d.vorname + " " + d.nachname;
+      });
+
+    var nationalrat = container
+      .selectAll("arc")
+      .data(pieData)
+        .enter()
+          .append("g")
+          .attr("class","arc");
+
+    nationalrat
+      .each(function(d) {
+        makeSeats(d);
+        assignSeats(d.seats,d.data.values);
+
+        d3.select(this)
+          .call(tip)
+          .selectAll("circle")
+          .data(d.data.values)
+          .enter()
+            .append("circle")
+            .attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; })
+            .attr("r", 5)
+            .attr("fill", function(d){ return params.fill(d.sort); })
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide)
+      });
+
+    if(params.name == "nationalrat"){
+
+    }
+
+  }
+
+  queue()
+    .defer(d3.csv, 'data/politiker.csv')
+    .defer(d3.csv, 'data/badges.csv')
+    .await(ready)
+
+  function ready (error,politiker,badges) {
+    var fill = d3.scale.category10();
+    console.log(politiker[0]);
+
+    politiker.forEach(function(d){
+      d.sort = d.partei.slice(0,3).toUpperCase();
+    })
+
+    var nationalrat = d3.nest()
+      .key(function(d) { return d.sort; })
+      .entries(politiker.filter(function(d){ return d.rat == "NR" }));
+
+    nationalrat = nationalrat.filter(function(d){ return d.values.length>1 });
+
+    var standerat = d3.nest()
+      .key(function(d) { return d.sort; })
+      .entries(politiker.filter(function(d){ return d.rat == "SR" }));
+
+    standerat = standerat.filter(function(d){ return d.values.length>1 });
+    
+
+    var parlamentSvg = svg.append("g")
+        .attr("transform", "translate(" + w / 2 + "," + h * 0.9  + ")");
+    
+    var nationalratPie = makeRat({
+      name: "nationalrat",
+      innerRadius: 500,
+      outerRadius: 580,
+      startAngle: -Math.PI/4,
+      margin: 13,
+      padding: 0.009,
+      rows: 6,
+      data: nationalrat,
+      fill: fill,
+      svg: parlamentSvg,
+      fillup:9
+    });
+
+    var standeratPie = makeRat({
+      name: "standerat",
+      innerRadius: 450,
+      outerRadius: 480,
+      startAngle: -Math.PI/4,
+      margin: 13,
+      padding: 0.009,
+      rows: 2,
+      data: standerat,
+      fill: fill,
+      svg: parlamentSvg,
+      fillup:0
+    });
+
+
+     
+
+  }
+    
+
+</script>

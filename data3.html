@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<title></title>
+<meta charset="utf-8">
+<script src="js/d3.v3.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/queue.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/tipsy.js"></script>
+<link href="css/tipsy.css" rel="stylesheet" type="text/css" />
+
+<style>
+.link {
+  fill:none;
+  stroke-width: 1px;
+  opacity: 0.3;
+
+}
+.arc path {
+  opacity: 0.3;
+}
+body {
+  background: #F4F4F4;
+  font: 11px sans-serif;
+
+}
+svg {
+   background: #fff;
+}
+
+
+</style>
+<body>
+<div id="chart"></div>
+</body>
+<script>
+
+  var w = 900, h = 700, r = 100;
+  var svg = d3.select("#chart").append("svg")
+      .attr("width", w)
+      .attr("height", h)
+
+  
+  var makeRat = function(params){
+
+    var makeSeats = function(data){
+      var seats = [];
+      d3.range(params.rows).forEach(function(z){
+        
+        var angleDiff = data.endAngle - data.startAngle - 2*params.padding;
+        var radiusDiff = params.outerRadius-params.innerRadius;
+        var r = params.innerRadius + params.margin + (z/params.rows) * radiusDiff;
+        var numPerRow = Math.floor((angleDiff * r) / params.margin);
+
+        d3.range(numPerRow).forEach(function(s){
+          var angle =  params.padding + params.startAngle*2 + data.startAngle + ((s+0.5)/numPerRow) * angleDiff;
+          var x = Math.cos(angle)*r ;
+          var y = Math.sin(angle)*r ;
+          seats.push({x:x,y:y});
+        });
+      });
+      data.seats = seats;
+    }
+
+    var assignSeats = function(seats,persons){
+      //console.log(seats,persons)
+      if(seats.length<persons.length){
+        console.log("not enough seats", seats.length-persons.length, persons);
+      }
+      var i = 0;
+      persons.forEach(function(p){
+        p.x = seats[i].x;
+        p.y = seats[i].y;
+        i++;
+      });
+    }
+    
+    var arc = d3.svg.arc()
+        .innerRadius(params.innerRadius)
+        .outerRadius(params.outerRadius)
+
+    var pie = d3.layout.pie()
+        .value(function(d,i) { return d.values.length+ params.fillup; })
+        .sort(null)
+        .startAngle(params.startAngle)
+        .endAngle(params.startAngle*-1)
+
+    var pieData = pie(params.data);
+
+    console.log(pieData)
+    var container = params.svg.append("g").attr('class', params.name);
+
+    var g = container.selectAll(".arc")
+      .data(pieData)
+        .enter().append("g")
+          .attr("class", "arc")
+          .attr("fill", function(d){ return params.fill(d.data.key); })
+    
+    g.append("path")
+      .attr("d", arc)
+      .attr("class", function(d){ return d.data.key })
+
+    var nationalrat = container
+      .selectAll("arc")
+      .data(pieData)
+        .enter()
+          .append("g")
+          .attr("class","arc");
+
+    nationalrat
+      .each(function(d) {
+        makeSeats(d);
+        assignSeats(d.seats,d.data.values);
+
+        d3.select(this)
+          .selectAll("circle")
+          .data(d.data.values)
+          .enter()
+            .append("circle")
+            .attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; })
+            .attr("r", 5)
+            .attr("fill", function(d){ return params.fill(d.sort); })
+      });
+
+    $("circle").tipsy({ 
+        fade: true,
+        gravity: 'w', 
+        html: true, 
+        title: function() {
+          var d = this.__data__;
+          return d.vorname + " " + d.nachname; 
+        }
+      });
+
+    if(params.name == "nationalrat"){
+      
+      g.append("text")
+          .attr("transform", function(d) {
+              var c = arc.centroid(d),
+                  x = c[0],
+                  y = c[1],
+                  angle = Math.atan2(y,x)*180/Math.PI+90
+                  // pythagorean theorem for hypotenuse
+                  h = Math.sqrt(x*x + y*y);
+              return "translate(" + (x/h * params.labelRadius) +  ',' +
+                 (y/h * params.labelRadius) +  ") rotate("+ angle +")"; 
+          })
+          .attr("dy", ".35em")
+          .attr("text-anchor", function(d) {
+              // are we past the center?
+              return "middle"
+          })
+          .text(function(d, i) { return d.data.key; });
+    }
+
+    return {
+      arc:arc,
+      arcs:g,
+      pieData:pieData
+    }
+
+  }
+
+  queue()
+    .defer(d3.csv, 'data/politiker.csv')
+    .defer(d3.csv, 'data/badges.csv')
+    .await(ready)
+
+  function ready (error,politiker,badges) {
+    var fill = d3.scale.category10();
+    console.log(politiker[0]);
+
+    politiker.forEach(function(d){
+      d.sort = d.partei.slice(0,3).toUpperCase();
+    })
+
+    var nationalrat = d3.nest()
+      .key(function(d) { return d.sort; })
+      .entries(politiker.filter(function(d){ return d.rat == "NR" }));
+
+    nationalrat = nationalrat.filter(function(d){ return d.values.length>1 });
+    nationalrat.sort(function(a,b){
+      return b.values.length - a.values.length;
+    })
+
+    var standerat = d3.nest()
+      .key(function(d) { return d.sort; })
+      .entries(politiker.filter(function(d){ return d.rat == "SR" }));
+
+    standerat = standerat.filter(function(d){ return d.values.length>1 });
+    
+    standeratSort = [];
+    nationalrat.forEach(function(d1){
+      var ok = standerat.filter(function(d2){ return d1.key == d2.key});
+      if(ok.length != 0){
+        standeratSort.push(ok[0]);
+      }
+    });
+    console.log(standeratSort,standerat);
+
+    var parlamentSvg = svg.append("g")
+        .attr("transform", "translate(" + w / 2 + "," + h * 0.9  + ")");
+    
+    var nationalratPie = makeRat({
+      name: "nationalrat",
+      innerRadius: 500,
+      outerRadius: 580,
+      labelRadius: 590,
+      startAngle: -Math.PI/4,
+      margin: 13,
+      padding: 0.009,
+      rows: 6,
+      data: nationalrat,
+      fill: fill,
+      svg: parlamentSvg,
+      fillup:9
+    });
+
+    var standeratPie = makeRat({
+      name: "standerat",
+      innerRadius: 450,
+      outerRadius: 480,
+      startAngle: -Math.PI/4,
+      margin: 13,
+      padding: 0.009,
+      rows: 2,
+      data: standeratSort,
+      fill: fill,
+      svg: parlamentSvg,
+      fillup:0
+    });
+
+    var links = [];
+    standeratPie.arcs.each(function(sr){
+      
+      var nr = nationalratPie.arcs.filter(function(d){ return d.data.key == sr.data.key}).data()[0];
+      var centerSR = standeratPie.arc.centroid(sr);
+      var centerNR = nationalratPie.arc.centroid(nr);
+      console.log(centerSR,centerNR);
+
+      var a = {x:centerSR[1]*1.03, y:centerSR[0]*1.03 };
+      var b = {x:centerNR[1]*0.93, y:centerNR[0]*0.93};
+      links.push({source: b, target: a, key:sr.data.key});
+
+    })
+
+    var diagonal = d3.svg.chord()
+      .projection(function(d) { return [d.y, d.x]; });
+
+    var link = parlamentSvg.selectAll(".link")
+                .data(links)
+                .enter().append("path")
+                .attr("class", "link")
+                .attr("d", diagonal)
+                .attr("stroke", function(d){ return fill(d.key); })
+
+    //console.log(d3.map(nationalratPie.arcs.data()));
+
+  }
+    
+
+</script>
