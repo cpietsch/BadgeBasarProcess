@@ -243,9 +243,10 @@ svg {
       links.push({source: b, target: a, key:sr.data.key});
 
     })
+    console.log(links)
 
-    var diagonal = d3.svg.chord()
-      .projection(function(d) { return [d.y, d.x]; });
+    var diagonal = d3.svg.diagonal()
+      .projection(function(d) { console.log(d); return [d.y, d.x]; });
 
     var link = parlamentSvg.selectAll(".link")
                 .data(links)

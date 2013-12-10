@@ -1,0 +1,13 @@
+id
+badgegeber_id
+name
+deklarierte_funktion
+infocube_id
+person.genderCode
+person.firstname
+person.display_firstname
+person.name
+person.city
+person.kanton
+person.urlizedname
+bemerkungen

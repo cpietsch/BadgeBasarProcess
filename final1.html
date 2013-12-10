@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<title></title>
+<meta charset="utf-8">
+<script src="js/d3.v3.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/queue.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/tipsy.js"></script>
+<link href="css/tipsy.css" rel="stylesheet" type="text/css" />
+
+<style>
+
+body {
+  background: #F4F4F4;
+  font: 10px Arial;
+}
+svg {
+   background: #fff;
+}
+
+
+
+.link {
+  fill:none;
+  stroke-width: 1px;
+  stroke:#000;
+  opacity: 0;
+}
+
+
+.lobby .active {
+  
+}
+.lobby .hide {
+  fill:#CCC;
+}
+.lobby circle {
+  
+}
+
+.rat:hover path {
+  
+}
+.rat:hover circle {
+
+}
+
+.arc {
+  cursor: pointer;
+}
+.arc path {
+  fill:#F1F1F1;
+  stroke:#FFF;
+  stroke-width:2px;
+}
+.arc:hover path {
+  fill:#EEE;
+}
+.arc text {
+  fill:#4c4c4c;
+}
+.arc circle {
+  opacity: 0.8;
+}
+#filter {
+  width: 200px;
+  position: absolute;
+  left: 750px;
+}
+
+#filter div {
+  padding:5px;
+  background: #EEE;
+  margin: 5px;
+}
+
+select {
+  width: 100%;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  height: 300px;
+  overflow-y: scroll;
+}
+li {
+  display: block;
+  margin-bottom: 3px;
+  cursor: pointer;
+  overflow: hidden;
+}
+li:hover {
+  background: #FFF;
+}
+#funktionenFilter {
+  position: absolute;
+  left: 400px;
+  top: 390px;
+  width: 200px;
+}
+#badgesTitle {
+  position: absolute;
+  left: 400px;
+  top: 370px;
+  width: 200px;
+  font-size: 12px;
+  text-align: left;
+}
+
+
+</style>
+<body>
+<div id="filter">
+  <div>Filter</div>
+  <div>
+    <input name="suche" type="text" size="20" value="Suche: Partei, Politiker, Lobbyist">
+  </div>
+  <div>
+    
+  </div>
+</div>
+<div id="badgesTitle">Badges</div>
+<select size="1" id="funktionenFilter">
+      <option value="alle">Alle Kategorien</option>
+</select>
+<div id="chart"></div>
+</body>
+<script>
+
+  var w = 950, h = 800, r = 100;
+  var svg = d3.select("#chart").append("svg")
+      .attr("width", w)
+      .attr("height", h)
+
+  var animation = false;
+  var node;
+  var filterPartei;
+
+  
+  var makeRat = function(params){
+
+    params.startAngle += params.arcPadding;
+    params.endAngle -= params.arcPadding;
+
+    var makeSeats = function(o){
+      var seats = [];
+      d3.range(o.rows).forEach(function(z){
+        var angleDiff = o.data.endAngle - o.data.startAngle - 2*o.padding;
+        //var radiusDiff = o.outerRadius-o.innerRadius;
+        //var r = o.innerRadius + o.margin + (z/o.rows) * radiusDiff;
+        var r = o.radius + o.margin + (z * o.margin);
+        if(o.startFromEnd) {
+          r = o.radius-20 - o.margin - (z * o.margin);
+        }
+        var numPerRow = Math.abs(Math.floor((angleDiff * r) / o.margin));
+        //console.log(numPerRow);
+        
+        d3.range(numPerRow).forEach(function(s){
+
+          var angle =  o.padding + o.data.startAngle + ((s+0.5)/numPerRow) * angleDiff;
+          var x = Math.sin(angle)*r ;
+          var y = -Math.cos(angle)*r ;
+          seats.push({x:x,y:y});
+        });
+      });
+      return seats;
+      //o.data.seats = seats;
+    }
+
+    var assignSeats = function(seats,persons){
+      //console.log(persons)
+      if(seats.length<persons.length){
+        console.log("not enough seats", seats.length-persons.length, seats,persons);
+      }
+
+      persons.sort(function(a,b){
+        return a.geschlecht > b.geschlecht?1:-1;
+      });
+
+      var i = 0;
+      persons.forEach(function(p){
+        p.x = seats[i].x;
+        p.y = seats[i].y;
+        i++;
+      });
+    }
+    
+    var arcPartei = d3.svg.arc()
+        .innerRadius(params.centerRadius)
+        .outerRadius(params.outerRadius)
+
+    var pie = d3.layout.pie()
+        .value(function(d,i) { return d.politiker.length+ params.fillup; })
+        .sort(null)
+        .startAngle(params.startAngle)
+        .endAngle(params.endAngle)
+
+    var pieData = pie(params.data);
+
+    console.log(pieData)
+
+    var container = params.svg.append("g").attr('class', params.name);
+
+    container.append('text')
+      .attr("transform", function(){
+        if(params.labelOrientation==180){
+          return "translate(-350,"+(params.centerRadius)+")"
+        } else {
+          return "translate(-350,"+(-1*(params.centerRadius))+")"
+        }
+      })
+      .attr("text-anchor", "middle")
+      .text(params.name);
+
+    var arcs = container.selectAll(".arc")
+      .data(pieData)
+        .enter().append("g")
+          .attr("class", "arc")
+    
+    arcs.append("path")
+      .attr("d", arcPartei)
+      .attr("class", function(d){ return d.data.key })
+      .on("click", function(d) {
+        console.log(d)
+      })
+      .attr("fill", function(d){ return d.data.values[0].farbe; })
+
+    arcs.each(function(d,i){
+      d.parteiSeats = makeSeats({
+        data:d,
+        radius:params.centerRadius,
+        rows: 10,
+        padding: params.padding,
+        margin: params.margin
+      });
+      assignSeats(d.parteiSeats,d.data.politiker);
+
+      d3.select(this).append("g")
+        .selectAll(".politiker")
+        .data(d.data.politiker) 
+          .enter()
+            .append("circle")
+            .classed('politiker',true)
+
+      d.badgeSeats = makeSeats({
+        data:d,
+        radius:params.centerRadius,
+        rows: 12,
+        padding: params.padding,
+        margin: params.margin,
+        startFromEnd:true
+      });
+
+      assignSeats(d.badgeSeats,d.data.badges);
+
+      d3.select(this).append("g")
+        .selectAll(".badges")
+        .data(d.data.badges) 
+          .enter()
+            .append("circle")
+            .classed('badges',true)
+
+      //console.log(d.data.key,d.data.politiker.length,d.data.politiker.length*2,d.data.badges.length);
+     });
+
+    arcs.append("text")
+      .attr("transform", function(d) {
+         d.centroid = arcPartei.centroid(d);
+          var c = d.centroid,
+              x = c[0],
+              y = c[1],
+              angle = Math.atan2(y,x)*180/Math.PI+90 + params.labelOrientation,
+              // pythagorean theorem for hypotenuse
+              h = Math.sqrt(x*x + y*y);
+          return "translate(" + (x/h * params.labelRadius) +  ',' +
+             (y/h * params.labelRadius) +  ") rotate("+ angle +")"; 
+      })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      .text(function(d, i) { return d.data.key; });
+
+
+    container.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", 5)
+      .attr("fill", function(d){ 
+        if(d.geschlecht=="w") return 'none';
+        else return d.farbe;
+      })
+      .attr("stroke", function(d){ 
+        if(d.geschlecht=="w") return d.farbe;
+        else return 'none';
+      })
+
+
+
+    return {
+      arcPartei:arcPartei,
+      arcs:arcs,
+      pieData:pieData
+    }
+
+  }
+
+  queue()
+    .defer(d3.csv, 'data/google/politiker.csv')
+    .defer(d3.csv, 'data/google/badges.csv')
+    .defer(d3.csv, 'data/google/kategorien.csv')
+    .await(ready)
+
+  function ready (error,politiker,badges,kategorien) {
+    // console.log(politiker,badges,kategorien);
+  
+    politiker.forEach(function(d){
+      d.partei = d.parteiZuordnung;
+      d.badges = badges.filter(function(badge){ return d.id == badge.badgegeber_id; });
+    });
+
+    badges = badges.filter(function(d){ return (d.badgegeber_id != "" && d.status !="neu") });
+    badges.forEach(function(d){
+      if(d.deklarierte_funktion == "0.0"){
+        d.deklarierte_funktion = "keine Angabe";
+      }
+      d.funktionKurz = d.deklarierte_funktion.slice(0,10);
+      d.politiker = politiker.filter(function(pol){ return pol.id == d.badgegeber_id; })[0];
+      d.partei = d.politiker.partei;
+      d.farbe = d.politiker.farbe;
+      d.rat = d.politiker.rat;
+      d.kategorie = kategorien.filter(function(k){ return d.kategorie == k.id; })[0].kategorie;
+    });
+
+    console.log(politiker[0],badges[0]);
+
+    var nationalrat = d3.nest()
+      .key(function(d) { return d.partei; })
+      .entries(politiker.filter(function(d){ return d.rat == "NR" }));
+
+    var nationalratOver = nationalrat.filter(function(d){ return d.values.length<=1 });
+    //nationalrat = nationalrat.filter(function(d){ return d.values.length>1 });
+    console.log(nationalratOver);
+    nationalrat.sort(function(a,b){
+      return b.values.length - a.values.length;
+    });
+
+    nationalrat.forEach(function(n){
+      n.politiker = n.values;
+      n.badges = badges.filter(function(b){ return (n.key == b.partei && b.rat == "NR") })
+    });
+
+    var standerat = d3.nest()
+      .key(function(d) { return d.partei; })
+      .entries(politiker.filter(function(d){ return d.rat == "SR" }));
+    //standerat = standerat.filter(function(d){ return d.values.length>1 });
+    standerat.sort(function(a,b){
+      return b.values.length - a.values.length;
+    })
+    standerat.forEach(function(n){
+      n.politiker = n.values;
+      n.badges = badges.filter(function(b){ return (n.key == b.partei && b.rat == "SR") })
+    });
+
+    
+    console.log(nationalrat)
+    //standerat = standerat.filter(function(d){ return d.values.length>1 });
+    
+    // standeratSort = [];
+    // nationalrat.forEach(function(d1){
+    //   var ok = standerat.filter(function(d2){ return d1.key == d2.key});
+    //   if(ok.length != 0){
+    //     standeratSort.push(ok[0]);
+    //   }
+    // });
+    // standerat = standeratSort;
+
+    var funktionen = d3.nest()
+      .key(function(d) { return d.kategorie; })
+      .entries(badges)
+      .sort(function(a,b) { return b.values.length - a.values.length })
+    
+    funktionen.forEach(function(d) {
+        d.values.forEach(function(i) {
+          i.siblings = d.values.length;
+        })
+    })
+
+
+    var centerPos = {left:w/2 ,top:h/2};
+    var circleSvg = svg.append("g")
+        .attr("transform", "translate(" + centerPos.left + "," + centerPos.top  + ")")
+        .attr("class","rat")
+    
+    var nationalratPie = makeRat({
+      name: "Nationalrat",
+      innerRadius: 150,
+      centerRadius: 280,
+      outerRadius: 370,
+      labelRadius: 350,
+
+      labelOrientation: 0,
+      arcPadding:0.05,
+      startAngle: -Math.PI*0.7,
+      endAngle: Math.PI*0.7,
+
+      margin: 14,
+      padding: 0.02,
+      data: nationalrat,
+      svg: circleSvg,
+      fillup:10
+    });
+
+    var srPie = makeRat({
+      name: "Ständerat",
+      innerRadius: 150,
+      centerRadius: 280,
+      outerRadius: 370,
+      labelRadius: 350,
+
+      labelOrientation: 180,
+      arcPadding:0.05,
+      startAngle: Math.PI*0.7,
+      endAngle: Math.PI*1.3,
+
+      margin: 14,
+      padding: 0.02,
+      data: standerat,
+      svg: circleSvg,
+      fillup:10
+    });
+
+    // var nationalratPie = makeRat({
+    //   name: "nationalrat",
+    //   innerRadius: 50,
+    //   outerRadius: 230,
+    //   labelRadius: 350,
+
+    //   labelOrientation: 0,
+    //   arcPadding:0.05,
+    //   startAngle: -Math.PI*0.7,
+    //   endAngle: Math.PI*0.7,
+
+    //   margin: 13,
+    //   padding: 0.02,
+    //   rows: 13,
+    //   data: nationalrat,
+    //   svg: circleSvg,
+    //   fillup:3,
+    //   startFromEnd:true
+    // });
+
+    // var standeratPie = makeRat({
+    //   name: "standerat",
+    //   innerRadius: 250,
+    //   outerRadius: 290,
+    //   labelRadius: 300,
+
+    //   labelOrientation: 180,
+    //   arcPadding:0.05,
+    //   startAngle: Math.PI*0.7,
+    //   endAngle: Math.PI*1.3,
+
+    //   margin: 13,
+    //   padding: 0.02,
+    //   rows: 3,
+    //   data: standerat,
+    //   svg: circleSvg,
+    //   fillup:3
+    // });
+
+    // wandelhalle
+
+    var lobby = svg.append("g")
+      .attr("transform", "translate( -100, 0)")
+      .attr("class", "lobby")
+
+
+    d3.select("#funktionenFilter")
+      .on("change", function() {
+        var key = this.options[this.selectedIndex].value;
+        filterKatergorie(key);
+      })
+      .selectAll("option").data(funktionen).enter().append("option")
+          .attr("value", function(d){ return d.key; }) 
+          .text(function(d){ return d.values[0].kategorie + " ("+d.values.length+")"; })
+    
+
+    // var legend = svg.append("g").attr("transform","translate(10,10)");
+
+    // legend.append("circle")
+    //   .attr('r',5)
+    //   .attr('fill','none')
+    //   .attr('stroke','#000')
+
+
+
+    $(".rat circle").tipsy({ 
+        fade: false,
+        gravity: 'w', 
+        html: true, 
+        title: function() {
+          var d = this.__data__;
+          if(d.badgegeber_id){
+            return d.deklarierte_funktion + '<br>'+ d.name; 
+          } else {
+            return d.vorname + " " + d.nachname; 
+          }
+          
+        }
+      });
+    var filterKatergorie = function(key){
+      console.log(key);
+
+
+      if(key == "alle"){
+        circleSvg.selectAll("circle")
+          .attr("r", 5)
+          .attr("fill", function(d){ 
+            if(d.geschlecht=="w") return 'none';
+            else return d.farbe;
+          })
+          .attr("stroke", function(d){ 
+            if(d.geschlecht=="w") return d.farbe;
+            else return 'none';
+          })
+        .attr('r',5)
+      } else {
+        var politiker = circleSvg.selectAll('.politiker').attr('fill','#DDD').attr('r',3).attr('stroke','none');
+        var badges = circleSvg
+          .selectAll('.badges')
+          .attr('fill',"#EEE")
+          .attr('stroke','none')
+          .attr('r',3)
+        badges
+          .filter(function(b){ return b.kategorie == key; })
+            .attr("fill", function(d){ 
+              if(d.geschlecht=="w") return 'none';
+              else return d.farbe;
+            })
+            .attr("stroke", function(d){ 
+              if(d.geschlecht=="w") return d.farbe;
+              else return 'none';
+            })
+            .attr('r',5)
+            .each(function(d){
+              console.log(d.politiker)
+              politiker
+                .filter(function(p){ return d.politiker.id == p.id; })
+                .attr("fill", function(d){ 
+                  if(d.geschlecht=="w") return 'none';
+                  else return d.farbe;
+                })
+                .attr("stroke", function(d){ 
+                  if(d.geschlecht=="w") return d.farbe;
+                  else return 'none';
+                })
+                .attr('r',5)
+            })
+      }
+
+      //console.log(filter);
+    }
+
+  }
+    
+
+</script>

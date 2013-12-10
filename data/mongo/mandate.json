@@ -1,0 +1,709 @@
+{ "name" : "Stiftung für die Unterstützung der Forschung im Bereich Seilbahnen", "id" : "5033251", "status" : "active", "role" : "president", "badge_id" : "235", "_id" : { "$oid" : "5270275b1976461737000001" } }
+{ "name" : "Schweizer Reisekasse (Reka) Genossenschaft", "id" : "70954", "status" : "active", "role" : "member", "badge_id" : "235", "_id" : { "$oid" : "5270275b1976461737000002" } }
+{ "name" : "SchweizMobil", "id" : "712164", "status" : "active", "role" : "member", "badge_id" : "235", "_id" : { "$oid" : "5270275b1976461737000003" } }
+{ "name" : "Verband öffentlicher Verkehr, Genossenschaft (VöV)", "id" : "310378", "status" : "active", "role" : "director", "badge_id" : "235", "_id" : { "$oid" : "5270275b1976461737000004" } }
+{ "name" : "Bärn fägt - Stiftung für Berner Spiel-, Sport- und Erlebnistage", "id" : "7124388", "status" : "active", "role" : "authorized signatory", "badge_id" : "235", "_id" : { "$oid" : "5270275b1976461737000005" } }
+{ "name" : "Extramedia Holding AG", "id" : "811363", "status" : "active", "role" : "president of the board of directors", "badge_id" : "242", "_id" : { "$oid" : "5270275b1976461737000006" } }
+{ "name" : "Maxmakers AG", "id" : "82791", "status" : "active", "role" : "vice-president", "badge_id" : "242", "_id" : { "$oid" : "5270275b1976461737000007" } }
+{ "name" : "Cleantech Agentur Schweiz", "id" : "7200315", "status" : "active", "role" : "vice-president", "badge_id" : "242", "_id" : { "$oid" : "5270275b1976461737000008" } }
+{ "name" : "Foundation for Global Sustainability (FFGS)", "id" : "5638490", "status" : "active", "role" : "delegate", "badge_id" : "242", "_id" : { "$oid" : "5270275b1976461737000009" } }
+{ "name" : "Stiftung Global Infrastructure Basel", "id" : "6569447", "status" : "active", "role" : "member", "badge_id" : "242", "_id" : { "$oid" : "5270275b197646173700000a" } }
+{ "name" : "Schweizerische Bundesbahnen SBB", "id" : "818565", "status" : "active", "role" : "authorized signatory", "badge_id" : "245", "_id" : { "$oid" : "5270275b197646173700000b" } }
+{ "name" : "Ferienheimgenossenschaft SEV", "id" : "83722", "status" : "active", "role" : "president", "badge_id" : "491", "_id" : { "$oid" : "5270275b197646173700000c" } }
+{ "name" : "SEV - Gewerkschaft des Verkehrspersonals", "id" : "108671", "status" : "active", "role" : "president", "badge_id" : "491", "_id" : { "$oid" : "5270275b197646173700000d" } }
+{ "name" : "Coop Rechtsschutz AG", "id" : "3749", "status" : "active", "role" : "member", "badge_id" : "491", "_id" : { "$oid" : "5270275b197646173700000e" } }
+{ "name" : "SEV Versicherungen Genossenschaft   in Liquidation", "id" : "70243", "status" : "inbreakup", "role" : "member", "badge_id" : "491", "_id" : { "$oid" : "5270275b197646173700000f" } }
+{ "name" : "Pensionskasse des Schweizerischen Eisenbahn- und Verkehrspersonal-Verbandes", "id" : "224004", "status" : "active", "role" : "member", "badge_id" : "491", "_id" : { "$oid" : "5270275b1976461737000010" } }
+{ "name" : "Lothar Ziörjen, Architekturbüro", "id" : "331779", "status" : "active", "role" : "authorized signatory", "badge_id" : "246", "_id" : { "$oid" : "5270275b1976461737000011" } }
+{ "name" : "Verein Pro Waldmannsburg", "id" : "727357", "status" : "active", "role" : "member", "badge_id" : "492", "_id" : { "$oid" : "5270275b1976461737000012" } }
+{ "name" : "Lenzlinger Söhne AG", "id" : "10084", "status" : "active", "role" : "authorized signatory", "badge_id" : "492", "_id" : { "$oid" : "5270275b1976461737000013" } }
+{ "name" : "Lenzlinger Söhne AG", "id" : "6443028", "status" : "active", "role" : "authorized signatory", "badge_id" : "492", "_id" : { "$oid" : "5270275b1976461737000014" } }
+{ "name" : "Lenzlinger Fils SA", "id" : "6491513", "status" : "active", "role" : "authorized signatory", "badge_id" : "492", "_id" : { "$oid" : "5270275b1976461737000015" } }
+{ "name" : "Lenzlinger Söhne AG", "id" : "7112076", "status" : "active", "role" : "authorized signatory", "badge_id" : "492", "_id" : { "$oid" : "5270275b1976461737000016" } }
+{ "name" : "Pensionskasse Schweizerischer Anwaltsverband (PK SAV)", "id" : "70624", "status" : "active", "role" : "member", "badge_id" : "255", "_id" : { "$oid" : "5270275b1976461737000017" } }
+{ "name" : "Unterstützungsfonds des Schweizerischen Anwaltsverbandes", "id" : "117243", "status" : "active", "role" : "member", "badge_id" : "255", "_id" : { "$oid" : "5270275b1976461737000018" } }
+{ "name" : "Verein Hilfe für seelisch Leidende Basel", "id" : "357518", "status" : "active", "role" : "president", "badge_id" : "175", "_id" : { "$oid" : "5270275b1976461737000019" } }
+{ "name" : "Stiftung Hilfe für seelisch Leidende Basel", "id" : "6783413", "status" : "active", "role" : "president", "badge_id" : "175", "_id" : { "$oid" : "5270275b197646173700001a" } }
+{ "name" : "Interpharma", "id" : "163174", "status" : "active", "role" : "general secretary", "badge_id" : "175", "_id" : { "$oid" : "5270275b197646173700001b" } }
+{ "name" : "Association pour la Mise en valeur des Travaux de la Recherche Agronomique", "id" : "698007", "status" : "active", "role" : "president", "badge_id" : "423", "_id" : { "$oid" : "5270275b197646173700001c" } }
+{ "name" : "Agro-Marketing Suisse (AMS)", "id" : "765433", "status" : "active", "role" : "vice-president", "badge_id" : "423", "_id" : { "$oid" : "5270275b197646173700001d" } }
+{ "name" : "Vorsorgestiftung der Schweizerischen Landwirtschaft", "id" : "318134", "status" : "active", "role" : "member", "badge_id" : "423", "_id" : { "$oid" : "5270275b197646173700001e" } }
+{ "name" : "Le Journal Agri Sàrl", "id" : "653780", "status" : "active", "role" : "diverse", "badge_id" : "423", "_id" : { "$oid" : "5270275b197646173700001f" } }
+{ "name" : "CAVO-Stiftung", "id" : "74971", "status" : "active", "role" : "member", "badge_id" : "424", "_id" : { "$oid" : "5270275b1976461737000020" } }
+{ "name" : "Stiftung Technische Obstverwertung Wädenswil", "id" : "293364", "status" : "active", "role" : "member", "badge_id" : "424", "_id" : { "$oid" : "5270275b1976461737000021" } }
+{ "name" : "Schweizer Obstverband", "id" : "15126", "status" : "active", "role" : "vice-director", "badge_id" : "424", "_id" : { "$oid" : "5270275b1976461737000022" } }
+{ "name" : "Labor Veritas AG", "id" : "4467299", "status" : "active", "role" : "vice-president", "badge_id" : "179", "_id" : { "$oid" : "5270275b1976461737000023" } }
+{ "name" : "Studerus und Partner AG", "id" : "5718242", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "179", "_id" : { "$oid" : "5270275b1976461737000024" } }
+{ "name" : "Personalvorsorgestiftung Labor Veritas", "id" : "232528", "status" : "active", "role" : "member", "badge_id" : "179", "_id" : { "$oid" : "5270275b1976461737000025" } }
+{ "name" : "Probat Heizungssysteme AG", "id" : "239607", "status" : "active", "role" : "member", "badge_id" : "179", "_id" : { "$oid" : "5270275b1976461737000026" } }
+{ "name" : "Maurer Partner Communications AG", "id" : "5698245", "status" : "active", "role" : "president of the board of directors", "badge_id" : "183", "_id" : { "$oid" : "5270275b1976461737000027" } }
+{ "name" : "Thomas C. Maurer & Partner", "id" : "4398641", "status" : "active", "role" : "fully liable partner", "badge_id" : "183", "_id" : { "$oid" : "5270275b1976461737000028" } }
+{ "name" : "Meyer-Wyss & Partner AG", "id" : "24080", "status" : "active", "role" : "member", "badge_id" : "184", "_id" : { "$oid" : "5270275b1976461737000029" } }
+{ "name" : "Stiftung der Schweizer Werbung für die Lauterkeit in der kommerziellen Kommunikation", "id" : "114874", "status" : "active", "role" : "member", "badge_id" : "184", "_id" : { "$oid" : "5270275b197646173700002a" } }
+{ "name" : "ProLitteris, Schweizerische Urheberrechtsgesellschaft für Literatur und bildende Kunst, Genossenschaft", "id" : "240380", "status" : "active", "role" : "member", "badge_id" : "184", "_id" : { "$oid" : "5270275b197646173700002b" } }
+{ "name" : "Stiftung des Schweizerischen Zeitungsverleger-Verbandes zur Sicherung des schweizerischen Pressewesens", "id" : "292160", "status" : "active", "role" : "member", "badge_id" : "184", "_id" : { "$oid" : "5270275b197646173700002c" } }
+{ "name" : "Medialex", "id" : "662675", "status" : "active", "role" : "member", "badge_id" : "184", "_id" : { "$oid" : "5270275b197646173700002d" } }
+{ "name" : "Pensionskassengenossenschaft des Schweizerischen Gewerkschaftsbundes", "id" : "224039", "status" : "active", "role" : "member", "badge_id" : "185", "_id" : { "$oid" : "5270275b197646173700002e" } }
+{ "name" : "Stiftung für Konsumentenschutz", "id" : "116807", "status" : "active", "role" : "member", "badge_id" : "186", "_id" : { "$oid" : "5270275b197646173700002f" } }
+{ "name" : "INTERCOOPERATION, Swiss Foundation for Development and International Cooperation", "id" : "765645", "status" : "active", "role" : "member", "badge_id" : "186", "_id" : { "$oid" : "5270275b1976461737000030" } }
+{ "name" : "Karch Kampagnen GmbH", "id" : "6480102", "status" : "active", "role" : "associate", "badge_id" : "186", "_id" : { "$oid" : "5270275b1976461737000031" } }
+{ "name" : "Kleinbauern-Warenversand GmbH in Liquidation", "id" : "683183", "status" : "inbreakup", "role" : "liquidator", "badge_id" : "186", "_id" : { "$oid" : "5270275b1976461737000032" } }
+{ "name" : "Hanspeter Reimann Schreinerarbeiten", "id" : "6970750", "status" : "active", "role" : "holder", "badge_id" : "189", "_id" : { "$oid" : "5270275b1976461737000033" } }
+{ "name" : "Energieplattform Immobilien (EPImmo)", "id" : "6943418", "status" : "active", "role" : "member", "badge_id" : "193", "_id" : { "$oid" : "5270275b1976461737000034" } }
+{ "name" : "Stiftung Solinvest", "id" : "5847367", "status" : "active", "role" : "authorized signatory", "badge_id" : "193", "_id" : { "$oid" : "5270275b1976461737000035" } }
+{ "name" : "Sicherheitsfonds BVG", "id" : "117560", "status" : "active", "role" : "member", "badge_id" : "196", "_id" : { "$oid" : "5270275b1976461737000036" } }
+{ "name" : "Schweizer Milchproduzenten SMP Genossenschaft", "id" : "310350", "status" : "active", "role" : "authorized officer", "badge_id" : "198", "_id" : { "$oid" : "5270275b1976461737000037" } }
+{ "name" : "Vorsorgestiftung SMP", "id" : "318212", "status" : "active", "role" : "president", "badge_id" : "444", "_id" : { "$oid" : "5270275b1976461737000038" } }
+{ "name" : "Zusatzstiftung SMP", "id" : "326487", "status" : "active", "role" : "president", "badge_id" : "444", "_id" : { "$oid" : "5270275b1976461737000039" } }
+{ "name" : "Emmentalische Mobiliar Versicherungs-Genossenschaft (emmental versicherung)", "id" : "4971", "status" : "active", "role" : "vice-president", "badge_id" : "444", "_id" : { "$oid" : "5270275b197646173700003a" } }
+{ "name" : "Pensionskasse der emmental versicherung", "id" : "232666", "status" : "active", "role" : "member", "badge_id" : "444", "_id" : { "$oid" : "5270275b197646173700003b" } }
+{ "name" : "Genossenschaft Hauseigentümerverband Zürich", "id" : "145354", "status" : "active", "role" : "member", "badge_id" : "200", "_id" : { "$oid" : "5270275b197646173700003c" } }
+{ "name" : "Stiftung Umwelt-Einsatz Schweiz (SUS)", "id" : "293395", "status" : "active", "role" : "member", "badge_id" : "201", "_id" : { "$oid" : "5270275b197646173700003d" } }
+{ "name" : "Rottebrigge-Alte Mühle", "id" : "588305", "status" : "active", "role" : "member", "badge_id" : "201", "_id" : { "$oid" : "5270275b197646173700003e" } }
+{ "name" : "Fundaziun Pro Terra Engiadina", "id" : "5870237", "status" : "active", "role" : "member", "badge_id" : "201", "_id" : { "$oid" : "5270275b197646173700003f" } }
+{ "name" : "Stiftung Landschaftsschutz Schweiz", "id" : "268028", "status" : "active", "role" : "managing director", "badge_id" : "201", "_id" : { "$oid" : "5270275b1976461737000040" } }
+{ "name" : "Schweizerische Verkehrs-Stiftung (SVS)", "id" : "122699", "status" : "active", "role" : "member", "badge_id" : "449", "_id" : { "$oid" : "5270275b1976461737000041" } }
+{ "name" : "VCS Verkehrs-Club der Schweiz", "id" : "40937", "status" : "active", "role" : "managing director", "badge_id" : "449", "_id" : { "$oid" : "5270275b1976461737000042" } }
+{ "name" : "Furrer.Hugi & Partner AG für Public Affairs und Kommunikationsmanagement", "id" : "821909", "status" : "active", "role" : "authorized officer", "badge_id" : "454", "_id" : { "$oid" : "5270275b1976461737000043" } }
+{ "name" : "Fondazione ECAP", "id" : "117316", "status" : "active", "role" : "member", "badge_id" : "212", "_id" : { "$oid" : "5270275b1976461737000044" } }
+{ "name" : "Consulenza Armin Menzi", "id" : "4093801", "status" : "active", "role" : "holder", "badge_id" : "349", "_id" : { "$oid" : "5270275b1976461737000045" } }
+{ "name" : "wellatwork.ch GmbH", "id" : "5760940", "status" : "active", "role" : "managing director", "badge_id" : "204", "_id" : { "$oid" : "5270275b1976461737000046" } }
+{ "name" : "Stiftung Märtplatz", "id" : "292972", "status" : "active", "role" : "member", "badge_id" : "204", "_id" : { "$oid" : "5270275b1976461737000047" } }
+{ "name" : "Verein ARC -  Bildungsinstitut für Arbeitnehmende", "id" : "4645644", "status" : "active", "role" : "member", "badge_id" : "204", "_id" : { "$oid" : "5270275b1976461737000048" } }
+{ "name" : "PHS Public Health Services GmbH", "id" : "4996816", "status" : "active", "role" : "associate", "badge_id" : "204", "_id" : { "$oid" : "5270275b1976461737000049" } }
+{ "name" : "syneric GmbH", "id" : "6371095", "status" : "active", "role" : "associate", "badge_id" : "204", "_id" : { "$oid" : "5270275b197646173700004a" } }
+{ "name" : "Stiftung Synapsis - Alzheimer Forschung Schweiz AFS", "id" : "4878047", "status" : "active", "role" : "managing director", "badge_id" : "204", "_id" : { "$oid" : "5270275b197646173700004b" } }
+{ "name" : "Jetra AG", "id" : "579369", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "213", "_id" : { "$oid" : "5270275b197646173700004c" } }
+{ "name" : "Stiftung Klimarappen", "id" : "5208161", "status" : "active", "role" : "member", "badge_id" : "213", "_id" : { "$oid" : "5270275b197646173700004d" } }
+{ "name" : "cemsuisse Verband der Schweizerischen Cementindustrie", "id" : "5263841", "status" : "active", "role" : "managing director", "badge_id" : "213", "_id" : { "$oid" : "5270275b197646173700004e" } }
+{ "name" : "Betonsuisse Marketing AG", "id" : "5445863", "status" : "active", "role" : "secretary outside of the board of directors", "badge_id" : "213", "_id" : { "$oid" : "5270275b197646173700004f" } }
+{ "name" : "Stiftung für Erforschung der Frauenarbeit", "id" : "292475", "status" : "active", "role" : "vice-president", "badge_id" : "216", "_id" : { "$oid" : "5270275b1976461737000050" } }
+{ "name" : "Stiftung Alters- und Pflegeheim Birsfelden", "id" : "291780", "status" : "active", "role" : "member", "badge_id" : "462", "_id" : { "$oid" : "5270275b1976461737000051" } }
+{ "name" : "Stiftung ZEWO", "id" : "4412332", "status" : "active", "role" : "member", "badge_id" : "463", "_id" : { "$oid" : "5270275b1976461737000052" } }
+{ "name" : "Schweizerischer Fussballverband", "id" : "6897353", "status" : "active", "role" : "general secretary outside of the board of managers", "badge_id" : "219", "_id" : { "$oid" : "5270275b1976461737000053" } }
+{ "name" : "Dr. Heinrich Wachter-Stiftung zur Förderung der wissenschaftlichen Forschung an der Hochschule St. Gallen für Wirtschafts- und Sozialwissenschaften", "id" : "318753", "status" : "active", "role" : "member", "badge_id" : "466", "_id" : { "$oid" : "5270275b1976461737000054" } }
+{ "name" : "Young Leaders Alumni Foundation", "id" : "7059421", "status" : "active", "role" : "member", "badge_id" : "466", "_id" : { "$oid" : "5270275b1976461737000055" } }
+{ "name" : "Credit Suisse Group AG", "id" : "3913", "status" : "active", "role" : "authorized signatory", "badge_id" : "466", "_id" : { "$oid" : "5270275b1976461737000056" } }
+{ "name" : "Credit Suisse AG", "id" : "15012", "status" : "active", "role" : "authorized signatory", "badge_id" : "466", "_id" : { "$oid" : "5270275b1976461737000057" } }
+{ "name" : "Stiftung Landschaftsschutz Schweiz", "id" : "268028", "status" : "active", "role" : "member", "badge_id" : "477", "_id" : { "$oid" : "5270275b1976461737000058" } }
+{ "name" : "sanu durabilitas - Schweizerische Stiftung für Nachhaltige Entwicklung", "id" : "268034", "status" : "active", "role" : "member", "badge_id" : "477", "_id" : { "$oid" : "5270275b1976461737000059" } }
+{ "name" : "Solsana AG", "id" : "6473402", "status" : "active", "role" : "member", "badge_id" : "478", "_id" : { "$oid" : "5270275b197646173700005a" } }
+{ "name" : "Vitali Treuhand GmbH", "id" : "5597055", "status" : "active", "role" : "associate", "badge_id" : "234", "_id" : { "$oid" : "5270275b197646173700005b" } }
+{ "name" : "premium incentives and events AG", "id" : "4594926", "status" : "active", "role" : "member", "badge_id" : "486", "_id" : { "$oid" : "5270275b197646173700005c" } }
+{ "name" : "Swiss Economic Forum (SEF) AG", "id" : "4804896", "status" : "active", "role" : "member", "badge_id" : "486", "_id" : { "$oid" : "5270275b197646173700005d" } }
+{ "name" : "Stähli & Linder AG", "id" : "5837891", "status" : "active", "role" : "member", "badge_id" : "486", "_id" : { "$oid" : "5270275b197646173700005e" } }
+{ "name" : "IFH Interforum Holding AG", "id" : "6808909", "status" : "active", "role" : "member", "badge_id" : "486", "_id" : { "$oid" : "5270275b197646173700005f" } }
+{ "name" : "Pedrazzini Holding AG", "id" : "570304", "status" : "active", "role" : "president of the board of directors", "badge_id" : "1", "_id" : { "$oid" : "5270275b1976461737000060" } }
+{ "name" : "Pedrazzini Campo SA", "id" : "6908867", "status" : "active", "role" : "president of the board of directors", "badge_id" : "1", "_id" : { "$oid" : "5270275b1976461737000061" } }
+{ "name" : "Isler & Pedrazzini AG", "id" : "8761", "status" : "active", "role" : "delegate", "badge_id" : "1", "_id" : { "$oid" : "5270275b1976461737000062" } }
+{ "name" : "Affolter Mühle und Transport AG", "id" : "539751", "status" : "active", "role" : "member", "badge_id" : "2", "_id" : { "$oid" : "5270275b1976461737000063" } }
+{ "name" : "BBV Treuhand AG", "id" : "649247", "status" : "active", "role" : "member", "badge_id" : "2", "_id" : { "$oid" : "5270275b1976461737000064" } }
+{ "name" : "aaremilch AG", "id" : "5522132", "status" : "active", "role" : "managing director", "badge_id" : "2", "_id" : { "$oid" : "5270275b1976461737000065" } }
+{ "name" : "UBS AG", "id" : "260570", "status" : "active", "role" : "authorized signatory", "badge_id" : "8", "_id" : { "$oid" : "5270275b1976461737000066" } }
+{ "name" : "UBS AG", "id" : "766457", "status" : "active", "role" : "authorized signatory", "badge_id" : "8", "_id" : { "$oid" : "5270275b1976461737000067" } }
+{ "name" : "GFW Development AGlll", "id" : "612375", "status" : "active", "role" : "member", "badge_id" : "9", "_id" : { "$oid" : "5270275b1976461737000068" } }
+{ "name" : "Dr. Schenker Kommunikationszentrum für Wirtschaft und Politik AG", "id" : "4551851", "status" : "active", "role" : "managing director", "badge_id" : "9", "_id" : { "$oid" : "5270275b1976461737000069" } }
+{ "name" : "Auto-i-DAT AG", "id" : "353677", "status" : "active", "role" : "president of the board of directors", "badge_id" : "10", "_id" : { "$oid" : "5270275b197646173700006a" } }
+{ "name" : "auto-schweiz VEREINIGUNG SCHWEIZER AUTOMOBIL-IMPORTEURE", "id" : "313275", "status" : "active", "role" : "president", "badge_id" : "10", "_id" : { "$oid" : "5270275b197646173700006b" } }
+{ "name" : "Stiftung Auto Recycling Schweiz", "id" : "597312", "status" : "active", "role" : "member", "badge_id" : "10", "_id" : { "$oid" : "5270275b197646173700006c" } }
+{ "name" : "Genossenschaft Feriendorf Fiesch", "id" : "109479", "status" : "active", "role" : "member", "badge_id" : "256", "_id" : { "$oid" : "5270275b197646173700006d" } }
+{ "name" : "Swiss Olympic Association", "id" : "5134692", "status" : "active", "role" : "director", "badge_id" : "256", "_id" : { "$oid" : "5270275b197646173700006e" } }
+{ "name" : "Schweizer Sporthilfe", "id" : "268418", "status" : "active", "role" : "authorized signatory", "badge_id" : "256", "_id" : { "$oid" : "5270275b197646173700006f" } }
+{ "name" : "Schweizerische Sozialpartner-Stiftung für die Auffangeinrichtung gemäss Artikel 60 BVG (Stiftung Auffangeinrichtung BVG)", "id" : "117050", "status" : "active", "role" : "member", "badge_id" : "11", "_id" : { "$oid" : "5270275b1976461737000070" } }
+{ "name" : "Verein ARC -  Bildungsinstitut für Arbeitnehmende", "id" : "4645644", "status" : "active", "role" : "member", "badge_id" : "11", "_id" : { "$oid" : "5270275b1976461737000071" } }
+{ "name" : "wohnbaugenossenschaften schweiz - verband der gemeinnützigen wohnbauträger", "id" : "268215", "status" : "active", "role" : "member", "badge_id" : "259", "_id" : { "$oid" : "5270275b1976461737000072" } }
+{ "name" : "Klipper GmbH", "id" : "384792", "status" : "active", "role" : "associate", "badge_id" : "259", "_id" : { "$oid" : "5270275b1976461737000073" } }
+{ "name" : "Institution de maintien, d'aide et de soins à domicile", "id" : "7031474", "status" : "active", "role" : "member", "badge_id" : "14", "_id" : { "$oid" : "5270275b1976461737000074" } }
+{ "name" : "East West Book Shop, Rentsch & Co", "id" : "97024", "status" : "active", "role" : "authorized officer", "badge_id" : "261", "_id" : { "$oid" : "5270275b1976461737000075" } }
+{ "name" : "Zenhäusern & Partner AG Unternehmensberatung für Öffentlichkeitsarbeit", "id" : "661233", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "16", "_id" : { "$oid" : "5270275b1976461737000076" } }
+{ "name" : "Zenhäusern Akademie AG", "id" : "5065812", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "16", "_id" : { "$oid" : "5270275b1976461737000077" } }
+{ "name" : "Nimbus AG", "id" : "549040", "status" : "active", "role" : "member", "badge_id" : "16", "_id" : { "$oid" : "5270275b1976461737000078" } }
+{ "name" : "maxon motor ag", "id" : "816596", "status" : "active", "role" : "member", "badge_id" : "16", "_id" : { "$oid" : "5270275b1976461737000079" } }
+{ "name" : "Synegration AG", "id" : "4896041", "status" : "active", "role" : "member", "badge_id" : "16", "_id" : { "$oid" : "5270275b197646173700007a" } }
+{ "name" : "Grünes Kreuz Schweiz", "id" : "602539", "status" : "active", "role" : "managing director", "badge_id" : "262", "_id" : { "$oid" : "5270275b197646173700007b" } }
+{ "name" : "Institut für Wirtschaftsstudien Basel AG", "id" : "5572862", "status" : "active", "role" : "president of the board of directors", "badge_id" : "19", "_id" : { "$oid" : "5270275b197646173700007c" } }
+{ "name" : "Fürsorgestiftung Waldwirtschaft Schweiz in Liquidation", "id" : "123667", "status" : "inbreakup", "role" : "member", "badge_id" : "267", "_id" : { "$oid" : "5270275b197646173700007d" } }
+{ "name" : "Stiftung für Konsumentenschutz", "id" : "116807", "status" : "active", "role" : "managing director", "badge_id" : "22", "_id" : { "$oid" : "5270275b197646173700007e" } }
+{ "name" : "ROBINVEST AG", "id" : "5729064", "status" : "active", "role" : "member", "badge_id" : "25", "_id" : { "$oid" : "5270275b197646173700007f" } }
+{ "name" : "SWISSOLAR - Schweizerischer Fachverband für Sonnenenergie", "id" : "5647039", "status" : "active", "role" : "managing director", "badge_id" : "26", "_id" : { "$oid" : "5270275b1976461737000080" } }
+{ "name" : "Genossenschaft Solidaritätsfonds der Auslandschweizer", "id" : "131966", "status" : "active", "role" : "vice-president", "badge_id" : "27", "_id" : { "$oid" : "5270275b1976461737000081" } }
+{ "name" : "Institut für Sicherheitsanalysen und strategisches Networking - Stiftung (ISSN)", "id" : "5598721", "status" : "active", "role" : "member", "badge_id" : "27", "_id" : { "$oid" : "5270275b1976461737000082" } }
+{ "name" : "bosec consulting gmbh", "id" : "4377303", "status" : "active", "role" : "authorized signatory", "badge_id" : "27", "_id" : { "$oid" : "5270275b1976461737000083" } }
+{ "name" : "Agrisano", "id" : "714432", "status" : "active", "role" : "member", "badge_id" : "29", "_id" : { "$oid" : "5270275b1976461737000084" } }
+{ "name" : "AGRIDEA Schweizerische Vereinigung für die Entwicklung der Landwirtschaft und des ländlichen Raums", "id" : "5599259", "status" : "active", "role" : "member", "badge_id" : "29", "_id" : { "$oid" : "5270275b1976461737000085" } }
+{ "name" : "Schweizerischer Bauernverband (SBV)", "id" : "403502", "status" : "active", "role" : "authorized signatory", "badge_id" : "29", "_id" : { "$oid" : "5270275b1976461737000086" } }
+{ "name" : "Stiftung für Innovation, Entwicklung und Forschung Graubünden", "id" : "5654541", "status" : "active", "role" : "member", "badge_id" : "30", "_id" : { "$oid" : "5270275b1976461737000087" } }
+{ "name" : "economiesuisse", "id" : "4925481", "status" : "active", "role" : "member of the executive board", "badge_id" : "30", "_id" : { "$oid" : "5270275b1976461737000088" } }
+{ "name" : "Centre Patronal", "id" : "5636828", "status" : "active", "role" : "executive member", "badge_id" : "35", "_id" : { "$oid" : "5270275b1976461737000089" } }
+{ "name" : "Centre Patronal", "id" : "7063823", "status" : "active", "role" : "executive member", "badge_id" : "35", "_id" : { "$oid" : "5270275b197646173700008a" } }
+{ "name" : "VKS - Verband Kompost- und Vergärwerke Schweiz", "id" : "811571", "status" : "active", "role" : "vice-president", "badge_id" : "42", "_id" : { "$oid" : "5270275b197646173700008b" } }
+{ "name" : "Verein Energie-Information (E-Info)", "id" : "607598", "status" : "active", "role" : "member", "badge_id" : "42", "_id" : { "$oid" : "5270275b197646173700008c" } }
+{ "name" : "Nova Energie GmbH", "id" : "4734444", "status" : "active", "role" : "authorized signatory", "badge_id" : "42", "_id" : { "$oid" : "5270275b197646173700008d" } }
+{ "name" : "LYSOFT SA", "id" : "4146848", "status" : "active", "role" : "president of the board of directors", "badge_id" : "288", "_id" : { "$oid" : "5270275b197646173700008e" } }
+{ "name" : "Lys DCT Seydoux, Beerli", "id" : "682800", "status" : "active", "role" : "general partner", "badge_id" : "288", "_id" : { "$oid" : "5270275b197646173700008f" } }
+{ "name" : "Rudolf Steiner Schulverein St. Gallen", "id" : "256067", "status" : "active", "role" : "member", "badge_id" : "45", "_id" : { "$oid" : "5270275b1976461737000090" } }
+{ "name" : "SWISSAID, Schweizerische Stiftung für Entwicklungszusammenarbeit", "id" : "297768", "status" : "active", "role" : "member", "badge_id" : "45", "_id" : { "$oid" : "5270275b1976461737000091" } }
+{ "name" : "Vorsorgestiftung RSS, Gemeinschaftsstiftung für Mitarbeitende der Rudolf Steiner Schulen in der Schweiz", "id" : "6753565", "status" : "active", "role" : "member", "badge_id" : "45", "_id" : { "$oid" : "5270275b1976461737000092" } }
+{ "name" : "Ecopolitics GmbH", "id" : "4045427", "status" : "active", "role" : "associate", "badge_id" : "45", "_id" : { "$oid" : "5270275b1976461737000093" } }
+{ "name" : "Dynamics Group AG", "id" : "5442536", "status" : "active", "role" : "director", "badge_id" : "46", "_id" : { "$oid" : "5270275b1976461737000094" } }
+{ "name" : "Dynamics Group AG", "id" : "5677046", "status" : "active", "role" : "director", "badge_id" : "46", "_id" : { "$oid" : "5270275b1976461737000095" } }
+{ "name" : "Handelskammer Schweiz- Armenien", "id" : "7038640", "status" : "active", "role" : "vice-president", "badge_id" : "47", "_id" : { "$oid" : "5270275b1976461737000096" } }
+{ "name" : "Swisstasting Sàrl", "id" : "7092781", "status" : "active", "role" : "associate", "badge_id" : "295", "_id" : { "$oid" : "5270275b1976461737000097" } }
+{ "name" : "pro juventute", "id" : "122996", "status" : "active", "role" : "member", "badge_id" : "50", "_id" : { "$oid" : "5270275b1976461737000098" } }
+{ "name" : "Mobility Solutions AG", "id" : "5023144", "status" : "active", "role" : "member", "badge_id" : "50", "_id" : { "$oid" : "5270275b1976461737000099" } }
+{ "name" : "Swiss eMobility", "id" : "7190156", "status" : "active", "role" : "member", "badge_id" : "50", "_id" : { "$oid" : "5270275b197646173700009a" } }
+{ "name" : "Kaufmann Ronny - Berater", "id" : "4504333", "status" : "active", "role" : "holder", "badge_id" : "50", "_id" : { "$oid" : "5270275b197646173700009b" } }
+{ "name" : "Leder Partner", "id" : "674393", "status" : "active", "role" : "general partner", "badge_id" : "53", "_id" : { "$oid" : "5270275b197646173700009c" } }
+{ "name" : "Energieplattform Immobilien (EPImmo)", "id" : "6943418", "status" : "active", "role" : "member of the executive board", "badge_id" : "300", "_id" : { "$oid" : "5270275b197646173700009d" } }
+{ "name" : "Hauseigentümerverband Schweiz", "id" : "268184", "status" : "active", "role" : "director", "badge_id" : "300", "_id" : { "$oid" : "5270275b197646173700009e" } }
+{ "name" : "Swisstransplant - Schweizerische Stiftung für Organspende und Transplantation", "id" : "297799", "status" : "active", "role" : "member", "badge_id" : "55", "_id" : { "$oid" : "5270275b197646173700009f" } }
+{ "name" : "Marie-Louise Baumann MLB Communications", "id" : "6459850", "status" : "active", "role" : "holder", "badge_id" : "55", "_id" : { "$oid" : "5270275b19764617370000a0" } }
+{ "name" : "Psychiatrische Dienste Graubünden", "id" : "6844873", "status" : "active", "role" : "president", "badge_id" : "56", "_id" : { "$oid" : "5270275b19764617370000a1" } }
+{ "name" : "Stiftung Casty-Buchmann, Chur/Masans", "id" : "664171", "status" : "active", "role" : "member", "badge_id" : "56", "_id" : { "$oid" : "5270275b19764617370000a2" } }
+{ "name" : "Swissgrid AG", "id" : "5091646", "status" : "active", "role" : "member", "badge_id" : "56", "_id" : { "$oid" : "5270275b19764617370000a3" } }
+{ "name" : "Yvette Estermann Stiftung", "id" : "6368285", "status" : "active", "role" : "member", "badge_id" : "303", "_id" : { "$oid" : "5270275b19764617370000a4" } }
+{ "name" : "ESTERMANN - CONSULTING", "id" : "779169", "status" : "active", "role" : "holder", "badge_id" : "303", "_id" : { "$oid" : "5270275b19764617370000a5" } }
+{ "name" : "Hääss-Chammer-Gnosseschaft Appenzell", "id" : "142633", "status" : "active", "role" : "member", "badge_id" : "58", "_id" : { "$oid" : "5270275b19764617370000a6" } }
+{ "name" : "Lokal Appenzell GmbH", "id" : "5818826", "status" : "active", "role" : "associate", "badge_id" : "58", "_id" : { "$oid" : "5270275b19764617370000a7" } }
+{ "name" : "Schweizerische Beratungsstelle für Unfallverhütung bfu", "id" : "68038", "status" : "active", "role" : "member of the executive board", "badge_id" : "305", "_id" : { "$oid" : "5270275b19764617370000a8" } }
+{ "name" : "Katz Kunststoff-Ausbildungs- und Technologie-Zentrum", "id" : "588312", "status" : "active", "role" : "member", "badge_id" : "66", "_id" : { "$oid" : "5270275b19764617370000a9" } }
+{ "name" : "Kunststoff Verband Schweiz (KVS)", "id" : "594905", "status" : "active", "role" : "managing director", "badge_id" : "66", "_id" : { "$oid" : "5270275b19764617370000aa" } }
+{ "name" : "Verband Kunststoff-Rohre und Rohrleitungsteile", "id" : "5552419", "status" : "active", "role" : "authorized signatory", "badge_id" : "66", "_id" : { "$oid" : "5270275b19764617370000ab" } }
+{ "name" : "GEO Consulting Group AG", "id" : "786243", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "314", "_id" : { "$oid" : "5270275b19764617370000ac" } }
+{ "name" : "Lignum Holzwirtschaft Schweiz", "id" : "397971", "status" : "active", "role" : "member", "badge_id" : "69", "_id" : { "$oid" : "5270275b19764617370000ad" } }
+{ "name" : "Verband Holzindustrie Schweiz HIS", "id" : "40738", "status" : "active", "role" : "director", "badge_id" : "69", "_id" : { "$oid" : "5270275b19764617370000ae" } }
+{ "name" : "Nuklearforum Schweiz", "id" : "40749", "status" : "active", "role" : "member", "badge_id" : "315", "_id" : { "$oid" : "5270275b19764617370000af" } }
+{ "name" : "Stiftung Klimarappen", "id" : "5208161", "status" : "active", "role" : "member", "badge_id" : "315", "_id" : { "$oid" : "5270275b19764617370000b0" } }
+{ "name" : "Energieplattform Immobilien (EPImmo)", "id" : "6943418", "status" : "active", "role" : "member", "badge_id" : "315", "_id" : { "$oid" : "5270275b19764617370000b1" } }
+{ "name" : "Möbelfabrik Betschart AG", "id" : "24114", "status" : "active", "role" : "member", "badge_id" : "71", "_id" : { "$oid" : "5270275b19764617370000b2" } }
+{ "name" : "Personalvorsorgestiftung der Möbelfabrik Betschart AG", "id" : "229860", "status" : "active", "role" : "member", "badge_id" : "71", "_id" : { "$oid" : "5270275b19764617370000b3" } }
+{ "name" : "Peter Föhn-Heinzer Holding AG", "id" : "4444479", "status" : "active", "role" : "member", "badge_id" : "71", "_id" : { "$oid" : "5270275b19764617370000b4" } }
+{ "name" : "Möbelfabrik Betschart AG", "id" : "24114", "status" : "active", "role" : "member", "badge_id" : "317", "_id" : { "$oid" : "5270275b19764617370000b5" } }
+{ "name" : "Société d'expansion touristique de Zinal SA", "id" : "21043", "status" : "active", "role" : "president of the board of directors", "badge_id" : "72", "_id" : { "$oid" : "5270275b19764617370000b6" } }
+{ "name" : "Les 4 Vallées SA", "id" : "725978", "status" : "active", "role" : "president of the board of directors", "badge_id" : "72", "_id" : { "$oid" : "5270275b19764617370000b7" } }
+{ "name" : "Remontées Mécaniques de Grimentz - Zinal SA", "id" : "7027480", "status" : "active", "role" : "member", "badge_id" : "72", "_id" : { "$oid" : "5270275b19764617370000b8" } }
+{ "name" : "Inspection des finances du canton du Valais", "id" : "5629150", "status" : "active", "role" : "diverse", "badge_id" : "72", "_id" : { "$oid" : "5270275b19764617370000b9" } }
+{ "name" : "aspero ag", "id" : "6503707", "status" : "active", "role" : "managing director", "badge_id" : "74", "_id" : { "$oid" : "5270275b19764617370000ba" } }
+{ "name" : "Stiftung Knabenkantorei Basel", "id" : "598190", "status" : "active", "role" : "member", "badge_id" : "75", "_id" : { "$oid" : "5270275b19764617370000bb" } }
+{ "name" : "Schweizerische Bankiervereinigung (SwissBanking)", "id" : "40711", "status" : "active", "role" : "authorized signatory", "badge_id" : "75", "_id" : { "$oid" : "5270275b19764617370000bc" } }
+{ "name" : "Fachstelle für Gesundheitspolitik polsan GmbH", "id" : "5455082", "status" : "active", "role" : "president of management board", "badge_id" : "77", "_id" : { "$oid" : "5270275b19764617370000bd" } }
+{ "name" : "RTR Radiotelevisiun Svizra Rumantscha, succursala da la Societad svizra da radio e televisiun", "id" : "816423", "status" : "active", "role" : "director general", "badge_id" : "326", "_id" : { "$oid" : "5270275b19764617370000be" } }
+{ "name" : "Schweizerische Radio- und Fernsehgesellschaft", "id" : "646899", "status" : "active", "role" : "director general", "badge_id" : "326", "_id" : { "$oid" : "5270275b19764617370000bf" } }
+{ "name" : "Schweizerische Radio- und Fernsehgesellschaft, Zweigniederlassung swissinfo", "id" : "680731", "status" : "active", "role" : "director general", "badge_id" : "326", "_id" : { "$oid" : "5270275b19764617370000c0" } }
+{ "name" : "SRF Schweizer Radio und Fernsehen, Zweigniederlassung der Schweizerischen Radio- und Fernsehgesellschaft", "id" : "709826", "status" : "active", "role" : "director general", "badge_id" : "326", "_id" : { "$oid" : "5270275b19764617370000c1" } }
+{ "name" : "RTS Radio Télévision Suisse, succursale de la Société suisse de radiodiffusion et télévision", "id" : "713217", "status" : "active", "role" : "director general", "badge_id" : "326", "_id" : { "$oid" : "5270275b19764617370000c2" } }
+{ "name" : "RSI Radiotelevisione svizzera di lingua italiana, succursale della Società svizzera di radiotelevisione", "id" : "759168", "status" : "active", "role" : "director general", "badge_id" : "326", "_id" : { "$oid" : "5270275b19764617370000c3" } }
+{ "name" : "Renate Hotz Communications AG", "id" : "5436471", "status" : "active", "role" : "member", "badge_id" : "329", "_id" : { "$oid" : "5270275b19764617370000c4" } }
+{ "name" : "Migros-Genossenschafts-Bund", "id" : "11261", "status" : "active", "role" : "authorized signatory", "badge_id" : "329", "_id" : { "$oid" : "5270275b19764617370000c5" } }
+{ "name" : "Renate Hotz Communications AG", "id" : "5436471", "status" : "active", "role" : "president of the board of directors", "badge_id" : "84", "_id" : { "$oid" : "5270275b19764617370000c6" } }
+{ "name" : "Stiftung Auto Recycling Schweiz", "id" : "597312", "status" : "active", "role" : "member", "badge_id" : "331", "_id" : { "$oid" : "5270275b19764617370000c7" } }
+{ "name" : "Suva", "id" : "5870217", "status" : "active", "role" : "member", "badge_id" : "331", "_id" : { "$oid" : "5270275b19764617370000c8" } }
+{ "name" : "BOOM Büro für Organisation, Oeffentlichkeitsarbeit & Medienberatung Michael Gehrken", "id" : "692676", "status" : "active", "role" : "holder", "badge_id" : "331", "_id" : { "$oid" : "5270275b19764617370000c9" } }
+{ "name" : "ASTAG Schweizerischer Nutzfahrzeugverband", "id" : "4680048", "status" : "active", "role" : "director", "badge_id" : "331", "_id" : { "$oid" : "5270275b19764617370000ca" } }
+{ "name" : "Gesellschaft Schweiz - Albanien", "id" : "5718926", "status" : "active", "role" : "president", "badge_id" : "332", "_id" : { "$oid" : "5270275b19764617370000cb" } }
+{ "name" : "Verein Energieallianz", "id" : "6329079", "status" : "active", "role" : "member", "badge_id" : "87", "_id" : { "$oid" : "5270275b19764617370000cc" } }
+{ "name" : "Stiftung des Schweizerischen Bierbrauervereins für Wissenschaftliche Forschung", "id" : "292138", "status" : "active", "role" : "member", "badge_id" : "90", "_id" : { "$oid" : "5270275b19764617370000cd" } }
+{ "name" : "Köhler, Stüdeli & Partner GmbH", "id" : "4909939", "status" : "active", "role" : "president of management board", "badge_id" : "94", "_id" : { "$oid" : "5270275b19764617370000ce" } }
+{ "name" : "Schweizerischer Verband für komplementärmedizinische Heilmittel", "id" : "673377", "status" : "active", "role" : "managing director", "badge_id" : "94", "_id" : { "$oid" : "5270275b19764617370000cf" } }
+{ "name" : "kmuNEXT Schweizerische Vereinigung für Unternehmensnachfolge in Liquidation", "id" : "5269690", "status" : "inbreakup", "role" : "member", "badge_id" : "341", "_id" : { "$oid" : "5270275b19764617370000d0" } }
+{ "name" : "Giovanni Giunta Bureau de conseils", "id" : "7015293", "status" : "active", "role" : "holder", "badge_id" : "341", "_id" : { "$oid" : "5270275b19764617370000d1" } }
+{ "name" : "Schweizerische Technische Fachschule Winterthur (STF)", "id" : "15092", "status" : "active", "role" : "president", "badge_id" : "97", "_id" : { "$oid" : "5270275b19764617370000d2" } }
+{ "name" : "Paritätische Krankenversicherung für Branchen der Gebäudetechnik", "id" : "221374", "status" : "active", "role" : "member", "badge_id" : "97", "_id" : { "$oid" : "5270275b19764617370000d3" } }
+{ "name" : "Sozialfonds VSEI", "id" : "286830", "status" : "active", "role" : "member", "badge_id" : "97", "_id" : { "$oid" : "5270275b19764617370000d4" } }
+{ "name" : "Paritätische Landeskommission der Schweizerischen Elektro- und Telekommunikations-Installationsbranche (PLK)", "id" : "5131511", "status" : "active", "role" : "member", "badge_id" : "97", "_id" : { "$oid" : "5270275b19764617370000d5" } }
+{ "name" : "medi 24 Service AG", "id" : "4022257", "status" : "inbreakup", "role" : "single member of the board of directors", "badge_id" : "344", "_id" : { "$oid" : "5270275b19764617370000d6" } }
+{ "name" : "Amavita Health Care AG", "id" : "4539901", "status" : "active", "role" : "authorized signatory", "badge_id" : "344", "_id" : { "$oid" : "5270275b19764617370000d7" } }
+{ "name" : "G-Pharma AG", "id" : "5697285", "status" : "active", "role" : "authorized signatory", "badge_id" : "344", "_id" : { "$oid" : "5270275b19764617370000d8" } }
+{ "name" : "Grünau AG", "id" : "730959", "status" : "active", "role" : "vice-president", "badge_id" : "100", "_id" : { "$oid" : "5270275b19764617370000d9" } }
+{ "name" : "SpoHaWe AG", "id" : "5532595", "status" : "active", "role" : "member", "badge_id" : "100", "_id" : { "$oid" : "5270275b19764617370000da" } }
+{ "name" : "Livesystems AG", "id" : "5536332", "status" : "active", "role" : "member", "badge_id" : "100", "_id" : { "$oid" : "5270275b19764617370000db" } }
+{ "name" : "kw la soupe GmbH", "id" : "4710674", "status" : "active", "role" : "associate", "badge_id" : "100", "_id" : { "$oid" : "5270275b19764617370000dc" } }
+{ "name" : "Sanitas Krankenversicherung", "id" : "714250", "status" : "active", "role" : "president", "badge_id" : "101", "_id" : { "$oid" : "5270275b19764617370000dd" } }
+{ "name" : "The Swiss Leading Hospitals", "id" : "5674085", "status" : "active", "role" : "member", "badge_id" : "347", "_id" : { "$oid" : "5270275b19764617370000de" } }
+{ "name" : "Stiftung für Innovation, Entwicklung und Forschung Graubünden", "id" : "5654541", "status" : "active", "role" : "member", "badge_id" : "105", "_id" : { "$oid" : "5270275b19764617370000df" } }
+{ "name" : "Stiftung Privatschulregister Schweiz", "id" : "5398325", "status" : "active", "role" : "president", "badge_id" : "105", "_id" : { "$oid" : "5270275b19764617370000e0" } }
+{ "name" : "IGKG Interessengemeinschaft Kaufmännische Grundbildung Schweiz", "id" : "6755948", "status" : "active", "role" : "vice-president", "badge_id" : "105", "_id" : { "$oid" : "5270275b19764617370000e1" } }
+{ "name" : "swissskills", "id" : "117058", "status" : "active", "role" : "member", "badge_id" : "105", "_id" : { "$oid" : "5270275b19764617370000e2" } }
+{ "name" : "Personalvorsorgestiftung der Geschäftsstelle des Schweizerischen Gewerbeverbandes", "id" : "231161", "status" : "active", "role" : "member", "badge_id" : "105", "_id" : { "$oid" : "5270275b19764617370000e3" } }
+{ "name" : "Pestalozzi-Stiftung für die Förderung der Ausbildung Jugendlicher aus schweizerischen Berggegenden", "id" : "232861", "status" : "active", "role" : "member", "badge_id" : "105", "_id" : { "$oid" : "5270275b19764617370000e4" } }
+{ "name" : "Internationale Solarmobil Föderation ISF", "id" : "395107", "status" : "active", "role" : "vice-president", "badge_id" : "106", "_id" : { "$oid" : "5270275b19764617370000e5" } }
+{ "name" : "Schweizerische Greina-Stiftung (SGS) zur Erhaltung der alpinen Fliessgewässer", "id" : "117045", "status" : "active", "role" : "member", "badge_id" : "106", "_id" : { "$oid" : "5270275b19764617370000e6" } }
+{ "name" : "Solar Agentur Schweiz", "id" : "6840148", "status" : "active", "role" : "managing director", "badge_id" : "106", "_id" : { "$oid" : "5270275b19764617370000e7" } }
+{ "name" : "Proviande Genossenschaft", "id" : "20957", "status" : "active", "role" : "member", "badge_id" : "107", "_id" : { "$oid" : "5270275b19764617370000e8" } }
+{ "name" : "Schweizerischer Bauernverband (SBV)", "id" : "403502", "status" : "active", "role" : "authorized signatory", "badge_id" : "107", "_id" : { "$oid" : "5270275b19764617370000e9" } }
+{ "name" : "Schweizerischer Bauernverband (SBV)", "id" : "403502", "status" : "active", "role" : "authorized officer", "badge_id" : "108", "_id" : { "$oid" : "5270275b19764617370000ea" } }
+{ "name" : "CURAVIVA - Verband Heime und Institutionen Schweiz", "id" : "5068611", "status" : "active", "role" : "vice-president", "badge_id" : "111", "_id" : { "$oid" : "5270275b19764617370000eb" } }
+{ "name" : "ARGOS SA", "id" : "595976", "status" : "active", "role" : "member", "badge_id" : "111", "_id" : { "$oid" : "5270275b19764617370000ec" } }
+{ "name" : "BESA Care AG", "id" : "7002607", "status" : "active", "role" : "member", "badge_id" : "111", "_id" : { "$oid" : "5270275b19764617370000ed" } }
+{ "name" : "Fondation du foyer d'accueil Le Christ-Roi", "id" : "115912", "status" : "active", "role" : "director", "badge_id" : "111", "_id" : { "$oid" : "5270275b19764617370000ee" } }
+{ "name" : "Interpharma", "id" : "163174", "status" : "active", "role" : "member of the executive board", "badge_id" : "112", "_id" : { "$oid" : "5270275b19764617370000ef" } }
+{ "name" : "Schweizerischer Bäcker-Confiseurmeister-Verband", "id" : "268108", "status" : "active", "role" : "vice-director", "badge_id" : "114", "_id" : { "$oid" : "5270275b19764617370000f0" } }
+{ "name" : "Fondation des immeubles pour les organisations internationales (FIPOI)", "id" : "114788", "status" : "active", "role" : "member", "badge_id" : "361", "_id" : { "$oid" : "5270275b19764617370000f1" } }
+{ "name" : "Services industriels de Genève", "id" : "6299054", "status" : "active", "role" : "member", "badge_id" : "361", "_id" : { "$oid" : "5270275b19764617370000f2" } }
+{ "name" : "Stiftung Alpenruhe Saanen", "id" : "645781", "status" : "active", "role" : "member", "badge_id" : "116", "_id" : { "$oid" : "5270275b19764617370000f3" } }
+{ "name" : "Schweizerische Flüchtlingshilfe / SFH", "id" : "7203683", "status" : "active", "role" : "member", "badge_id" : "116", "_id" : { "$oid" : "5270275b19764617370000f4" } }
+{ "name" : "Stiftung Klimarappen", "id" : "5208161", "status" : "active", "role" : "member", "badge_id" : "120", "_id" : { "$oid" : "5270275b19764617370000f5" } }
+{ "name" : "Erdöl - Vereinigung (EV)", "id" : "104098", "status" : "active", "role" : "president", "badge_id" : "120", "_id" : { "$oid" : "5270275b19764617370000f6" } }
+{ "name" : "Stiftung Klimaschutz und CO2-Kompensation KliK", "id" : "7052862", "status" : "active", "role" : "president", "badge_id" : "120", "_id" : { "$oid" : "5270275b19764617370000f7" } }
+{ "name" : "Hutter Dynamics AG", "id" : "216315", "status" : "active", "role" : "member", "badge_id" : "120", "_id" : { "$oid" : "5270275b19764617370000f8" } }
+{ "name" : "Hutter Dynamics AG Schaffhausen", "id" : "221414", "status" : "active", "role" : "member", "badge_id" : "120", "_id" : { "$oid" : "5270275b19764617370000f9" } }
+{ "name" : "Energie-Agentur der Wirtschaft (EnAW)", "id" : "4453219", "status" : "active", "role" : "member", "badge_id" : "120", "_id" : { "$oid" : "5270275b19764617370000fa" } }
+{ "name" : "Theres und Gerhard Kraus-Vogt Stiftung", "id" : "651985", "status" : "active", "role" : "member", "badge_id" : "124", "_id" : { "$oid" : "5270275b19764617370000fb" } }
+{ "name" : "swisscleantech Association", "id" : "5797620", "status" : "active", "role" : "member", "badge_id" : "370", "_id" : { "$oid" : "5270275b19764617370000fc" } }
+{ "name" : "ecos AG", "id" : "685220", "status" : "active", "role" : "president of the board of directors", "badge_id" : "370", "_id" : { "$oid" : "5270275b19764617370000fd" } }
+{ "name" : "Stiftung Oekomedia", "id" : "685310", "status" : "active", "role" : "president", "badge_id" : "370", "_id" : { "$oid" : "5270275b19764617370000fe" } }
+{ "name" : "Stiftung Global Infrastructure Basel", "id" : "6569447", "status" : "active", "role" : "president", "badge_id" : "370", "_id" : { "$oid" : "5270275b19764617370000ff" } }
+{ "name" : "Stiftung BASE (Basel Agency for Sustainable Energy)", "id" : "4395103", "status" : "active", "role" : "member", "badge_id" : "370", "_id" : { "$oid" : "5270275b1976461737000100" } }
+{ "name" : "The Gold Standard Foundation", "id" : "5411125", "status" : "active", "role" : "member", "badge_id" : "370", "_id" : { "$oid" : "5270275b1976461737000101" } }
+{ "name" : "Association Spitex privée Suisse (ASPS)", "id" : "5241435", "status" : "active", "role" : "secretary outside of the board of managers", "badge_id" : "372", "_id" : { "$oid" : "5270275b1976461737000102" } }
+{ "name" : "KOMET Werbeagentur AG", "id" : "597317", "status" : "active", "role" : "president of the board of directors", "badge_id" : "372", "_id" : { "$oid" : "5270275b1976461737000103" } }
+{ "name" : "VerMaG AG", "id" : "7237206", "status" : "active", "role" : "member", "badge_id" : "372", "_id" : { "$oid" : "5270275b1976461737000104" } }
+{ "name" : "KOMET marketing & communication Sàrl", "id" : "5690754", "status" : "active", "role" : "president of management board", "badge_id" : "372", "_id" : { "$oid" : "5270275b1976461737000105" } }
+{ "name" : "BIRDIE Company GmbH", "id" : "4525006", "status" : "active", "role" : "associate", "badge_id" : "372", "_id" : { "$oid" : "5270275b1976461737000106" } }
+{ "name" : "Durst, Marketing und Kommunikation", "id" : "4046366", "status" : "active", "role" : "holder", "badge_id" : "372", "_id" : { "$oid" : "5270275b1976461737000107" } }
+{ "name" : "AXA Assurances SA", "id" : "324882", "status" : "active", "role" : "authorized signatory", "badge_id" : "129", "_id" : { "$oid" : "5270275b1976461737000108" } }
+{ "name" : "AXA Versicherungen AG", "id" : "18526", "status" : "active", "role" : "authorized signatory", "badge_id" : "129", "_id" : { "$oid" : "5270275b1976461737000109" } }
+{ "name" : "AXA Versicherungen AG, Zweigniederlassung St. Gallen", "id" : "324858", "status" : "active", "role" : "authorized signatory", "badge_id" : "129", "_id" : { "$oid" : "5270275b197646173700010a" } }
+{ "name" : "AXA Versicherungen AG", "id" : "324875", "status" : "active", "role" : "authorized signatory", "badge_id" : "129", "_id" : { "$oid" : "5270275b197646173700010b" } }
+{ "name" : "AXA Versicherungen AG", "id" : "324878", "status" : "active", "role" : "authorized signatory", "badge_id" : "129", "_id" : { "$oid" : "5270275b197646173700010c" } }
+{ "name" : "AXA Assicurazioni SA, succursale di Lugano", "id" : "324880", "status" : "active", "role" : "authorized signatory", "badge_id" : "129", "_id" : { "$oid" : "5270275b197646173700010d" } }
+{ "name" : "POWERcondens AG", "id" : "800604", "status" : "active", "role" : "member", "badge_id" : "132", "_id" : { "$oid" : "5270275b197646173700010e" } }
+{ "name" : "Swisspower AG", "id" : "6567746", "status" : "active", "role" : "member of the executive board", "badge_id" : "380", "_id" : { "$oid" : "5270275b197646173700010f" } }
+{ "name" : "Sigg Innenausbau GmbH", "id" : "671386", "status" : "active", "role" : "associate", "badge_id" : "136", "_id" : { "$oid" : "5270275b1976461737000110" } }
+{ "name" : "Paul Aenishänslin Public Affairs & Communications (PAE-PAC)", "id" : "4608992", "status" : "active", "role" : "holder", "badge_id" : "137", "_id" : { "$oid" : "5270275b1976461737000111" } }
+{ "name" : "STV-Verlags AG der Ingenieure & Architekten", "id" : "296184", "status" : "active", "role" : "president of the board of directors", "badge_id" : "138", "_id" : { "$oid" : "5270275b1976461737000112" } }
+{ "name" : "Personalvorsorgestiftung von scienceindustries", "id" : "232658", "status" : "active", "role" : "member", "badge_id" : "138", "_id" : { "$oid" : "5270275b1976461737000113" } }
+{ "name" : "scienceindustries", "id" : "268069", "status" : "active", "role" : "member of the executive board", "badge_id" : "138", "_id" : { "$oid" : "5270275b1976461737000114" } }
+{ "name" : "Verein ARC -  Bildungsinstitut für Arbeitnehmende", "id" : "4645644", "status" : "active", "role" : "member", "badge_id" : "139", "_id" : { "$oid" : "5270275b1976461737000115" } }
+{ "name" : "GTER-GROUPEMENT POUR DES TRANSPORTS EXPRESS REGIONAUX", "id" : "771741", "status" : "active", "role" : "member", "badge_id" : "385", "_id" : { "$oid" : "5270275b1976461737000116" } }
+{ "name" : "Hirzel.Neef.Schmid.Konsulenten AG", "id" : "4474379", "status" : "active", "role" : "director", "badge_id" : "140", "_id" : { "$oid" : "5270275b1976461737000117" } }
+{ "name" : "Hirzel.Neef.Schmid.Konsulenten AG", "id" : "6576142", "status" : "active", "role" : "director", "badge_id" : "140", "_id" : { "$oid" : "5270275b1976461737000118" } }
+{ "name" : "FIPRA Schweiz GmbH", "id" : "7011674", "status" : "active", "role" : "managing director", "badge_id" : "140", "_id" : { "$oid" : "5270275b1976461737000119" } }
+{ "name" : "SCN SwissCableNet AG", "id" : "806711", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "386", "_id" : { "$oid" : "5270275b197646173700011a" } }
+{ "name" : "Robert Walser-Stiftung Bern", "id" : "269490", "status" : "active", "role" : "member", "badge_id" : "386", "_id" : { "$oid" : "5270275b197646173700011b" } }
+{ "name" : "SWISSCABLE VERBAND FÜR KOMMUNIKATIONSNETZE", "id" : "702393", "status" : "active", "role" : "managing director", "badge_id" : "386", "_id" : { "$oid" : "5270275b197646173700011c" } }
+{ "name" : "Hilfs- und Solidaritätsfonds syndicom", "id" : "32605", "status" : "active", "role" : "co-president", "badge_id" : "388", "_id" : { "$oid" : "5270275b197646173700011d" } }
+{ "name" : "syndicom", "id" : "6512328", "status" : "active", "role" : "co-president", "badge_id" : "388", "_id" : { "$oid" : "5270275b197646173700011e" } }
+{ "name" : "Suva", "id" : "5870217", "status" : "active", "role" : "member", "badge_id" : "388", "_id" : { "$oid" : "5270275b197646173700011f" } }
+{ "name" : "Beat Bucher AG", "id" : "2749", "status" : "active", "role" : "member", "badge_id" : "143", "_id" : { "$oid" : "5270275b1976461737000120" } }
+{ "name" : "FaH Consulting Hansjörg Fasnacht", "id" : "4407853", "status" : "active", "role" : "holder", "badge_id" : "143", "_id" : { "$oid" : "5270275b1976461737000121" } }
+{ "name" : "Raiffeisenbank Amriswil-Dozwil-Sommeri Genossenschaft", "id" : "243207", "status" : "active", "role" : "member", "badge_id" : "389", "_id" : { "$oid" : "5270275b1976461737000122" } }
+{ "name" : "Swiss Communication Agency Sagl", "id" : "6311314", "status" : "active", "role" : "associate", "badge_id" : "144", "_id" : { "$oid" : "5270275b1976461737000123" } }
+{ "name" : "Auslandschweizer-Organisation", "id" : "42744", "status" : "active", "role" : "director", "badge_id" : "390", "_id" : { "$oid" : "5270275b1976461737000124" } }
+{ "name" : "Stiftung Auslandschweizerplatz Brunnen", "id" : "116726", "status" : "active", "role" : "member", "badge_id" : "390", "_id" : { "$oid" : "5270275b1976461737000125" } }
+{ "name" : "Für die Auslandschweizer", "id" : "122994", "status" : "active", "role" : "member", "badge_id" : "390", "_id" : { "$oid" : "5270275b1976461737000126" } }
+{ "name" : "Stiftung für Schweizer Schulen im Ausland", "id" : "646698", "status" : "active", "role" : "member", "badge_id" : "390", "_id" : { "$oid" : "5270275b1976461737000127" } }
+{ "name" : "Oeschger-Hintermann Stiftung der NHG", "id" : "4825624", "status" : "active", "role" : "member", "badge_id" : "390", "_id" : { "$oid" : "5270275b1976461737000128" } }
+{ "name" : "educationsuisse", "id" : "7027407", "status" : "active", "role" : "member", "badge_id" : "390", "_id" : { "$oid" : "5270275b1976461737000129" } }
+{ "name" : "Stiftung für Radio und Kultur Schweiz", "id" : "6327436", "status" : "active", "role" : "member", "badge_id" : "392", "_id" : { "$oid" : "5270275b197646173700012a" } }
+{ "name" : "Suva", "id" : "5870217", "status" : "active", "role" : "authorized signatory", "badge_id" : "147", "_id" : { "$oid" : "5270275b197646173700012b" } }
+{ "name" : "Schweizerische Bankiervereinigung (SwissBanking)", "id" : "40711", "status" : "active", "role" : "authorized signatory", "badge_id" : "148", "_id" : { "$oid" : "5270275b197646173700012c" } }
+{ "name" : "Wohnbaugenossenschaft Oberfeld, Ostermundigen", "id" : "5606885", "status" : "active", "role" : "president", "badge_id" : "394", "_id" : { "$oid" : "5270275b197646173700012d" } }
+{ "name" : "E plus U Energie- und Umweltberatung GmbH", "id" : "5579664", "status" : "active", "role" : "associate", "badge_id" : "394", "_id" : { "$oid" : "5270275b197646173700012e" } }
+{ "name" : "Fondation du Musée de la Tourbière", "id" : "709982", "status" : "active", "role" : "secretary", "badge_id" : "149", "_id" : { "$oid" : "5270275b197646173700012f" } }
+{ "name" : "CSEM Centre Suisse d'Electronique et de Microtechnique SA - Recherche et Développement", "id" : "3241", "status" : "active", "role" : "member", "badge_id" : "149", "_id" : { "$oid" : "5270275b1976461737000130" } }
+{ "name" : "Fondation des établissements cantonaux pour personnes âgées", "id" : "115586", "status" : "active", "role" : "member", "badge_id" : "149", "_id" : { "$oid" : "5270275b1976461737000131" } }
+{ "name" : "Fondation \"Les Billodes\"", "id" : "116484", "status" : "active", "role" : "diverse", "badge_id" : "149", "_id" : { "$oid" : "5270275b1976461737000132" } }
+{ "name" : "Fondation des Spectacles français", "id" : "691516", "status" : "active", "role" : "member", "badge_id" : "397", "_id" : { "$oid" : "5270275b1976461737000133" } }
+{ "name" : "Radio- und Fernsehgenossenschaft Bern Deutschfreiburg Oberwallis RGB", "id" : "242583", "status" : "active", "role" : "president", "badge_id" : "398", "_id" : { "$oid" : "5270275b1976461737000134" } }
+{ "name" : "OGS Beratungsteam AG", "id" : "217443", "status" : "active", "role" : "member", "badge_id" : "398", "_id" : { "$oid" : "5270275b1976461737000135" } }
+{ "name" : "economiesuisse", "id" : "4925481", "status" : "active", "role" : "member of the executive board", "badge_id" : "157", "_id" : { "$oid" : "5270275b1976461737000136" } }
+{ "name" : "AG Haus der Wirtschaft", "id" : "751093", "status" : "active", "role" : "secretary outside of the board of directors", "badge_id" : "157", "_id" : { "$oid" : "5270275b1976461737000137" } }
+{ "name" : "ACADEMIE MOBILITE SA", "id" : "5613340", "status" : "active", "role" : "delegate", "badge_id" : "162", "_id" : { "$oid" : "5270275b1976461737000138" } }
+{ "name" : "Swiss eMobility", "id" : "7190156", "status" : "active", "role" : "member", "badge_id" : "162", "_id" : { "$oid" : "5270275b1976461737000139" } }
+{ "name" : "Touring Club Suisse (TCS)", "id" : "305247", "status" : "active", "role" : "director", "badge_id" : "162", "_id" : { "$oid" : "5270275b197646173700013a" } }
+{ "name" : "Hauseigentümerverband Schweiz", "id" : "268184", "status" : "active", "role" : "deputy director", "badge_id" : "408", "_id" : { "$oid" : "5270275b197646173700013b" } }
+{ "name" : "Garage STUDER", "id" : "6925297", "status" : "active", "role" : "holder", "badge_id" : "414", "_id" : { "$oid" : "5270275b197646173700013c" } }
+{ "name" : "Stiftung SwissEngineering STV", "id" : "286827", "status" : "active", "role" : "member", "badge_id" : "417", "_id" : { "$oid" : "5270275b197646173700013d" } }
+{ "name" : "Stiftung für die Hilfskasse des Schweizerischen Technischen Verbandes STV", "id" : "292304", "status" : "active", "role" : "member", "badge_id" : "417", "_id" : { "$oid" : "5270275b197646173700013e" } }
+{ "name" : "Furrer.Hugi & Partner AG für Public Affairs und Kommunikationsmanagement", "id" : "821909", "status" : "active", "role" : "member", "badge_id" : "417", "_id" : { "$oid" : "5270275b197646173700013f" } }
+{ "name" : "Berner Politgespräche GmbH", "id" : "5485153", "status" : "active", "role" : "president of management board", "badge_id" : "417", "_id" : { "$oid" : "5270275b1976461737000140" } }
+{ "name" : "Port-Associations GmbH", "id" : "6662437", "status" : "active", "role" : "managing director", "badge_id" : "417", "_id" : { "$oid" : "5270275b1976461737000141" } }
+{ "name" : "Michi Nussbaumer, Grafik und Typografie", "id" : "6562984", "status" : "active", "role" : "holder", "badge_id" : "172", "_id" : { "$oid" : "5270275b1976461737000142" } }
+{ "name" : "cR Kommunikation AG", "id" : "86175", "status" : "active", "role" : "president of the board of directors", "badge_id" : "418", "_id" : { "$oid" : "5270275b1976461737000143" } }
+{ "name" : "Genossenschaft Baseltor", "id" : "131777", "status" : "active", "role" : "president", "badge_id" : "418", "_id" : { "$oid" : "5270275b1976461737000144" } }
+{ "name" : "Liegenschaft Hauptgasse 79 AG", "id" : "546549", "status" : "active", "role" : "member", "badge_id" : "418", "_id" : { "$oid" : "5270275b1976461737000145" } }
+{ "name" : "Liegenschaft Hauptgasse 64 AG", "id" : "7191682", "status" : "active", "role" : "member", "badge_id" : "418", "_id" : { "$oid" : "5270275b1976461737000146" } }
+{ "name" : "cR Lichtspiele GmbH", "id" : "4784701", "status" : "active", "role" : "authorized signatory", "badge_id" : "418", "_id" : { "$oid" : "5270275b1976461737000147" } }
+{ "name" : "Kummer Public Affairs", "id" : "4115979", "status" : "active", "role" : "holder", "badge_id" : "220", "_id" : { "$oid" : "5270275b1976461737000148" } }
+{ "name" : "Verein velojournal", "id" : "6879673", "status" : "active", "role" : "member", "badge_id" : "221", "_id" : { "$oid" : "5270275b1976461737000149" } }
+{ "name" : "EQUAM Stiftung", "id" : "825414", "status" : "active", "role" : "member", "badge_id" : "467", "_id" : { "$oid" : "5270275b197646173700014a" } }
+{ "name" : "Stiftung für Konsumentenschutz", "id" : "116807", "status" : "active", "role" : "vice-president", "badge_id" : "470", "_id" : { "$oid" : "5270275b197646173700014b" } }
+{ "name" : "Europäische Reiseversicherungs AG", "id" : "5242", "status" : "active", "role" : "member", "badge_id" : "470", "_id" : { "$oid" : "5270275b197646173700014c" } }
+{ "name" : "Genossenschaft Alpin Center Zermatt", "id" : "5516292", "status" : "active", "role" : "member", "badge_id" : "465", "_id" : { "$oid" : "5270275b197646173700014d" } }
+{ "name" : "Mutuel Assurance Maladie SA", "id" : "6455695", "status" : "active", "role" : "member", "badge_id" : "465", "_id" : { "$oid" : "5270275b197646173700014e" } }
+{ "name" : "CLINIQUE LE NOIRMONT SOCIETE COOPERATIVE", "id" : "75809", "status" : "active", "role" : "member", "badge_id" : "465", "_id" : { "$oid" : "5270275b197646173700014f" } }
+{ "name" : "Stiftung zur Förderung besonderer gemeinschaftlicher Aufgaben der sozialen Krankenversicherung", "id" : "293513", "status" : "active", "role" : "member", "badge_id" : "465", "_id" : { "$oid" : "5270275b1976461737000150" } }
+{ "name" : "Medidata AG", "id" : "635751", "status" : "active", "role" : "member", "badge_id" : "465", "_id" : { "$oid" : "5270275b1976461737000151" } }
+{ "name" : "SVK Schweizerischer Verband für Gemeinschaftsaufgaben der Krankenversicherer", "id" : "726764", "status" : "active", "role" : "member", "badge_id" : "465", "_id" : { "$oid" : "5270275b1976461737000152" } }
+{ "name" : "Schweizerischer Versicherungsverband (SVV)", "id" : "5344085", "status" : "active", "role" : "member", "badge_id" : "465", "_id" : { "$oid" : "5270275b1976461737000153" } }
+{ "name" : "SASIS AG", "id" : "5828759", "status" : "active", "role" : "vice-president", "badge_id" : "465", "_id" : { "$oid" : "5270275b1976461737000154" } }
+{ "name" : "SASIS AG", "id" : "5828850", "status" : "active", "role" : "vice-president", "badge_id" : "465", "_id" : { "$oid" : "5270275b1976461737000155" } }
+{ "name" : "santésuisse", "id" : "6246638", "status" : "active", "role" : "vice-president", "badge_id" : "465", "_id" : { "$oid" : "5270275b1976461737000156" } }
+{ "name" : "tarifsuisse ag", "id" : "6426301", "status" : "active", "role" : "vice-president", "badge_id" : "465", "_id" : { "$oid" : "5270275b1976461737000157" } }
+{ "name" : "Allianz Schweizer Krankenversicherer", "id" : "6784868", "status" : "active", "role" : "vice-president", "badge_id" : "465", "_id" : { "$oid" : "5270275b1976461737000158" } }
+{ "name" : "spirit of management Andreas Burgener", "id" : "4723997", "status" : "active", "role" : "holder", "badge_id" : "244", "_id" : { "$oid" : "5270275b1976461737000159" } }
+{ "name" : "auto-schweiz VEREINIGUNG SCHWEIZER AUTOMOBIL-IMPORTEURE", "id" : "313275", "status" : "active", "role" : "director", "badge_id" : "244", "_id" : { "$oid" : "5270275b197646173700015a" } }
+{ "name" : "Bozzio AG", "id" : "5426262", "status" : "active", "role" : "president of the board of directors", "badge_id" : "244", "_id" : { "$oid" : "5270275b197646173700015b" } }
+{ "name" : "DTC Dynamic Test Center AG", "id" : "646922", "status" : "active", "role" : "vice-president", "badge_id" : "244", "_id" : { "$oid" : "5270275b197646173700015c" } }
+{ "name" : "INOBAT Interessenorganisation Batterieentsorgung Genossenschaft", "id" : "583791", "status" : "active", "role" : "member", "badge_id" : "244", "_id" : { "$oid" : "5270275b197646173700015d" } }
+{ "name" : "Stiftung Auto Recycling Schweiz", "id" : "597312", "status" : "active", "role" : "member", "badge_id" : "244", "_id" : { "$oid" : "5270275b197646173700015e" } }
+{ "name" : "Orthotec AG", "id" : "630809", "status" : "active", "role" : "member", "badge_id" : "244", "_id" : { "$oid" : "5270275b197646173700015f" } }
+{ "name" : "Stiftung St.Galler Landwirtschaft", "id" : "318012", "status" : "active", "role" : "member", "badge_id" : "195", "_id" : { "$oid" : "5270275b1976461737000160" } }
+{ "name" : "St. Galler Bauernverband", "id" : "785660", "status" : "active", "role" : "managing director", "badge_id" : "195", "_id" : { "$oid" : "5270275b1976461737000161" } }
+{ "name" : "HULFTEGG Finanz- und Verwaltungs AG", "id" : "154616", "status" : "active", "role" : "president of the board of directors", "badge_id" : "195", "_id" : { "$oid" : "5270275b1976461737000162" } }
+{ "name" : "Animaltruck AG", "id" : "4830867", "status" : "active", "role" : "president of the board of directors", "badge_id" : "195", "_id" : { "$oid" : "5270275b1976461737000163" } }
+{ "name" : "Genossenschaft pro Mosnang", "id" : "37437", "status" : "active", "role" : "president", "badge_id" : "195", "_id" : { "$oid" : "5270275b1976461737000164" } }
+{ "name" : "Vorsorgestiftung der Schweizerischen Landwirtschaft", "id" : "318134", "status" : "active", "role" : "vice-president", "badge_id" : "195", "_id" : { "$oid" : "5270275b1976461737000165" } }
+{ "name" : "Förderverein energietal toggenburg", "id" : "6444785", "status" : "active", "role" : "vice-president", "badge_id" : "195", "_id" : { "$oid" : "5270275b1976461737000166" } }
+{ "name" : "Personalvorsorgestiftung des Schweizerischen Bauernverbandes", "id" : "232487", "status" : "active", "role" : "member", "badge_id" : "441", "_id" : { "$oid" : "5270275b1976461737000167" } }
+{ "name" : "Qualinova AG", "id" : "822767", "status" : "active", "role" : "member", "badge_id" : "441", "_id" : { "$oid" : "5270275b1976461737000168" } }
+{ "name" : "Stiftung zur Förderung des landwirtschaftlichen Bildungswesens", "id" : "293573", "status" : "active", "role" : "president", "badge_id" : "441", "_id" : { "$oid" : "5270275b1976461737000169" } }
+{ "name" : "Schweizerischer Bauernverband (SBV)", "id" : "403502", "status" : "active", "role" : "vice-president", "badge_id" : "441", "_id" : { "$oid" : "5270275b197646173700016a" } }
+{ "name" : "Regionale Wald-Genossenschaft Fontannen", "id" : "5701303", "status" : "active", "role" : "vice-president", "badge_id" : "441", "_id" : { "$oid" : "5270275b197646173700016b" } }
+{ "name" : "LANDI Wolhusen Genossenschaft in Liquidation", "id" : "182233", "status" : "inbreakup", "role" : "member", "badge_id" : "441", "_id" : { "$oid" : "5270275b197646173700016c" } }
+{ "name" : "Genossenschaft Landwirtschaftliches Bau- und Architekturbüro LBA des Schweizerischen Bauernverbandes", "id" : "182462", "status" : "active", "role" : "member", "badge_id" : "441", "_id" : { "$oid" : "5270275b197646173700016d" } }
+{ "name" : "Schweizerischer Versicherungsverband (SVV)", "id" : "5344085", "status" : "active", "role" : "director", "badge_id" : "208", "_id" : { "$oid" : "5270275b197646173700016e" } }
+{ "name" : "Schweizerische Vereinigung für Qualitäts- und Management-Systeme (SQS)", "id" : "40693", "status" : "active", "role" : "member", "badge_id" : "208", "_id" : { "$oid" : "5270275b197646173700016f" } }
+{ "name" : "Personalvorsorgestiftung der Wilhelm Schulthess-Stiftung", "id" : "231362", "status" : "active", "role" : "member", "badge_id" : "208", "_id" : { "$oid" : "5270275b1976461737000170" } }
+{ "name" : "Wilhelm Schulthess - Stiftung", "id" : "267152", "status" : "active", "role" : "member", "badge_id" : "208", "_id" : { "$oid" : "5270275b1976461737000171" } }
+{ "name" : "Stiftung Speranza", "id" : "5808690", "status" : "active", "role" : "member", "badge_id" : "208", "_id" : { "$oid" : "5270275b1976461737000172" } }
+{ "name" : "CLIMA-SUISSE, Verband Schweizerischer und Liechtensteinischer Heizungs- und Lüftungsfirmen", "id" : "688086", "status" : "inbreakup", "role" : "director", "badge_id" : "208", "_id" : { "$oid" : "5270275b1976461737000173" } }
+{ "name" : "Handelskammer beider Basel", "id" : "726339", "status" : "active", "role" : "director", "badge_id" : "457", "_id" : { "$oid" : "5270275b1976461737000174" } }
+{ "name" : "BioValley Basel", "id" : "6572383", "status" : "active", "role" : "cashier", "badge_id" : "457", "_id" : { "$oid" : "5270275b1976461737000175" } }
+{ "name" : "Jubiläums-Stiftung des Bankhauses La Roche & Co.", "id" : "371094", "status" : "active", "role" : "member", "badge_id" : "457", "_id" : { "$oid" : "5270275b1976461737000176" } }
+{ "name" : "Stiftung Europainstitut Basel", "id" : "612315", "status" : "active", "role" : "member", "badge_id" : "457", "_id" : { "$oid" : "5270275b1976461737000177" } }
+{ "name" : "SSIB Swiss School for International Business AG", "id" : "4926052", "status" : "active", "role" : "member", "badge_id" : "457", "_id" : { "$oid" : "5270275b1976461737000178" } }
+{ "name" : "Swiss Chambers' Arbitration Institution", "id" : "5722470", "status" : "active", "role" : "member", "badge_id" : "457", "_id" : { "$oid" : "5270275b1976461737000179" } }
+{ "name" : "BaselArea - Wirtschaftsförderung Basel-Stadt und Basel-Landschaft", "id" : "6639707", "status" : "active", "role" : "member", "badge_id" : "457", "_id" : { "$oid" : "5270275b197646173700017a" } }
+{ "name" : "BAUBIOLOGIE Bigler, haustrocknung.ch", "id" : "6588417", "status" : "active", "role" : "holder", "badge_id" : "24", "_id" : { "$oid" : "5270275b197646173700017b" } }
+{ "name" : "Schweizerischer Gewerbeverband", "id" : "5935272", "status" : "active", "role" : "director", "badge_id" : "24", "_id" : { "$oid" : "5270275b197646173700017c" } }
+{ "name" : "proparis Vorsorge-Stiftung Gewerbe Schweiz", "id" : "130809", "status" : "active", "role" : "president", "badge_id" : "24", "_id" : { "$oid" : "5270275b197646173700017d" } }
+{ "name" : "Schweizerisches Institut für Unternehmerschulung im Gewerbe Genossenschaft", "id" : "268276", "status" : "active", "role" : "president", "badge_id" : "24", "_id" : { "$oid" : "5270275b197646173700017e" } }
+{ "name" : "Energie-Agentur der Wirtschaft (EnAW)", "id" : "4453219", "status" : "active", "role" : "vice-president", "badge_id" : "24", "_id" : { "$oid" : "5270275b197646173700017f" } }
+{ "name" : "Personalvorsorgestiftung der Geschäftsstelle des Schweizerischen Gewerbeverbandes", "id" : "231161", "status" : "active", "role" : "member", "badge_id" : "24", "_id" : { "$oid" : "5270275b1976461737000180" } }
+{ "name" : "Haustrocknung.ch GmbH", "id" : "7201195", "status" : "active", "role" : "associate", "badge_id" : "24", "_id" : { "$oid" : "5270275b1976461737000181" } }
+{ "name" : "LANDI Chénens Société coopérative", "id" : "282878", "status" : "active", "role" : "member", "badge_id" : "275", "_id" : { "$oid" : "5270275b1976461737000182" } }
+{ "name" : "Bauernzeitung Nordwestschweiz, Bern und Freiburg AG, Bern", "id" : "661166", "status" : "active", "role" : "member", "badge_id" : "275", "_id" : { "$oid" : "5270275b1976461737000183" } }
+{ "name" : "Le Journal Agri Sàrl", "id" : "653780", "status" : "active", "role" : "diverse", "badge_id" : "275", "_id" : { "$oid" : "5270275b1976461737000184" } }
+{ "name" : "AGRO fiduciaire fribourgeoise SA", "id" : "5455802", "status" : "active", "role" : "president of the board of directors", "badge_id" : "275", "_id" : { "$oid" : "5270275b1976461737000185" } }
+{ "name" : "Agrimmo AG", "id" : "6294164", "status" : "active", "role" : "president of the board of directors", "badge_id" : "275", "_id" : { "$oid" : "5270275b1976461737000186" } }
+{ "name" : "Société de fromagerie de Châtonnaye-Sédeilles-Rossens", "id" : "283302", "status" : "active", "role" : "president", "badge_id" : "275", "_id" : { "$oid" : "5270275b1976461737000187" } }
+{ "name" : "Agrosolution AG", "id" : "5402950", "status" : "active", "role" : "vice-president", "badge_id" : "275", "_id" : { "$oid" : "5270275b1976461737000188" } }
+{ "name" : "Fondation rurale de prévoyance professionnelle vieillesse survivants et invalidité", "id" : "116974", "status" : "active", "role" : "member", "badge_id" : "275", "_id" : { "$oid" : "5270275b1976461737000189" } }
+{ "name" : "TRANSAT SA", "id" : "5874918", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "36", "_id" : { "$oid" : "5270275b197646173700018a" } }
+{ "name" : "Wohnbau-DT GmbH", "id" : "6535205", "status" : "active", "role" : "president of management board", "badge_id" : "36", "_id" : { "$oid" : "5270275b197646173700018b" } }
+{ "name" : "TRANSAT Entretien SàRL", "id" : "5914466", "status" : "active", "role" : "associate", "badge_id" : "36", "_id" : { "$oid" : "5270275b197646173700018c" } }
+{ "name" : "La Méridienne Fribourg S.A.", "id" : "181484", "status" : "active", "role" : "president of the board of directors", "badge_id" : "36", "_id" : { "$oid" : "5270275b197646173700018d" } }
+{ "name" : "SFH Société fribourgeoise de l'habitat SA", "id" : "6550700", "status" : "active", "role" : "president of the board of directors", "badge_id" : "36", "_id" : { "$oid" : "5270275b197646173700018e" } }
+{ "name" : "SBH Société Bulloise de l'Habitat SA", "id" : "6705607", "status" : "active", "role" : "president of the board of directors", "badge_id" : "36", "_id" : { "$oid" : "5270275b197646173700018f" } }
+{ "name" : "Coopérative Fribourgeoise de l'Habitat Familial", "id" : "727712", "status" : "active", "role" : "president", "badge_id" : "36", "_id" : { "$oid" : "5270275b1976461737000190" } }
+{ "name" : "Serge et Daniel Bulliard S.A.", "id" : "67544", "status" : "active", "role" : "vice-president", "badge_id" : "36", "_id" : { "$oid" : "5270275b1976461737000191" } }
+{ "name" : "Region Ost- und Zentralschweiz des Schweizerischen Verbandes für visuelle Kommunikation (Viscom)", "id" : "333303", "status" : "active", "role" : "managing director", "badge_id" : "48", "_id" : { "$oid" : "5270275b1976461737000192" } }
+{ "name" : "INSTITUT LIBERTAS", "id" : "161705", "status" : "active", "role" : "member", "badge_id" : "48", "_id" : { "$oid" : "5270275b1976461737000193" } }
+{ "name" : "Jubiläumsstiftung der Kantonsschule Winterthur 1963", "id" : "168461", "status" : "active", "role" : "member", "badge_id" : "48", "_id" : { "$oid" : "5270275b1976461737000194" } }
+{ "name" : "Schweizerische Gesellschaft für militärhistorische Studienreisen GMS", "id" : "268316", "status" : "active", "role" : "member", "badge_id" : "48", "_id" : { "$oid" : "5270275b1976461737000195" } }
+{ "name" : "Stiftung centro del bel libro", "id" : "362281", "status" : "active", "role" : "member", "badge_id" : "48", "_id" : { "$oid" : "5270275b1976461737000196" } }
+{ "name" : "Schweizerischer Verband für visuelle Kommunikation (Viscom)", "id" : "40709", "status" : "active", "role" : "deputy director", "badge_id" : "48", "_id" : { "$oid" : "5270275b1976461737000197" } }
+{ "name" : "Arbeitgeber Baselland", "id" : "4890499", "status" : "active", "role" : "member", "badge_id" : "294", "_id" : { "$oid" : "5270275b1976461737000198" } }
+{ "name" : "Zentrale Arbeitsmarkt-Kontrolle, ZAK", "id" : "5473306", "status" : "active", "role" : "member", "badge_id" : "294", "_id" : { "$oid" : "5270275b1976461737000199" } }
+{ "name" : "Wirtschaftskammer Baselland", "id" : "171444", "status" : "active", "role" : "member of the executive board", "badge_id" : "294", "_id" : { "$oid" : "5270275b197646173700019a" } }
+{ "name" : "IWF Institut für Wirtschaftsförderung AG", "id" : "744464", "status" : "active", "role" : "authorized signatory", "badge_id" : "294", "_id" : { "$oid" : "5270275b197646173700019b" } }
+{ "name" : "VBS Verband-Services AG", "id" : "7005117", "status" : "active", "role" : "authorized signatory", "badge_id" : "294", "_id" : { "$oid" : "5270275b197646173700019c" } }
+{ "name" : "Zentrale Paritätische Kontrollstelle, ZPK", "id" : "5002473", "status" : "active", "role" : "vice-president", "badge_id" : "294", "_id" : { "$oid" : "5270275b197646173700019d" } }
+{ "name" : "Touring Club Schweiz, Sektion beider Basel", "id" : "5158292", "status" : "active", "role" : "vice-president", "badge_id" : "294", "_id" : { "$oid" : "5270275b197646173700019e" } }
+{ "name" : "Stiftung Tierpark Weihermätteli", "id" : "6997555", "status" : "active", "role" : "vice-president", "badge_id" : "294", "_id" : { "$oid" : "5270275b197646173700019f" } }
+{ "name" : "BG Mitte, Bürgschaftsgenossenschaft für KMU", "id" : "379649", "status" : "active", "role" : "member", "badge_id" : "294", "_id" : { "$oid" : "5270275b19764617370001a0" } }
+{ "name" : "Gewerbeverband Baselland", "id" : "4173962", "status" : "active", "role" : "member", "badge_id" : "294", "_id" : { "$oid" : "5270275b19764617370001a1" } }
+{ "name" : "Clientis AG", "id" : "4691415", "status" : "active", "role" : "member", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001a2" } }
+{ "name" : "Farner Consulting AG", "id" : "5691444", "status" : "active", "role" : "member", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001a3" } }
+{ "name" : "Farner Consulting SA", "id" : "5766656", "status" : "active", "role" : "member", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001a4" } }
+{ "name" : "Verein Geothermische Kraftwerke Schweiz (VGKS)", "id" : "6734760", "status" : "active", "role" : "member", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001a5" } }
+{ "name" : "Verein Barmelweid", "id" : "26062", "status" : "active", "role" : "president", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001a6" } }
+{ "name" : "Franke Schweiz AG", "id" : "5966", "status" : "active", "role" : "member", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001a7" } }
+{ "name" : "Aargauische Stiftung für Freiheit und Verantwortung in Politik und Wirtschaft", "id" : "26072", "status" : "active", "role" : "member", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001a8" } }
+{ "name" : "Farner Consulting AG", "id" : "107920", "status" : "active", "role" : "member", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001a9" } }
+{ "name" : "Farner Consulting AG", "id" : "654237", "status" : "active", "role" : "member", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001aa" } }
+{ "name" : "Clientis Bank Küttigen-Erlinsbach AG", "id" : "5117", "status" : "active", "role" : "president of the board of directors", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001ab" } }
+{ "name" : "Reuss Private AG", "id" : "4185512", "status" : "active", "role" : "president of the board of directors", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001ac" } }
+{ "name" : "Betriebe Barmelweid AG", "id" : "4269554", "status" : "active", "role" : "president of the board of directors", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001ad" } }
+{ "name" : "Klinik Barmelweid AG", "id" : "4269558", "status" : "active", "role" : "president of the board of directors", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001ae" } }
+{ "name" : "Pflegezentrum Barmelweid AG", "id" : "5920036", "status" : "active", "role" : "president of the board of directors", "badge_id" : "301", "_id" : { "$oid" : "5270275b19764617370001af" } }
+{ "name" : "Onyx Energie Mittelland AG", "id" : "811871", "status" : "active", "role" : "member", "badge_id" : "80", "_id" : { "$oid" : "5270275b19764617370001b0" } }
+{ "name" : "\"Organisation der Schweizerischen Stromverbundunternehmen\" (Swisselectric)", "id" : "4640944", "status" : "active", "role" : "member", "badge_id" : "80", "_id" : { "$oid" : "5270275b19764617370001b1" } }
+{ "name" : "Verband Schweizerischer Elektrizitätsunternehmen (VSE)", "id" : "310367", "status" : "active", "role" : "president", "badge_id" : "80", "_id" : { "$oid" : "5270275b19764617370001b2" } }
+{ "name" : "AEK Energie AG", "id" : "19021", "status" : "active", "role" : "vice-president", "badge_id" : "80", "_id" : { "$oid" : "5270275b19764617370001b3" } }
+{ "name" : "BKW AG", "id" : "6653957", "status" : "active", "role" : "vice-president", "badge_id" : "80", "_id" : { "$oid" : "5270275b19764617370001b4" } }
+{ "name" : "Groupe E SA", "id" : "5025", "status" : "active", "role" : "member", "badge_id" : "80", "_id" : { "$oid" : "5270275b19764617370001b5" } }
+{ "name" : "Kraftwerke Oberhasli AG", "id" : "9589", "status" : "active", "role" : "member", "badge_id" : "80", "_id" : { "$oid" : "5270275b19764617370001b6" } }
+{ "name" : "Kistler Instrumente AG", "id" : "586089", "status" : "active", "role" : "member", "badge_id" : "366", "_id" : { "$oid" : "5270275b19764617370001b7" } }
+{ "name" : "EGS Beteiligungen AG", "id" : "5880664", "status" : "active", "role" : "member", "badge_id" : "366", "_id" : { "$oid" : "5270275b19764617370001b8" } }
+{ "name" : "Burckhardt Compression AG", "id" : "10728", "status" : "active", "role" : "president of the board of directors", "badge_id" : "366", "_id" : { "$oid" : "5270275b19764617370001b9" } }
+{ "name" : "Burckhardt Compression Holding AG", "id" : "4492330", "status" : "active", "role" : "president of the board of directors", "badge_id" : "366", "_id" : { "$oid" : "5270275b19764617370001ba" } }
+{ "name" : "TAW Holding AG", "id" : "6957758", "status" : "active", "role" : "president of the board of directors", "badge_id" : "366", "_id" : { "$oid" : "5270275b19764617370001bb" } }
+{ "name" : "Kistler Holding AG", "id" : "9363", "status" : "active", "role" : "member", "badge_id" : "366", "_id" : { "$oid" : "5270275b19764617370001bc" } }
+{ "name" : "Allgemeiner Wohlfahrtsfonds der Kistler Instrumente Aktiengesellschaft, Winterthur", "id" : "32608", "status" : "active", "role" : "member", "badge_id" : "366", "_id" : { "$oid" : "5270275b19764617370001bd" } }
+{ "name" : "SIMON UND HILDEGARD ROTHSCHILD-STIFTUNG", "id" : "821960", "status" : "active", "role" : "member", "badge_id" : "128", "_id" : { "$oid" : "5270275b19764617370001be" } }
+{ "name" : "Turavent Oil GmbH", "id" : "376445", "status" : "active", "role" : "managing director", "badge_id" : "128", "_id" : { "$oid" : "5270275b19764617370001bf" } }
+{ "name" : "Phibro GmbH", "id" : "618293", "status" : "active", "role" : "managing director", "badge_id" : "128", "_id" : { "$oid" : "5270275b19764617370001c0" } }
+{ "name" : "Adolf und Mary Mil-Stiftung", "id" : "203908", "status" : "active", "role" : "president", "badge_id" : "128", "_id" : { "$oid" : "5270275b19764617370001c1" } }
+{ "name" : "Saly Mayer Memorial Stiftung", "id" : "196915", "status" : "active", "role" : "member", "badge_id" : "128", "_id" : { "$oid" : "5270275b19764617370001c2" } }
+{ "name" : "Memorial Stiftung des Schweizerischen Israelitischen Gemeindebundes", "id" : "199304", "status" : "active", "role" : "member", "badge_id" : "128", "_id" : { "$oid" : "5270275b19764617370001c3" } }
+{ "name" : "Sikna-Stiftung", "id" : "275833", "status" : "active", "role" : "member", "badge_id" : "128", "_id" : { "$oid" : "5270275b19764617370001c4" } }
+{ "name" : "Stiftung Jüdische Zeitgeschichte an der ETH Zürich zur Sicherung und Erschliessung historischer Quellen in der Schweiz", "id" : "688803", "status" : "active", "role" : "member", "badge_id" : "128", "_id" : { "$oid" : "5270275b19764617370001c5" } }
+{ "name" : "Sozialfonds des KV Schweiz", "id" : "286828", "status" : "active", "role" : "member", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001c6" } }
+{ "name" : "Heidi Taxi Betriebs AG", "id" : "586102", "status" : "active", "role" : "member", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001c7" } }
+{ "name" : "HWZ Hochschule für Wirtschaft Zürich AG", "id" : "4368260", "status" : "active", "role" : "member", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001c8" } }
+{ "name" : "Suva", "id" : "5870217", "status" : "active", "role" : "member", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001c9" } }
+{ "name" : "Vorsorgestiftung des Kaufmännischen Verbandes Schweiz", "id" : "318221", "status" : "active", "role" : "managing director", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001ca" } }
+{ "name" : "SKV Immobilien AG", "id" : "4043196", "status" : "active", "role" : "delegate", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001cb" } }
+{ "name" : "SIB Schweizerisches Institut für Betriebsökonomie AG", "id" : "5740079", "status" : "active", "role" : "delegate", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001cc" } }
+{ "name" : "Verlag SKV AG", "id" : "7051193", "status" : "active", "role" : "delegate", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001cd" } }
+{ "name" : "Kaufmännischer Verband Schweiz", "id" : "268190", "status" : "active", "role" : "general secretary", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001ce" } }
+{ "name" : "Bildungsfonds des KV Schweiz", "id" : "55733", "status" : "active", "role" : "member", "badge_id" : "374", "_id" : { "$oid" : "5270275b19764617370001cf" } }
+{ "name" : "Verein Barmelweid", "id" : "26062", "status" : "active", "role" : "member", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d0" } }
+{ "name" : "Aargauische Stiftung für Freiheit und Verantwortung in Politik und Wirtschaft", "id" : "26072", "status" : "active", "role" : "member", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d1" } }
+{ "name" : "Buholz Immobilien AG", "id" : "5601563", "status" : "active", "role" : "member", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d2" } }
+{ "name" : "Burkart Immobilien AG", "id" : "6572460", "status" : "active", "role" : "member", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d3" } }
+{ "name" : "Obere Mühle Alterswohnungen AG", "id" : "6723537", "status" : "active", "role" : "member", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d4" } }
+{ "name" : "TCS-Zentrum Aargau AG", "id" : "299874", "status" : "active", "role" : "president of the board of directors", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d5" } }
+{ "name" : "Touring Club Schweiz, Sektion Aargau", "id" : "6617619", "status" : "active", "role" : "president", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d6" } }
+{ "name" : "Swiss eMobility", "id" : "7190156", "status" : "active", "role" : "president", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d7" } }
+{ "name" : "Assista Protection juridique SA", "id" : "19176", "status" : "active", "role" : "vice-president", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d8" } }
+{ "name" : "Touring Club Suisse (TCS)", "id" : "305247", "status" : "active", "role" : "vice-president", "badge_id" : "150", "_id" : { "$oid" : "5270275b19764617370001d9" } }
+{ "name" : "Tautec AG", "id" : "698074", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "406", "_id" : { "$oid" : "5270275b19764617370001da" } }
+{ "name" : "Patronale Personalfürsorgestiftung PILATUS-BAHNEN", "id" : "4272674", "status" : "active", "role" : "member", "badge_id" : "406", "_id" : { "$oid" : "5270275b19764617370001db" } }
+{ "name" : "SCL Helvetia AG", "id" : "6484243", "status" : "active", "role" : "member", "badge_id" : "406", "_id" : { "$oid" : "5270275b19764617370001dc" } }
+{ "name" : "Oskar J. Schwenk", "id" : "4005937", "status" : "active", "role" : "holder", "badge_id" : "406", "_id" : { "$oid" : "5270275b19764617370001dd" } }
+{ "name" : "PILATUS Flugzeugwerke AG", "id" : "12837", "status" : "active", "role" : "president of the board of directors", "badge_id" : "406", "_id" : { "$oid" : "5270275b19764617370001de" } }
+{ "name" : "Pilatus Aircraft Service AG", "id" : "19493", "status" : "active", "role" : "president of the board of directors", "badge_id" : "406", "_id" : { "$oid" : "5270275b19764617370001df" } }
+{ "name" : "PILATUS-BAHNEN AG", "id" : "20732", "status" : "active", "role" : "president of the board of directors", "badge_id" : "406", "_id" : { "$oid" : "5270275b19764617370001e0" } }
+{ "name" : "Mineralquelle Bad Knutwil AG", "id" : "204079", "status" : "active", "role" : "president of the board of directors", "badge_id" : "406", "_id" : { "$oid" : "5270275b19764617370001e1" } }
+{ "name" : "Altenrhein Aviation AG", "id" : "4634921", "status" : "active", "role" : "president of the board of directors", "badge_id" : "406", "_id" : { "$oid" : "5270275b19764617370001e2" } }
+{ "name" : "Port-Associations GmbH", "id" : "6662437", "status" : "active", "role" : "president of management board", "badge_id" : "171", "_id" : { "$oid" : "5270275b19764617370001e3" } }
+{ "name" : "Tabascom GmbH", "id" : "6872037", "status" : "active", "role" : "associate", "badge_id" : "171", "_id" : { "$oid" : "5270275b19764617370001e4" } }
+{ "name" : "Berner Politgespräche GmbH", "id" : "5485153", "status" : "active", "role" : "managing director", "badge_id" : "171", "_id" : { "$oid" : "5270275b19764617370001e5" } }
+{ "name" : "Clé de Berne GmbH", "id" : "6976376", "status" : "active", "role" : "managing director", "badge_id" : "171", "_id" : { "$oid" : "5270275b19764617370001e6" } }
+{ "name" : "Swiss Capital in Motion GmbH", "id" : "7015365", "status" : "active", "role" : "managing director", "badge_id" : "171", "_id" : { "$oid" : "5270275b19764617370001e7" } }
+{ "name" : "Bergfahrt AG", "id" : "6959305", "status" : "active", "role" : "president of the board of directors", "badge_id" : "171", "_id" : { "$oid" : "5270275b19764617370001e8" } }
+{ "name" : "Furrer.Hugi & Partner AG für Public Affairs und Kommunikationsmanagement", "id" : "821909", "status" : "active", "role" : "member", "badge_id" : "171", "_id" : { "$oid" : "5270275b19764617370001e9" } }
+{ "name" : "Polo Bern AG", "id" : "5315051", "status" : "active", "role" : "member", "badge_id" : "171", "_id" : { "$oid" : "5270275c19764617370001ea" } }
+{ "name" : "yjoo communications ag", "id" : "6317730", "status" : "active", "role" : "member", "badge_id" : "171", "_id" : { "$oid" : "5270275c19764617370001eb" } }
+{ "name" : "yjoo communications ag", "id" : "6337943", "status" : "active", "role" : "member", "badge_id" : "171", "_id" : { "$oid" : "5270275c19764617370001ec" } }
+{ "name" : "Textbüro Holz GmbH", "id" : "5295393", "status" : "active", "role" : "associate", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001ed" } }
+{ "name" : "Stylos BVG-Sammelstiftung", "id" : "4944573", "status" : "active", "role" : "member", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001ee" } }
+{ "name" : "Andermatt Swiss Alps AG", "id" : "5530903", "status" : "active", "role" : "member", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001ef" } }
+{ "name" : "Orascom Development Holding AG", "id" : "5660402", "status" : "active", "role" : "member", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001f0" } }
+{ "name" : "Stiftung SALLE MODULABLE", "id" : "5708995", "status" : "active", "role" : "member", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001f1" } }
+{ "name" : "Andermatt Swiss Alps AG", "id" : "5788686", "status" : "active", "role" : "member", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001f2" } }
+{ "name" : "Dynamics Group AG", "id" : "5442536", "status" : "active", "role" : "president of the board of directors", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001f3" } }
+{ "name" : "Dynamics Group AG", "id" : "5677046", "status" : "active", "role" : "president of the board of directors", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001f4" } }
+{ "name" : "Schweizerisches Alpines Museum", "id" : "268221", "status" : "active", "role" : "vice-president", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001f5" } }
+{ "name" : "Top Fifty AG", "id" : "709580", "status" : "active", "role" : "member", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001f6" } }
+{ "name" : "Fondation pour la Garde Suisse Pontificale au Vatican", "id" : "4140396", "status" : "active", "role" : "member", "badge_id" : "481", "_id" : { "$oid" : "5270275c19764617370001f7" } }
+{ "name" : "Suva", "id" : "5870217", "status" : "active", "role" : "member", "badge_id" : "426", "_id" : { "$oid" : "5270275c19764617370001f8" } }
+{ "name" : "maxi.ch Versicherungen AG", "id" : "5546128", "status" : "active", "role" : "vice-president", "badge_id" : "426", "_id" : { "$oid" : "5270275c19764617370001f9" } }
+{ "name" : "Ersatzkasse gemäss den Artikeln 72 - 74 des Bundesgesetzes vom 20. März 1981 über die Unfallversicherung", "id" : "104608", "status" : "active", "role" : "member", "badge_id" : "426", "_id" : { "$oid" : "5270275c19764617370001fa" } }
+{ "name" : "proparis Vorsorge-Stiftung Gewerbe Schweiz", "id" : "130809", "status" : "active", "role" : "member", "badge_id" : "426", "_id" : { "$oid" : "5270275c19764617370001fb" } }
+{ "name" : "Stiftung für ein erweitertes Versicherungsangebot durch die Helsana", "id" : "391644", "status" : "active", "role" : "member", "badge_id" : "426", "_id" : { "$oid" : "5270275c19764617370001fc" } }
+{ "name" : "Personalvorsorgestiftung der Helsana Versicherungen AG", "id" : "787348", "status" : "active", "role" : "member", "badge_id" : "426", "_id" : { "$oid" : "5270275c19764617370001fd" } }
+{ "name" : "Helsana Versicherungen AG", "id" : "697913", "status" : "active", "role" : "vice-president", "badge_id" : "426", "_id" : { "$oid" : "5270275c19764617370001fe" } }
+{ "name" : "Progrès Versicherungen AG", "id" : "760934", "status" : "active", "role" : "vice-president", "badge_id" : "426", "_id" : { "$oid" : "5270275c19764617370001ff" } }
+{ "name" : "Helsana AG", "id" : "831675", "status" : "active", "role" : "vice-president", "badge_id" : "426", "_id" : { "$oid" : "5270275c1976461737000200" } }
+{ "name" : "avanex Versicherungen AG", "id" : "4373737", "status" : "active", "role" : "vice-president", "badge_id" : "426", "_id" : { "$oid" : "5270275c1976461737000201" } }
+{ "name" : "Sansan Versicherungen AG", "id" : "4373739", "status" : "active", "role" : "vice-president", "badge_id" : "426", "_id" : { "$oid" : "5270275c1976461737000202" } }
+{ "name" : "Schweizerische Sozialpartner-Stiftung für die Auffangeinrichtung gemäss Artikel 60 BVG (Stiftung Auffangeinrichtung BVG)", "id" : "117050", "status" : "active", "role" : "president", "badge_id" : "426", "_id" : { "$oid" : "5270275c1976461737000203" } }
+{ "name" : "Sicherheitsfonds BVG", "id" : "117560", "status" : "active", "role" : "president", "badge_id" : "426", "_id" : { "$oid" : "5270275c1976461737000204" } }
+{ "name" : "Personalvorsorgestiftung der Geschäftsstelle des Schweizerischen Gewerbeverbandes", "id" : "231161", "status" : "active", "role" : "president", "badge_id" : "426", "_id" : { "$oid" : "5270275c1976461737000205" } }
+{ "name" : "Helsana Unfall AG", "id" : "12585", "status" : "active", "role" : "vice-president", "badge_id" : "426", "_id" : { "$oid" : "5270275c1976461737000206" } }
+{ "name" : "Helsana Zusatzversicherungen AG", "id" : "670731", "status" : "active", "role" : "vice-president", "badge_id" : "426", "_id" : { "$oid" : "5270275c1976461737000207" } }
+{ "name" : "Suva", "id" : "5870217", "status" : "active", "role" : "member", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000208" } }
+{ "name" : "IndustriALL Global Union", "id" : "6972825", "status" : "active", "role" : "member", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000209" } }
+{ "name" : "Caisse de retraite anticipée du second oeuvre romand (RESOR)", "id" : "4889447", "status" : "active", "role" : "authorized signatory", "badge_id" : "431", "_id" : { "$oid" : "5270275c197646173700020a" } }
+{ "name" : "Stiftung der ehemaligen Familienausgleichskasse des Bau- und Holzgewerbes Baselland und Umgebung in Liquidation", "id" : "107445", "status" : "inbreakup", "role" : "liquidator", "badge_id" : "431", "_id" : { "$oid" : "5270275c197646173700020b" } }
+{ "name" : "Coopérative de construction de Moutier  en liquidation", "id" : "83794", "status" : "inbreakup", "role" : "member", "badge_id" : "431", "_id" : { "$oid" : "5270275c197646173700020c" } }
+{ "name" : "Société Immobilière Cluse-Préau SA", "id" : "273184", "status" : "active", "role" : "member", "badge_id" : "431", "_id" : { "$oid" : "5270275c197646173700020d" } }
+{ "name" : "Stiftung UNIA", "id" : "292249", "status" : "active", "role" : "member", "badge_id" : "431", "_id" : { "$oid" : "5270275c197646173700020e" } }
+{ "name" : "Wohnbaugenossenschaft \"Schönehof\" Frauenfeld", "id" : "327310", "status" : "active", "role" : "member", "badge_id" : "431", "_id" : { "$oid" : "5270275c197646173700020f" } }
+{ "name" : "L'Evénement syndical SA", "id" : "775866", "status" : "active", "role" : "member", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000210" } }
+{ "name" : "Associazione interprofessionale di controllo (AIC)", "id" : "4877396", "status" : "active", "role" : "president", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000211" } }
+{ "name" : "Gewerkschaft UNIA", "id" : "89292", "status" : "active", "role" : "co-president", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000212" } }
+{ "name" : "SI Lignon-Résidence SA", "id" : "277486", "status" : "active", "role" : "vice-president", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000213" } }
+{ "name" : "Typo Offset Aurora SA", "id" : "309374", "status" : "active", "role" : "vice-president", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000214" } }
+{ "name" : "COGERIM SOCIETE COOPERATIVE", "id" : "3548", "status" : "active", "role" : "member", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000215" } }
+{ "name" : "Egghölzli Verwaltungen AG", "id" : "99048", "status" : "active", "role" : "president of the board of directors", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000216" } }
+{ "name" : "Zivag Verwaltungen AG", "id" : "331829", "status" : "active", "role" : "president of the board of directors", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000217" } }
+{ "name" : "Zivag Verwaltungen AG", "id" : "331830", "status" : "active", "role" : "president of the board of directors", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000218" } }
+{ "name" : "Edizioni Sociali SA", "id" : "786186", "status" : "active", "role" : "president of the board of directors", "badge_id" : "431", "_id" : { "$oid" : "5270275c1976461737000219" } }
+{ "name" : "Zivag Verwaltungen AG, Zweigniederlassung Zürich", "id" : "5198660", "status" : "active", "role" : "president of the board of directors", "badge_id" : "431", "_id" : { "$oid" : "5270275c197646173700021a" } }
+{ "name" : "Verein Gastfamilien Basel 2008", "id" : "5568899", "status" : "active", "role" : "member", "badge_id" : "209", "_id" : { "$oid" : "5270275c197646173700021b" } }
+{ "name" : "Rofra Holding AG", "id" : "6449283", "status" : "active", "role" : "member", "badge_id" : "209", "_id" : { "$oid" : "5270275c197646173700021c" } }
+{ "name" : "Wirtschaftskammer Baselland", "id" : "171444", "status" : "active", "role" : "member of the executive board", "badge_id" : "209", "_id" : { "$oid" : "5270275c197646173700021d" } }
+{ "name" : "Baselland Tourismus", "id" : "4780271", "status" : "active", "role" : "member of the executive board", "badge_id" : "209", "_id" : { "$oid" : "5270275c197646173700021e" } }
+{ "name" : "Wirtschaftskammer Nordwestschweiz", "id" : "4267696", "status" : "active", "role" : "vice-president", "badge_id" : "209", "_id" : { "$oid" : "5270275c197646173700021f" } }
+{ "name" : "IWF Institut für Wirtschaftsförderung AG", "id" : "744464", "status" : "active", "role" : "delegate", "badge_id" : "209", "_id" : { "$oid" : "5270275c1976461737000220" } }
+{ "name" : "VBS Verband-Services AG", "id" : "7005117", "status" : "active", "role" : "delegate", "badge_id" : "209", "_id" : { "$oid" : "5270275c1976461737000221" } }
+{ "name" : "Touring Club Suisse (TCS)", "id" : "305247", "status" : "active", "role" : "member", "badge_id" : "209", "_id" : { "$oid" : "5270275c1976461737000222" } }
+{ "name" : "Schweizerische Gesellschaft zur Förderung des Bausparens (SGFB)", "id" : "4752825", "status" : "active", "role" : "member", "badge_id" : "209", "_id" : { "$oid" : "5270275c1976461737000223" } }
+{ "name" : "CH Gewerbe AG", "id" : "134669", "status" : "active", "role" : "president of the board of directors", "badge_id" : "209", "_id" : { "$oid" : "5270275c1976461737000224" } }
+{ "name" : "Personalfürsorgestiftung der Wirtschaftskammer Baselland", "id" : "229773", "status" : "active", "role" : "president", "badge_id" : "209", "_id" : { "$oid" : "5270275c1976461737000225" } }
+{ "name" : "Arbeitgeber Nordwestschweiz", "id" : "4263957", "status" : "active", "role" : "president", "badge_id" : "209", "_id" : { "$oid" : "5270275c1976461737000226" } }
+{ "name" : "Arbeitgeber Baselland", "id" : "4890499", "status" : "active", "role" : "president", "badge_id" : "209", "_id" : { "$oid" : "5270275c1976461737000227" } }
+{ "name" : "Gewerbeverband Baselland", "id" : "4173962", "status" : "active", "role" : "vice-president", "badge_id" : "209", "_id" : { "$oid" : "5270275c1976461737000228" } }
+{ "name" : "Centre de Recherche sur l'Environnement Alpin (CREALP)", "id" : "605665", "status" : "active", "role" : "member", "badge_id" : "283", "_id" : { "$oid" : "5270275c1976461737000229" } }
+{ "name" : "Pini Swiss Engineers SA", "id" : "666723", "status" : "active", "role" : "member", "badge_id" : "283", "_id" : { "$oid" : "5270275c197646173700022a" } }
+{ "name" : "Pini Swiss Engineers SA, Niederlassung Zürich", "id" : "7106884", "status" : "active", "role" : "member", "badge_id" : "283", "_id" : { "$oid" : "5270275c197646173700022b" } }
+{ "name" : "ETEC Ecologie aquatique Sàrl", "id" : "4681350", "status" : "active", "role" : "managing director", "badge_id" : "283", "_id" : { "$oid" : "5270275c197646173700022c" } }
+{ "name" : "alp Andenmatten Lauber & Partner AG, Zermatt", "id" : "5655280", "status" : "active", "role" : "secretary", "badge_id" : "283", "_id" : { "$oid" : "5270275c197646173700022d" } }
+{ "name" : "Electricité de la Lienne SA", "id" : "4805", "status" : "active", "role" : "member", "badge_id" : "283", "_id" : { "$oid" : "5270275c197646173700022e" } }
+{ "name" : "USIC-Stiftung", "id" : "40105", "status" : "active", "role" : "member", "badge_id" : "283", "_id" : { "$oid" : "5270275c197646173700022f" } }
+{ "name" : "Association de l'ancien Hôpital de Gravelone des communes des districts de Sion-Hérens-Conthey", "id" : "40458", "status" : "active", "role" : "member", "badge_id" : "283", "_id" : { "$oid" : "5270275c1976461737000230" } }
+{ "name" : "Radio Rhône SA", "id" : "406353", "status" : "active", "role" : "member", "badge_id" : "283", "_id" : { "$oid" : "5270275c1976461737000231" } }
+{ "name" : "Lizerne et Morge SA", "id" : "10260", "status" : "active", "role" : "president of the board of directors", "badge_id" : "283", "_id" : { "$oid" : "5270275c1976461737000232" } }
+{ "name" : "Kbm Engineers SA", "id" : "172258", "status" : "active", "role" : "president of the board of directors", "badge_id" : "283", "_id" : { "$oid" : "5270275c1976461737000233" } }
+{ "name" : "GazEl SA", "id" : "5508793", "status" : "active", "role" : "president of the board of directors", "badge_id" : "283", "_id" : { "$oid" : "5270275c1976461737000234" } }
+{ "name" : "Zentrum La Suisse Brig AG", "id" : "6428365", "status" : "active", "role" : "president of the board of directors", "badge_id" : "283", "_id" : { "$oid" : "5270275c1976461737000235" } }
+{ "name" : "alp Andenmatten Lauber & Partner AG", "id" : "5649408", "status" : "active", "role" : "secretary", "badge_id" : "283", "_id" : { "$oid" : "5270275c1976461737000236" } }
+{ "name" : "Genossenschaft Hauseigentümerverband Zürich", "id" : "145354", "status" : "active", "role" : "director", "badge_id" : "54", "_id" : { "$oid" : "5270275c1976461737000237" } }
+{ "name" : "HEV Kanton Zürich", "id" : "5364304", "status" : "active", "role" : "director", "badge_id" : "54", "_id" : { "$oid" : "5270275c1976461737000238" } }
+{ "name" : "Hypothekar-Bürgschaftsgenossenschaft für Wohneigentumsförderung HBW", "id" : "603963", "status" : "active", "role" : "authorized signatory", "badge_id" : "54", "_id" : { "$oid" : "5270275c1976461737000239" } }
+{ "name" : "Allreal Holding AG", "id" : "812395", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c197646173700023a" } }
+{ "name" : "Gebäudeversicherung Kanton Zürich", "id" : "4480287", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c197646173700023b" } }
+{ "name" : "Patronale Personalfürsorgestiftung der Spross-Holding AG", "id" : "5134658", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c197646173700023c" } }
+{ "name" : "Platanus Holding AG", "id" : "5404360", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c197646173700023d" } }
+{ "name" : "Persimob AG", "id" : "5734533", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c197646173700023e" } }
+{ "name" : "Spross Ga-La-Bau AG", "id" : "16036", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c197646173700023f" } }
+{ "name" : "Spross-Holding AG", "id" : "16037", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c1976461737000240" } }
+{ "name" : "Spross-Immobilien AG", "id" : "16038", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c1976461737000241" } }
+{ "name" : "Initiativ-Genossenschaft Lindenplatz Altstetten (IGLA)", "id" : "161081", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c1976461737000242" } }
+{ "name" : "Sto AG", "id" : "293857", "status" : "active", "role" : "member", "badge_id" : "54", "_id" : { "$oid" : "5270275c1976461737000243" } }
+{ "name" : "Belvoirpark AG", "id" : "5177285", "status" : "active", "role" : "member", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000244" } }
+{ "name" : "Sasso San Gottardo SA", "id" : "5177321", "status" : "active", "role" : "member", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000245" } }
+{ "name" : "Schweizerischer Gewerbeverband", "id" : "5935272", "status" : "active", "role" : "member", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000246" } }
+{ "name" : "Genossenschaft Dr. Frano Della Casa", "id" : "6356522", "status" : "active", "role" : "member", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000247" } }
+{ "name" : "Restaurant Vieux-Bois SA", "id" : "5300480", "status" : "active", "role" : "secretary", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000248" } }
+{ "name" : "Schweizer Reisekasse (Reka) Genossenschaft", "id" : "70954", "status" : "active", "role" : "member", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000249" } }
+{ "name" : "Kongress & Kursaal Bern AG", "id" : "82756", "status" : "active", "role" : "member", "badge_id" : "98", "_id" : { "$oid" : "5270275c197646173700024a" } }
+{ "name" : "Personalvorsorgestiftung der Geschäftsstelle des Schweizerischen Gewerbeverbandes", "id" : "231161", "status" : "active", "role" : "member", "badge_id" : "98", "_id" : { "$oid" : "5270275c197646173700024b" } }
+{ "name" : "Hotel Allegro Bern AG", "id" : "626292", "status" : "active", "role" : "member", "badge_id" : "98", "_id" : { "$oid" : "5270275c197646173700024c" } }
+{ "name" : "Gastroconsult SA, succursale de Fribourg", "id" : "709942", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c197646173700024d" } }
+{ "name" : "Gastroconsult SA", "id" : "710163", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c197646173700024e" } }
+{ "name" : "Gastroconsult AG, Zweigniederlassung", "id" : "712937", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c197646173700024f" } }
+{ "name" : "Gastroconsult AG", "id" : "715474", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000250" } }
+{ "name" : "Gastroconsult AG", "id" : "761941", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000251" } }
+{ "name" : "Gastroconsult SA", "id" : "705391", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000252" } }
+{ "name" : "Gastroconsult AG", "id" : "705925", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000253" } }
+{ "name" : "Gastroconsult SA, succursale de Saignelégier", "id" : "707920", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000254" } }
+{ "name" : "Gastroconsult AG, Succursale di Cadempino", "id" : "707991", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000255" } }
+{ "name" : "Gastroconsult AG", "id" : "708551", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000256" } }
+{ "name" : "Hotel Consulting Group AG", "id" : "827077", "status" : "active", "role" : "president of the board of directors", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000257" } }
+{ "name" : "GastroSuisse", "id" : "108662", "status" : "active", "role" : "president", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000258" } }
+{ "name" : "Gastroconsult AG", "id" : "696949", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c1976461737000259" } }
+{ "name" : "Gastroconsult AG", "id" : "701718", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c197646173700025a" } }
+{ "name" : "Gastroconsult AG", "id" : "703616", "status" : "active", "role" : "vice-president", "badge_id" : "98", "_id" : { "$oid" : "5270275c197646173700025b" } }
+{ "name" : "NetJets Europe GmbH", "id" : "701374", "status" : "active", "role" : "managing director", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700025c" } }
+{ "name" : "Flora, Bona und Rosa Bollag-Stiftung", "id" : "59257", "status" : "active", "role" : "single member of the foundation board", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700025d" } }
+{ "name" : "IDS Living GmbH", "id" : "4867290", "status" : "active", "role" : "president of management board", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700025e" } }
+{ "name" : "eurogold service Zumbühl & Co. Handelsagentur", "id" : "670972", "status" : "active", "role" : "general partner", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700025f" } }
+{ "name" : "Klingelfuss+Cie.", "id" : "4659734", "status" : "active", "role" : "general partner", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000260" } }
+{ "name" : "Dr. J. Bollag & Cie.", "id" : "6842976", "status" : "active", "role" : "general partner", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000261" } }
+{ "name" : "Frenziek AG", "id" : "121306", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000262" } }
+{ "name" : "MHN-AG Baugesellschaft zum Stein", "id" : "202090", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000263" } }
+{ "name" : "Mahr AG", "id" : "675089", "status" : "active", "role" : "member", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000264" } }
+{ "name" : "Kolmar Group AG", "id" : "722655", "status" : "active", "role" : "member", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000265" } }
+{ "name" : "R.R.E. Immo AG", "id" : "6790803", "status" : "active", "role" : "member", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000266" } }
+{ "name" : "Och Holding AG", "id" : "786744", "status" : "active", "role" : "vice-president", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000267" } }
+{ "name" : "Burwill Commodities AG", "id" : "813298", "status" : "active", "role" : "vice-president", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000268" } }
+{ "name" : "ASSOCIATION ROMANDE DES INTERMEDIAIRES FINANCIERS (ARIF)", "id" : "4080626", "status" : "active", "role" : "vice-president", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000269" } }
+{ "name" : "Forum Schweizer Selbstregulierungsorganisationen (Forum-SRO)", "id" : "6311301", "status" : "active", "role" : "vice-president", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700026a" } }
+{ "name" : "Elinex Holding AG", "id" : "101713", "status" : "active", "role" : "single member of the board of directors", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700026b" } }
+{ "name" : "Eltan Holding AG", "id" : "569177", "status" : "active", "role" : "president of the board of directors", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700026c" } }
+{ "name" : "Tramondo AG", "id" : "577340", "status" : "active", "role" : "president of the board of directors", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700026d" } }
+{ "name" : "Eltaver AG", "id" : "4280390", "status" : "active", "role" : "president of the board of directors", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700026e" } }
+{ "name" : "Eurogold Invest AG", "id" : "5860603", "status" : "active", "role" : "president of the board of directors", "badge_id" : "168", "_id" : { "$oid" : "5270275c197646173700026f" } }
+{ "name" : "Institut für Sicherheitsanalysen und strategisches Networking - Stiftung (ISSN)", "id" : "5598721", "status" : "active", "role" : "president", "badge_id" : "168", "_id" : { "$oid" : "5270275c1976461737000270" } }
+{ "name" : "Fondation equal-salary", "id" : "6390419", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000271" } }
+{ "name" : "Banque Cantonale du Valais, succursale de Monthey", "id" : "5084217", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000272" } }
+{ "name" : "Banque Cantonale du Valais, succursale de Martigny", "id" : "5084348", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000273" } }
+{ "name" : "Walliser Kantonalbank", "id" : "5085478", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000274" } }
+{ "name" : "Walliser Kantonalbank", "id" : "5085479", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000275" } }
+{ "name" : "Implenia AG", "id" : "5243952", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000276" } }
+{ "name" : "Les Domaines de Robert Gilliard SA", "id" : "134808", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000277" } }
+{ "name" : "Schweizerische Stiftung für die Erforschung der Muskelkrankheiten", "id" : "268030", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000278" } }
+{ "name" : "Fondation Louis Moret", "id" : "395415", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000279" } }
+{ "name" : "Banque Cantonale du Valais, succursale de Sierre", "id" : "4120234", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c197646173700027a" } }
+{ "name" : "Banque Cantonale du Valais, succursale de Sion", "id" : "4121125", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c197646173700027b" } }
+{ "name" : "VAUDOISE ASSURANCES HOLDING SA", "id" : "362987", "status" : "active", "role" : "vice-president", "badge_id" : "83", "_id" : { "$oid" : "5270275c197646173700027c" } }
+{ "name" : "Banque cantonale du Valais", "id" : "1590", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c197646173700027d" } }
+{ "name" : "OLF SA", "id" : "12237", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c197646173700027e" } }
+{ "name" : "Robert Gilliard SA Vins", "id" : "22927", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c197646173700027f" } }
+{ "name" : "Fondation Leenaards", "id" : "116469", "status" : "active", "role" : "member", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000280" } }
+{ "name" : "Fondation de financement de la Caisse de pension VAUDOISE ASSURANCES", "id" : "115182", "status" : "active", "role" : "president", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000281" } }
+{ "name" : "Caisse de pension VAUDOISE ASSURANCES", "id" : "217172", "status" : "active", "role" : "president", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000282" } }
+{ "name" : "VAUDOISE GENERALE, Compagnie d'Assurances SA", "id" : "17746", "status" : "active", "role" : "vice-president", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000283" } }
+{ "name" : "VAUDOISE VIE, Compagnie d'Assurances SA", "id" : "17747", "status" : "active", "role" : "vice-president", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000284" } }
+{ "name" : "MUTUELLE VAUDOISE, Société Coopérative", "id" : "352772", "status" : "active", "role" : "vice-president", "badge_id" : "83", "_id" : { "$oid" : "5270275c1976461737000285" } }
+{ "name" : "SHI Swiss Hotels Investments S.A.", "id" : "7236043", "status" : "active", "role" : "member", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000286" } }
+{ "name" : "Raymond Loretan", "id" : "6435542", "status" : "active", "role" : "holder", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000287" } }
+{ "name" : "Vins des Chevaliers SA", "id" : "4923606", "status" : "active", "role" : "vice-president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000288" } }
+{ "name" : "Klinik Pyramide am See AG", "id" : "275628", "status" : "active", "role" : "member", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000289" } }
+{ "name" : "CENTRE HENRY DUNANT POUR LE DIALOGUE HUMANITAIRE", "id" : "799547", "status" : "active", "role" : "member", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700028a" } }
+{ "name" : "Klinik Pyramide am See AG, Zweigniederlassung", "id" : "5862926", "status" : "active", "role" : "member", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700028b" } }
+{ "name" : "GSMN Neuchâtel SA", "id" : "7072960", "status" : "active", "role" : "member", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700028c" } }
+{ "name" : "AEVIS Holding SA", "id" : "133643", "status" : "active", "role" : "vice-president", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700028d" } }
+{ "name" : "Privatklinik Obach AG", "id" : "239537", "status" : "active", "role" : "vice-president", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700028e" } }
+{ "name" : "Ars Medica Clinic SA", "id" : "310957", "status" : "active", "role" : "vice-president", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700028f" } }
+{ "name" : "Clinique médico-chirurgicale de Valère SA", "id" : "542095", "status" : "active", "role" : "vice-president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000290" } }
+{ "name" : "Salus Medica Clinic SA", "id" : "646222", "status" : "active", "role" : "vice-president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000291" } }
+{ "name" : "SRF Schweizer Radio und Fernsehen, Zweigniederlassung der Schweizerischen Radio- und Fernsehgesellschaft", "id" : "709826", "status" : "active", "role" : "president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000292" } }
+{ "name" : "RTS Radio Télévision Suisse, succursale de la Société suisse de radiodiffusion et télévision", "id" : "713217", "status" : "active", "role" : "president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000293" } }
+{ "name" : "RSI Radiotelevisione svizzera di lingua italiana, succursale della Società svizzera di radiotelevisione", "id" : "759168", "status" : "active", "role" : "president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000294" } }
+{ "name" : "RTR Radiotelevisiun Svizra Rumantscha, succursala da la Societad svizra da radio e televisiun", "id" : "816423", "status" : "active", "role" : "president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000295" } }
+{ "name" : "Clinique Générale - Ste-Anne SA", "id" : "79832", "status" : "active", "role" : "vice-president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000296" } }
+{ "name" : "FONDATION DE PREVOYANCE GENOLIER SWISS MEDICAL NETWORK", "id" : "115376", "status" : "active", "role" : "president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000297" } }
+{ "name" : "Fondation patronale de la Société Suisse des Explosifs", "id" : "116690", "status" : "active", "role" : "president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000298" } }
+{ "name" : "Institut de Médecine de Genolier", "id" : "161526", "status" : "active", "role" : "president", "badge_id" : "145", "_id" : { "$oid" : "5270275c1976461737000299" } }
+{ "name" : "Schweizerische Radio- und Fernsehgesellschaft", "id" : "646899", "status" : "active", "role" : "president", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700029a" } }
+{ "name" : "Schweizerische Radio- und Fernsehgesellschaft, Zweigniederlassung swissinfo", "id" : "680731", "status" : "active", "role" : "president", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700029b" } }
+{ "name" : "Valsynthese SA", "id" : "311905", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700029c" } }
+{ "name" : "Publications Financières LSI SA", "id" : "711243", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700029d" } }
+{ "name" : "GSMN Zürich AG", "id" : "795853", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700029e" } }
+{ "name" : "Les Hauts de Genolier SA", "id" : "6262881", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c197646173700029f" } }
+{ "name" : "Genolier Swiss Medical Network SA", "id" : "6965730", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c19764617370002a0" } }
+{ "name" : "GSMN Vaud SA", "id" : "3485", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c19764617370002a1" } }
+{ "name" : "Société Suisse des Explosifs SA", "id" : "15672", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c19764617370002a2" } }
+{ "name" : "Centre Médico-Chirurgical des Eaux-Vives SA", "id" : "224525", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c19764617370002a3" } }
+{ "name" : "Klinik Villa im Park AG", "id" : "239539", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c19764617370002a4" } }
+{ "name" : "SSE Finance SA", "id" : "305387", "status" : "active", "role" : "president of the board of directors", "badge_id" : "145", "_id" : { "$oid" : "5270275c19764617370002a5" } }
+{ "name" : "Emch+Berger AG Bern, Zweigniederlassung Biel/Bienne", "id" : "6984106", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002a6" } }
+{ "name" : "Hayoz GmbH", "id" : "7064698", "status" : "active", "role" : "associate", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002a7" } }
+{ "name" : "INTRAS Assurance-maladie SA", "id" : "5746627", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002a8" } }
+{ "name" : "Sanagate AG", "id" : "5927280", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002a9" } }
+{ "name" : "Stiftung Bärenpark Bern", "id" : "6277031", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002aa" } }
+{ "name" : "Emch + Berger AG Bern, Zweigniederlassung Brig-Glis", "id" : "6364165", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002ab" } }
+{ "name" : "Emch + Berger AG Gesamtplanung Hochbau, succursale de Lausanne", "id" : "6711666", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002ac" } }
+{ "name" : "BSC Young Boys Betriebs AG", "id" : "5042617", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002ad" } }
+{ "name" : "Burckhardt + Partner AG, Architekten Generalplaner", "id" : "5127150", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002ae" } }
+{ "name" : "Burckhardt + Partner AG, Architekten Generalplaner", "id" : "5195693", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002af" } }
+{ "name" : "Stadtbauten Bern", "id" : "5443936", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b0" } }
+{ "name" : "Schweizerische Exportrisikoversicherung", "id" : "5565060", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b1" } }
+{ "name" : "tk3 SA, succursale de Carouge", "id" : "4679213", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b2" } }
+{ "name" : "CSS Kranken-Versicherung AG", "id" : "4798198", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b3" } }
+{ "name" : "CSS Holding AG", "id" : "4975118", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b4" } }
+{ "name" : "Sport und Event Holding AG", "id" : "4982160", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b5" } }
+{ "name" : "Arcosana AG", "id" : "4988911", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b6" } }
+{ "name" : "Emch + Berger AG Bern", "id" : "746082", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b7" } }
+{ "name" : "tk3 AG, Zweigniederlassung Zürich", "id" : "832616", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b8" } }
+{ "name" : "INTRAS Assurance SA", "id" : "4148527", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002b9" } }
+{ "name" : "tk3 SA, succursale de Lausanne", "id" : "4469134", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002ba" } }
+{ "name" : "Stade de Suisse Wankdorf Nationalstadion AG", "id" : "4559356", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002bb" } }
+{ "name" : "Stiftung Diaconis", "id" : "394367", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002bc" } }
+{ "name" : "CSS Versicherung AG", "id" : "567608", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002bd" } }
+{ "name" : "CSS Verein", "id" : "652694", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002be" } }
+{ "name" : "tk3 AG", "id" : "674653", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002bf" } }
+{ "name" : "Burckhardt + Partner AG, Architekten Generalplaner, Zweigniederlassung mit Sitz in Bern", "id" : "682232", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002c0" } }
+{ "name" : "Grosse Schanze AG", "id" : "6952", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002c1" } }
+{ "name" : "Emch+Berger AG Bern", "id" : "8464", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002c2" } }
+{ "name" : "BAND-GENOSSENSCHAFT", "id" : "46748", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002c3" } }
+{ "name" : "Burckhardt + Partner AG, Architekten Generalplaner", "id" : "67731", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002c4" } }
+{ "name" : "Burckhardt + Partner AG, Architekten Generalplaner", "id" : "67733", "status" : "active", "role" : "member", "badge_id" : "229", "_id" : { "$oid" : "5270275c19764617370002c5" } }

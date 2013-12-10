@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/queue.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tipsy.js"></script>
+    <script src="js/underscore.nest.js"></script>
+    <style type="text/css">
+
+text {
+  font-size: 11px;
+  pointer-events: none;
+}
+
+text.parent {
+  fill: steelblue;
+}
+
+circle {
+  fill: #ccc;
+  stroke: #999;
+  pointer-events: all;
+}
+
+circle.parent {
+  fill: steelblue;
+  fill-opacity: .1;
+  stroke: steelblue;
+}
+
+circle.parent:hover {
+  stroke-width: .5px;
+}
+
+circle.child {
+  pointer-events: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="body">
+      
+    </div>
+    <script type="text/javascript">
+
+var w = 1000,
+    h = 1000,
+    r = 500,
+    x = d3.scale.linear().range([0, r]),
+    y = d3.scale.linear().range([0, r]),
+    node,
+    root;
+
+var pack = d3.layout.pack()
+    .size([r, r])
+    .value(function(d) { return 1; });
+
+
+
+var svg = d3.select("#body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h)
+
+svg.append("svg:clipPath")
+    .attr("id", "clipper")
+    .append("svg:circle")
+    .style("stroke", "gray")
+    .style("fill", "black")
+    .attr("cx", (w - r) / 2)
+    .attr("cy", (h - r) / 2)
+    .attr("r", r/2+10);
+
+var vis = svg
+  .append("svg:g")
+    .attr("clip-path", "url(#clipper)")
+    .attr("transform", "translate(" + (w - r) / 2 + "," + (h - r) / 2 + ")");
+
+
+
+queue()
+  .defer(d3.csv, 'data/google/politiker.csv')
+  .defer(d3.csv, 'data/google/badges.csv')
+  .defer(d3.csv, 'data/google/kategorien.csv')
+  .await(ready)
+
+function ready (error,politiker,badges,kategorien) {
+  // console.log(politiker,badges,kategorien);
+
+  politiker.forEach(function(d){
+    d.partei = d.parteiZuordnung;
+    d.badges = badges.filter(function(badge){ return d.id == badge.badgegeber_id; });
+  });
+
+  badges = badges.filter(function(d){ return (d.status !="neu") });
+  badges.forEach(function(d){
+    if(d.deklarierte_funktion == "0.0"){
+      d.deklarierte_funktion = "keine Angabe";
+    }
+    d.funktionKurz = d.deklarierte_funktion.slice(0,10);
+    d.politiker = politiker.filter(function(pol){ return pol.id == d.badgegeber_id; })[0];
+    d.partei = d.politiker.partei;
+    d.farbe = d.politiker.farbe;
+    d.rat = d.politiker.rat;
+    d.kategorie = kategorien.filter(function(k){ return d.kategorie == k.id; })[0].kategorie;
+  });
+
+  badges = badges.filter(function(d){
+    return d.partei=="SVP";
+  })
+
+  //console.log(data);
+
+  var nest = _.nest(badges, ['kategorie','deklarierte_funktion']);
+
+  console.log(nest);
+
+  nest.children.forEach(function(n2){
+    //n1.children.forEach(function(n2){
+      //console.log(n2)
+      var other = n2.children.filter(function(d){ return d.children.length==1 });
+      var rest = n2.children.filter(function(d){ return d.children.length>1 });
+      if(rest.length!=0){
+        console.log(other,rest)
+      }
+      
+   // });
+  });
+
+  node = root = nest;
+
+  var nodes = pack.nodes(root);
+
+  var level=1;
+
+  vis.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("class", function(d) { return d.children ? "parent" : "child"; })
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", function(d) {  return d.depth == 3 ? d.r*0.8 : d.r; })
+      .style("opacity", function(d) { return d.depth == level ? 1 : 0; })
+      .on("click", function(d) { return zoom(node == d ? root : d); });
+
+  vis.selectAll("text")
+      .data(nodes)
+    .enter().append("svg:text")
+      .attr("class", function(d) { return d.children ? "parent" : "child"; })
+      .attr("x", function(d) { return d.x; })
+      .attr("y", function(d) { return d.y; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      .style("opacity", function(d) {
+        if(d.depth == level && d.r>30) return 1;
+        else return 0;
+      })
+      .text(function(d) { return d.name; });
+
+  d3.select(window).on("click", function() { zoom(root); });
+}
+
+
+
+function zoom(d, i) {
+  level=d.depth+1;
+  console.log(d,i);
+
+  var k = r / d.r / 2;
+  x.domain([d.x - d.r, d.x + d.r]);
+  y.domain([d.y - d.r, d.y + d.r]);
+
+  var t = vis.transition()
+      .duration(d3.event.altKey ? 7500 : 100);
+
+
+  t.selectAll("circle")
+      .attr("cx", function(d) { return x(d.x); })
+      .attr("cy", function(d) { return y(d.y); })
+      .attr("r", function(d) { return k * d.r; })
+      .style("opacity", function(d) { return d.depth == level ? 1 : 0; })
+
+  t.selectAll("text")
+      .attr("x", function(d) { return x(d.x); })
+      .attr("y", function(d) { return y(d.y); })
+      .style("opacity", function(d) {
+        if(d.depth == level && d.r>30) return 1;
+        else return 0;
+      })
+
+  node = d;
+  d3.event.stopPropagation();
+}
+
+    </script>
+  </body>
+</html>

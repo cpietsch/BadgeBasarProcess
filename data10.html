@@ -86,14 +86,9 @@ svg {
     <input name="suche" type="text" size="20" value="Suche: Partei, Politiker, Lobbyist">
   </div>
   <div>
-    <select>
-      <option value="volvo">Funktionen</option>
-      <option value="saab">Alle</option>
-      <option value="saab">Gast</option>
-      <option value="mercedes">Mitarbeiter/innen</option>
-      <option value="audi">Keine Angabe</option>
-      <option value="audi">Sonstige</option>
-    </select>
+  <select size="10" id="funktionenFilter">
+    <soption value="alle">Alle Funktionen</option>
+  </select>
   </div>
 </div>
 <div id="chart"></div>
@@ -257,6 +252,7 @@ svg {
     .defer(d3.csv, 'data/badges.csv')
     .await(ready)
 
+
   function ready (error,politiker,badges) {
     var fill = d3.scale.category10();
   
@@ -342,30 +338,26 @@ svg {
       fillup:0
     });
 
-    // wandelhalle
 
-    
-
-    // var links = [];
-    // funktionen.forEach(function(funktion){
-    //   var last;
-    //   funktion.values.forEach(function(a){
-    //     funktion.values.forEach(function(b){
-    //       if(a!=b){
-    //         var link = { source: a, target: b};
-    //         links.push(link);
-    //       }
-    //     });
-    //   });
-    // });
 
     var funktionen = d3.nest()
-      .key(function(d) { return d.deklarierte_funktion.slice(0,5); })
-      .entries(badges);
+      .key(function(d) { return d.deklarierte_funktion.slice(0,3); })
+      .entries(badges)
+      .sort(function(a,b) { return b.values.length - a.values.length })
 
+    console.log(funktionen)
     var strength = d3.scale.sqrt()
       .domain([1, d3.max(funktionen, function(d){ return d.values.length })])
       .range([0.8, 0.2])
+
+
+    function filterFunktion(key){
+      console.log(key)
+    }
+
+    var lobby = svg.append("g")
+      .attr("transform", "translate(0," + h/1.2  + ")")
+      .attr("class", "lobby")
 
     var links = [];
     var nodes = [];
@@ -396,93 +388,20 @@ svg {
         nodes.push(target);
       }
     })
-
-    console.log(links)
-
-    var force = d3.layout.force()
-        .nodes(nodes)
-        .links(links)
-        .size([w, h])
-        .linkDistance(function(d){
-          //return 1/d.strength * 5;
-          return 5;
-        })
-        .linkStrength(function(d){
-          return d.strength;
-        })
-        .charge(-10)
-        .start();
-
-    var safety = 0;
-    while(force.alpha() > 0.05) { 
-        force.tick();
-        if(safety++ > 500) {
-          break;
-        }
-    }
-
-    var lobby = svg.append("g")
-      .attr("transform", "translate(0," + h/1.2  + ")")
-      .attr("class", "lobby")
-
-    var link = lobby.selectAll(".link")
-          .data(links)
-        .enter().append("line")
-          .attr("class", "link")
-          //.style("stroke-width", function(d) { return Math.sqrt(d.value); });
-
+    
     var node = lobby
       .selectAll(".node")
-        .data(nodes)
+
+    var pack = d3.layout.pack()
+        .size([500, 500]);
+
+
+    lobby.data([data]).selectAll(".node")
+        .data(pack.nodes)
       .enter().append("circle")
-        .attr("class", function(d, i) { 
-          if (d.knoten) return "knoten";
-          else return "node";
-        })
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; })
-        .attr("r", function(d, i) { 
-          if (d.knoten) return 1/d.r* 15;
-          else return 5;
-        })
-        .style("fill", function(d, i) { 
-          if (!d.knoten) {
-            return fill(d.politiker.partei);
-          }
-        })
-        //.style("stroke", function(d, i) { return d3.rgb(fill(i & 3)).darker(2); })
-        .call(force.drag)
-        .on("mousedown", function(d) { 
-          console.log(d);
-          d3.event.stopPropagation();
-        })
-        .on("mouseover", function(d1) { 
-          d1.politiker = d3.selectAll(".rat circle").filter(function(d2){ return d2.id == d1.badgegeber_id })
-            //.attr("r",7)
-            .classed("active",true)
-
-          d3.select(this).classed("active",true)
-
-        })
-        .on("mouseout", function(d1) { 
-          d1.politiker
-            .attr("r",5)
-            .classed("active",false)
-
-          d3.select(this).classed("active",false)
-        })
-
-    
-    force.on("tick", function() {
-        link.attr("x1", function(d) { return d.source.x; })
-            .attr("y1", function(d) { return d.source.y; })
-            .attr("x2", function(d) { return d.target.x; })
-            .attr("y2", function(d) { return d.target.y; });
-
-        node.attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; });
-    });
-    
+        .attr("class", "node")
+        .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+        .attr("r", function(d) { return d.r; });
 
     $(".lobby circle").tipsy({ 
         fade: false,
@@ -494,6 +413,18 @@ svg {
         }
       });
 
+    d3.select("#funktionenFilter")
+      .on("change", function() {
+        var key = this.options[this.selectedIndex].value;
+        filterFunktion(key);
+      })
+      .selectAll("option").data(funktionen).enter().append("option")
+        .attr("value", function(d){ return d.key; }) 
+        .text(function(d){ 
+          return d.values[0].deklarierte_funktion + " ("+d.values.length+")";
+        })
+
+
 
     // d3.select("body")
     //    .on("mousedown", mousedown);
@@ -504,6 +435,8 @@ svg {
     //   });
     //   force.resume();
     // }
+
+    return this;
   }
     
     

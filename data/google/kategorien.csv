@@ -1,0 +1,26 @@
+id,abteilung,kategorie
+A,01-03,"Land- und Forstwirtschaft, Fischerei"
+B,05-09,Bergbau und Gewinnung von Steinen und Erden
+C,10-33,Verarbeitendes Gewerbe/Herstellung von Waren
+D,35,Energieversorgung
+E,36-39,Wasserversorgung; Abwasser- und Abfallentsorgung und Beseitigung von Umweltverschmutzungen
+F,41-43,Baugewerbe/Bau
+G,45-47,Handel, KFZ
+H,49-53,Verkehr und Lagerei
+I,55-56,Gastgewerbe/Beherbergung und Gastronomie
+J,58-63,Information und Kommunikation
+K,64-66,"Finanzen und Versicherung"
+L,68,Grundstücks- und Wohnungswesen
+M,69-75,"Wissenschaft, Technik"
+N,77-82,Erbringung von sonstigen wirtschaftlichen Dienstleistungen
+O,84,"Öffentliche Verwaltung, Verteidigung; Sozialversicherung"
+P,85,Erziehung und Unterricht
+Q,86-88,Gesundheits- und Sozialwesen
+R,90-93,"Kunst, Unterhaltung, Erholung"
+S,94-96,Sonstigen Dienstleistungen
+T,97-98,Private Haushalte mit Hauspersonal; Herstellung von Waren und Erbringung von Dienstleistungen durch private Haushalte für den Eigenbedarf ohne ausgeprägten Schwerpunkt
+U,99,Exterritoriale Organisationen und Körperschaften
+,,Keine Angabe
+0,,Gast
+1,,"Persönlicher MitarbeiterInnen"
+2,,Politisches
