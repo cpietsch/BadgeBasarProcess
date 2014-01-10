@@ -44,7 +44,7 @@
   opacity: 1;
 }
 .arc circle {
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 circle {
   cursor: pointer;
@@ -55,6 +55,7 @@ circle {
   stroke:#777;
   fill:none;
   opacity: 0.3;
+
 }
 
 .voronoi path {
@@ -69,12 +70,16 @@ circle {
   stroke-width:1px;
   pointer-events: none;
 }
+.label .background{
+  fill: #FFF;
+  stroke:#EEE;
+}
 
 .label .cell-center {
-  stroke: orange;
+  /*stroke: orange;*/
 }
 .label .cell-border {
-  stroke: green;
+  /*stroke: green;*/
 }
 
 .label--top {
@@ -92,11 +97,12 @@ circle {
 .label--left {
   text-anchor: end;
 }
-
+.label text {
+  filter:url(#highlight);
+}
 </style>
 
 
-<link rel="stylesheet" href="http://1315-nzz-visualization-platform.s3-website-eu-west-1.amazonaws.com/styleguide/assets/css/styleguide.css?_1380898359691=" />
 <link href="http://1315-nzz-visualization-platform.s3-website-eu-west-1.amazonaws.com/styleguide/assets/css/main.min.css?_1380898359691=" rel="stylesheet" />
 <link href="http://1315-nzz-visualization-platform.s3-website-eu-west-1.amazonaws.com/styleguide/assets/css/styleguide.min.css?_1380898359691=" rel="stylesheet" />
 <link href="http://1315-nzz-visualization-platform.s3-website-eu-west-1.amazonaws.com/styleguide/assets/css/prettify.min.css?_1380898359691=" rel="stylesheet" />
@@ -205,7 +211,7 @@ overflow: hidden;
 
 .kategorien {
   left: 80px;
-  top: 380px;
+  top: 400px;
   position: absolute;
   width: 260px;
   z-index: 100;
@@ -295,6 +301,16 @@ overflow: hidden;
   width: 260px;
 }
 
+#funktionen {
+  width: 260px;
+  position: absolute;
+  left: 80px;
+  top: 360px;
+}
+#funktionen select {
+  width: 260px;
+}
+
 </style>
 
 <body>
@@ -349,7 +365,13 @@ overflow: hidden;
 
 
 <div id="search">
-  <select class="" data-placeholder="Person auswählen" tabindex="-1">
+  <select class=""  data-placeholder="Person auswählen" tabindex="-1">
+     <option value=""></option>
+  </select>
+</div>
+
+<div id="funktionen">
+  <select class=""  data-placeholder="Funktion auswählen" tabindex="-1">
      <option value=""></option>
   </select>
 </div>
@@ -361,32 +383,41 @@ overflow: hidden;
   </div>
   <div>
     <svg width="30" height="10">
-      <circle cx="5" cy="5" r="5" style="fill:#4c7388;opacity:0.4;" />
-      <circle cx="20" cy="5" r="5" style="fill:#4c7388;" />
+      <circle cx="5" cy="5" r="5" type="politikerNRw" />
+      <circle cx="20" cy="5" r="5" type="politikerNRm" />
     </svg>
     <span>Nationalrat</span>
   </div>
   <div>
     <svg width="30" height="10">
-      <circle cx="5" cy="5" r="5" style="fill:#a95457;opacity:0.4;" />
-      <circle cx="20" cy="5" r="5" style="fill:#a95457;" />
+      <circle cx="5" cy="5" r="5" type="politikerSRw"/>
+      <circle cx="20" cy="5" r="5" type="politikerSRm" />
     </svg>
     <span>Ständerat</span>
   </div>
   <div>
     <svg width="30" height="10">
-      <circle cx="5" cy="5" r="5" style="fill:#777777;opacity:0.4;" />
-      <circle cx="20" cy="5" r="5" style="fill:#777777;" />
+      <circle cx="5" cy="5" r="5" type="badgew" />
+      <circle cx="20" cy="5" r="5" type="badgem"/>
     </svg>
     <span>Badgeinhaber</span>
   </div>
 </div>
 
-<div id="chart"></div>
+<div id="chart">
+<svg>
+  <filter x="0" y="0" width="1" height="1" id="highlight">
+     <feFlood flood-color="#FFF"/>
+     <feComposite in="SourceGraphic"/>
+  </filter>
+</svg>
+</div>
 <script>
 
+  var transitionSpeed = 500;
+  var transitionDelay= 5;
   var w = 600, h = 600, r = 100;
-  var svg = d3.select("#chart").append("svg")
+  var svg = d3.select("#chart svg")
       .attr("width", w)
       .attr("height", h)
 
@@ -395,8 +426,13 @@ overflow: hidden;
   var filterPartei;
   var fill = d3.scale.ordinal()
     .domain(["badgem", "badgew","politikerSRm","politikerSRw", "politikerNRm","politikerNRw"])
-    .range(["#777", "#BCBCBC","#a95457", "#D2ABAE" ,"#4c7388", "#A9BBC5"])
+    .range(["#777", "#A0A0A0","#a95457", "#d58a8a" ,"#4c7388", "#87a3b0"])
+    // .domain(["badgew", "badgem","politikerSRw","politikerSRm", "politikerNRw","politikerNRm"])
+    // .range(["#777", "#777","#a95457", "#a95457" ,"#4c7388", "#4c7388"])
 
+  d3.selectAll('.legende circle').attr("fill",function(d){
+    return fill(d3.select(this).attr("type"));
+  })
   var partei;
 
   
@@ -520,21 +556,25 @@ overflow: hidden;
   queue()
     .defer(d3.csv, 'data/google/politiker.csv')
     .defer(d3.csv, 'data/google/badges.csv')
+    //.defer(d3.csv, 'https://docs.google.com/spreadsheet/pub?key=0AhB_RnBFNkDcdHhHUjdmWm41UUtUQVhqLVRZZ3JmOFE&single=true&gid=14&output=csv')
+    //.defer(d3.csv, 'https://docs.google.com/spreadsheet/pub?key=0AhB_RnBFNkDcdHhHUjdmWm41UUtUQVhqLVRZZ3JmOFE&single=true&gid=0&output=csv')
     .defer(d3.csv, 'data/google/kategorien.csv')
     .await(ready)
 
   function ready (error,politiker,badges,kategorien) {
     // console.log(politiker,badges,kategorien);
-  
+
+    politiker = politiker.filter(function(d){ return (d.status !="alt") });
+    badges = badges.filter(function(d){ return (d.status !="alt") });
+
     politiker.forEach(function(d){
       d.partei = d.parteiZuordnung;
       d.badges = badges.filter(function(badge){ return d.id == badge.badgegeber_id; });
-      d.active = 1;
+      d.active = 3;
       d.type = "politiker";
       d.name = d.vorname + " " + d.nachname;
     });
 
-    badges = badges.filter(function(d){ return (d.status !="neu") });
     badges.forEach(function(d){
       if(d.deklarierte_funktion == "0.0"){
         d.deklarierte_funktion = "keine Angabe";
@@ -583,10 +623,11 @@ overflow: hidden;
 
     var makeSearch = function(){
       d3.select('#search select')
-        .selectAll('option')
+        .selectAll('.options')
         .data(personen)
         .enter()
           .append('option')
+          .classed('options',true)
           .attr('value',function(d){ return d.name; })
           .text(function(d){ return d.name; })
 
@@ -595,18 +636,22 @@ overflow: hidden;
         no_results_text: "Leider nicht gefunden!",
         allow_single_deselect: true
       }).change(function(){
-
         var name = $( "option:selected", this).attr('value');
         var selected = personen.filter(function(d){ return d.name == name });
+
         if(selected.length>0){
-          mouseout(selected[0]);
-          mouseover(selected[0]);
+            mouseout(selected[0]);
+            mouseover(selected[0]);
         } else {
           mouseout(selected[0]);
         }
+      }).on("chosen:showing_dropdown focus",function(){
+        filterKatergorie("Alle");
       })
     }
     makeSearch();
+
+
     
     var centerPos = {left:w/2 ,top:h/2};
     var circleSvg = svg.append("g")
@@ -662,17 +707,17 @@ overflow: hidden;
       var links = [];
       var p = 0.028;
 
-      d.badges.forEach(function(b){
-        //if(b.active>=4){
+      d.badges
+      .filter(function(d){ return d.active>=4})
+      .forEach(function(b){
           links.push({ 
             source: {x:d.cx*(1-p),y:d.cy*(1-p)},
-            target: {x:b.cx*(1+p),y:b.cy*(1+p)}
+            target: {x:b.cx*(1+p*1.2),y:b.cy*(1+p*1.2)}
           });
-        //}      
       });
 
-      var selection = link.selectAll(".link").data(links);
-      selection
+      link.selectAll(".link")
+        .data(links)
           .enter()
             .append("path")
             .attr("class", "link")
@@ -760,6 +805,7 @@ overflow: hidden;
             d.field = "deklarierte_funktion";
             return d;
            });
+           //console.log(d)
           //d.subkat.unshift({ key: "Alle", values: d.values });
           return d;
        })
@@ -775,6 +821,43 @@ overflow: hidden;
 
 
     console.log(kategorien);
+
+    var makeFunktionen = function(){
+
+      var funktionen = d3.nest()
+       .key(function(d) { return d.deklarierte_funktion; })
+       .entries(badges)
+       .sort(function(a,b) { return b.values.length - a.values.length });
+
+      funktionen.splice(0, 3);
+       //console.log(funktionen)
+
+      d3.select('#funktionen select')
+        .selectAll('.options')
+        .data(funktionen)
+        .enter()
+          .append('option')
+          .classed('options',true)
+          .attr('value',function(d){ return d.key; })
+          .text(function(d){ return d.key; })
+
+      $("#funktionen select").chosen({
+        disable_search_threshold: 10,
+        no_results_text: "Leider nicht gefunden!",
+        allow_single_deselect: true
+      }).change(function(){
+
+        var name = $( "option:selected", this).attr('value');
+        if(name){
+          filterKatergorie(name,"deklarierte_funktion");
+        } else {
+          filterKatergorie("Alle");
+        }
+        
+        
+      })
+    }
+    makeFunktionen();
 
     var makeRow = function(d){
       var elm = d3.select(this).append("div").classed("row",true)
@@ -793,7 +876,7 @@ overflow: hidden;
           d3.select(".katlist .active").classed("active",false);
           d3.select(this).classed("active",true);
 
-          filterKatergorie(d.field,d.key);
+          filterKatergorie(d.key,d.field);
         })
     };
 
@@ -803,8 +886,12 @@ overflow: hidden;
           .append("li")
           .classed("elem",true)
           .on('click',function(d){
-            d3.select(".katlist .open").classed("open",false);
-            d3.select(this).classed("open",true);
+            $("select")
+              .val("")
+              .trigger('chosen:updated');
+            
+            // d3.select(".katlist .open").classed("open",false);
+            // d3.select(this).classed("open",true);
           })
           .each(makeRow)
           .append("ul")
@@ -839,16 +926,16 @@ overflow: hidden;
         } else {
           d.active = 1;
         }
-        if(d.geschlecht=="w") d.active += 0.1;
+        if(d.geschlecht=="m") d.active += 0.1;
       })
       d.data.badges.sort(function(a,b){
         return a.active<b.active ? 1:-1;
       });
-      if(val=="" || val=="Alle"){
-        d.data.badges.sort(function(a,b){
-          return a.geschlecht<b.geschlecht ?1:-1;
-        });
-      }
+      // if(val=="" || val=="Alle"){
+      //   d.data.badges.sort(function(a,b){
+      //     return a.geschlecht<b.geschlecht ?1:-1;
+      //   });
+      // }
 
       d.data.badges.forEach(function(e,i){
         e.cx = d.data.badgeSeats[i].x;
@@ -857,12 +944,15 @@ overflow: hidden;
       return d.data.badges;
     }
 
-    var sortPolitiker = function(d){
+    var sortPolitiker = function(d,key,val){
       d.data.politiker.forEach(function(d){
-        d.active = 1;
+        if(val=="Alle") d.active=4;
+        else d.active = 1;
+
         d.badges.forEach(function(a){ if(a.active>=4) d.active=4; });
 
-        if(d.geschlecht=="w") d.active+=0.1;
+        if(d.geschlecht=="m") d.active+=0.1;
+        
       })
       d.data.politiker.sort(function(a,b){
         return a.active<b.active ?1:-1;
@@ -878,7 +968,7 @@ overflow: hidden;
     var allPolitiker = function(d){
       d.data.politiker.forEach(function(d){
         d.active = 4;
-        if(d.geschlecht=="w") d.active+=0.1;
+        if(d.geschlecht=="m") d.active+=0.1;
       })
       d.data.politiker.sort(function(a,b){
         return a.active<b.active ? 1:-1;
@@ -891,7 +981,7 @@ overflow: hidden;
       return d.data.politiker;
     }
 
-    var filterKatergorie = function(key, val){
+    var filterKatergorie = function(val, key, callback){
 
       circleSvg.selectAll('.arc').each(function(segment,ii){
 
@@ -899,12 +989,12 @@ overflow: hidden;
           .data(sortBadges(segment,key,val))
 
         d3.select(this).selectAll(".politiker")
-          .data(sortPolitiker(segment))
+          .data(sortPolitiker(segment,key,val))
 
         d3.select(this).selectAll('circle')
           .transition()
-          .duration(1000)
-          .delay(function(d,i){ return i*10; })
+          .duration(transitionSpeed)
+          .delay(function(d,i){ return i*transitionDelay; })
           .attr('cx',function(d,i){ return d.cx; })
           .attr('cy',function(d,i){ return d.cy; })
           .attr("r",function(d){ return d.active; })
@@ -917,6 +1007,9 @@ overflow: hidden;
 
       updateVoronoi();
 
+      if(callback) {
+        setTimeout(callback,transitionSpeed*2);
+      }
     }
 
     var showPolitiker = function(){
@@ -926,8 +1019,8 @@ overflow: hidden;
         d3.select(this).selectAll(".politiker")
           .data(allPolitiker(segment))
           .transition()
-          .duration(1000)
-          .delay(function(d,i){ return i*10; })
+          .duration(transitionSpeed)
+          .delay(function(d,i){ return i*transitionDelay; })
           .attr('cx',function(d,i){ return d.cx; })
           .attr('cy',function(d,i){ return d.cy; })
           .attr("r",function(d){ return d.active; })
@@ -962,7 +1055,7 @@ overflow: hidden;
       nodes
         .attr("r",function(d){ return 0; })
         .transition()
-        .duration(1000)
+        .duration(transitionSpeed)
         .attr("r",function(d){ return 4; })
         //.style("opacity",function(d){ return d.geschlecht=="w" ? 0.4 : 1; })
         .attr("fill", function(d){ 
@@ -993,6 +1086,9 @@ overflow: hidden;
 
       labelSvg.selectAll('g').data([]).exit().remove();
 
+      var tooltipWidth = 200;
+      var tooltipHeight = 200;
+
       var cell = labelSvg
         .selectAll("g")
         .data(vLabel)
@@ -1005,6 +1101,22 @@ overflow: hidden;
       cell.append("path")
           .attr("class", "cell-center")
           .attr("d", function(d) { return "M" + d.centroid() + "L" + d.point.cx + "," + d.point.cy; });
+
+      // cell.append('path')
+      //   .classed("background",true)
+      //   .attr("d", "M0,0"
+      //     + "H" + tooltipWidth
+      //     + "v" + tooltipHeight
+      //     + "H" + (tooltipWidth / 2 + 6)
+      //     + "l-6,6"
+      //     + "l-6,-6"
+      //     + "H0"
+      //     + "z")
+      //   .attr("transform", function(d) { return "translate(" + d.point.cx + "," + d.point.cy + ")"; })
+      //   .attr("dy", function(d) { return d.orient === "left" || d.orient === "right" ? ".35em" : d.orient === "bottom" ? ".71em" : null; })
+      //   .attr("x", function(d) { return d.orient === "right" ? 12 : d.orient === "left" ? -12 : null; })
+      //   .attr("y", function(d) { return d.orient === "bottom" ? 12 : d.orient === "top" ? -12 : null; })
+
 
       cell.append("text")
           .attr("class", function(d) {
@@ -1025,13 +1137,20 @@ overflow: hidden;
 
     var updateVoronoi = function(){
 
-      voronoi(personen).forEach(function(d) { d.point.cell = d; });
+      var data = circles.filter(function(d){ return d.active>=4; }).data();
+
+      voronoi(data).forEach(function(d) { d.point.cell = d; });
+      
+      voronoiSvg.selectAll("path").data([]).exit().remove();
 
       var s = voronoiSvg
         .selectAll("path")
-        .data(personen)
-        .attr("d", function(d) { return d.cell.length ? "M" + d.cell.join("L") + "Z" : null; })
-      
+        .data(data)
+        .enter()
+        .append("path")
+         .attr("d", function(d) { return d.cell.length ? "M" + d.cell.join("L") + "Z" : null; })
+         .on('mouseover', mouseover)
+          .on('mouseout', mouseout)
     };
 
     var makeVoronoi = function(){
@@ -1050,21 +1169,26 @@ overflow: hidden;
 
       var politiker = (d.type=="badge" ? d.politiker : d);
 
-      makeInfo(politiker);
-      makeLinks(politiker);
+      if(politiker.active>=4){
+        makeInfo(politiker);
+        makeLinks(politiker);
+      }
+
+      //circles.attr('opacity',0.5);
 
       var s = circles
         .filter(function(d){
           return d===politiker || d===politiker.badges[0] || d===politiker.badges[1];
         })
-        //.filter(function(d){ return d.active>=4 })
+        .filter(function(d){ return d.active>=4;  })
         .each(function(d){
           d.oldState = d.active;
         })
         .attr('r',8).attr('stroke-width',1).attr('stroke','#FFF')
-        .classed('active',true);
+        .classed('active',true)
+        //.attr('opacity',1);
 
-      makeLabel(s.data());
+      //makeLabel(s.data());
     
     };
     function mouseout(d){
@@ -1074,14 +1198,16 @@ overflow: hidden;
           return d.oldState;
         }).attr('stroke','none');
 
+      //circles.attr('opacity',1);
+
       link.selectAll(".link").data([]).exit().remove();
     };
    
     //showPolitiker();
     //makeForce();
     
-    filterKatergorie('');
-    makeVoronoi();
+    filterKatergorie('Alle');
+    //makeVoronoi();
 
     $('.intro-hide').show();
 
@@ -1094,7 +1220,7 @@ overflow: hidden;
       steps: [
         function(){
           $('.intro a').hide();
-          filterKatergorie('');
+          filterKatergorie('Alle');
           makeVoronoi();
           setTimeout(function(){
             $('.intro-hide').fadeIn();
